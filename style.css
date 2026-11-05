@@ -668,7 +668,7 @@ article .hero .post-date { display: block; margin-bottom: .35rem; }
 .stage-when { margin: 1.1rem 0 0; color: var(--muted-fg); font-size: .9375rem; animation: fade-in .8s 1.4s both; }
 @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
-.orb { position: relative; width: min(46rem, 94vw); aspect-ratio: 1; justify-self: end; margin-right: -9rem; --rx: 0deg; --ry: 0deg; }
+.orb { position: relative; width: min(46rem, 94vw); aspect-ratio: 1; justify-self: center; --rx: 0deg; --ry: 0deg; }
 @media (max-width: 62rem) { .orb { justify-self: center; margin-right: 0; width: min(30rem, 88vw); } }
 .orb-pulse i { position: absolute; inset: 6%; border-radius: 50%; border: 2px solid var(--accent); opacity: 0; animation: orb-pulse 6s ease-out infinite; }
 .orb-pulse i:nth-child(2) { animation-delay: 2s; } .orb-pulse i:nth-child(3) { animation-delay: 4s; }
@@ -801,12 +801,12 @@ section[id] { scroll-margin-top: 8.5rem; }
 @media (prefers-reduced-motion: reduce) { .cookie-btn { transition: none; } }
 
 @media (min-width: 62rem) {
-  .orb { width: min(46rem, 94vw, calc(100svh - 12rem)); }
+  .orb { width: min(46rem, 100%, calc(100svh - 12rem)); }
   .stage:not(.stage-short) h1 { font-size: clamp(2.6rem, min(8.2vw, 8.6svh), 6.4rem); }
 }
 @media (min-width: 62rem) and (max-height: 56rem) {
   .stage:not(.stage-short) { padding: 1.5rem 0 4rem; }
-  .orb { width: min(46rem, 94vw, calc(100svh - 10rem)); }
+  .orb { width: min(46rem, 100%, calc(100svh - 10rem)); }
   .stage:not(.stage-short) .stage-tag { margin-bottom: .75rem; }
   .stage:not(.stage-short) h1 { margin-bottom: .8rem; }
   .stage:not(.stage-short) .stage-lead { margin-bottom: 1rem; font-size: 1.0625rem; }
