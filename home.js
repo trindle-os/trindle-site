@@ -25,6 +25,34 @@
 })();
 
 (() => {
+  const rail = document.querySelector(".rail");
+  const row = rail && rail.querySelector(".rail-in");
+  if (!row) return;
+  const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const make = (dir, label, d) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "rail-arrow";
+    b.setAttribute("aria-label", label);
+    b.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="${d}"/></svg>`;
+    b.addEventListener("click", () => row.scrollBy({ left: dir * row.clientWidth * 0.8, behavior: calm ? "auto" : "smooth" }));
+    return b;
+  };
+  const left = make(-1, "Show earlier chapters", "M15 6l-6 6 6 6");
+  const right = make(1, "Show later chapters", "M9 6l6 6-6 6");
+  rail.classList.add("has-arrows");
+  rail.prepend(left);
+  rail.append(right);
+  const sync = () => {
+    left.disabled = row.scrollLeft < 2;
+    right.disabled = row.scrollLeft + row.clientWidth > row.scrollWidth - 2;
+  };
+  row.addEventListener("scroll", sync, { passive: true });
+  window.addEventListener("resize", sync);
+  sync();
+})();
+
+(() => {
   const links = [...document.querySelectorAll(".rail a")];
   if (!links.length || !("IntersectionObserver" in window)) return;
   const byId = new Map(links.map((a) => [a.hash.slice(1), a]));
