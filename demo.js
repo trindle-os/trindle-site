@@ -99,6 +99,37 @@
       }
     });
 
+    var chosen = null;
+    var bar = document.createElement("div");
+    bar.className = "reorder";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Move the chosen icon");
+    function shift(step) {
+      if (!chosen || order.indexOf(chosen) < 0) return;
+      var at = order.indexOf(chosen);
+      var to = (at + step + order.length) % order.length;
+      order.splice(at, 1);
+      order.splice(to, 0, chosen);
+      place();
+      tell(chosen.querySelector(".app").dataset.name + " moved to place " + (to + 1) + ".");
+    }
+    [["Move earlier", -1], ["Move later", 1]].forEach(function (b) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = b[0];
+      btn.disabled = true;
+      btn.addEventListener("click", function () { shift(b[1]); });
+      bar.appendChild(btn);
+    });
+    host.insertAdjacentElement("afterend", bar);
+    host.addEventListener("click", function (ev) {
+      var slot = ev.target.closest ? ev.target.closest(".slot") : null;
+      if (!slot || order.indexOf(slot) < 0) return;
+      chosen = slot;
+      [].forEach.call(bar.children, function (btn) { btn.disabled = false; });
+      tell(slot.querySelector(".app").dataset.name + " is chosen. Use Move earlier or Move later.");
+    });
+
     host.addEventListener("pointerdown", function (ev) {
       var btn = ev.target.closest ? ev.target.closest(".app") : null;
       if (!btn || !isOpen()) return;
@@ -158,7 +189,7 @@
     var shots = {
       "Settings": ["img/settings-appearance.jpg", "The Appearance page of Trindle's Settings"],
       "Apps": ["img/apps-move-your-apps.jpg", "The Move your apps page of Trindle's Apps"],
-      "Snapshots": ["img/settings-snapshots.jpg", "The Snapshots page of Trindle's Settings"]
+      "Snapshots": ["img/snapshots-card-cut.png", "The Snapshots page of Trindle's Settings"]
     };
 
     function deskTell(words) { if (deskSay) deskSay.textContent = words; }

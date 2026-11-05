@@ -551,8 +551,8 @@ article .hero .post-date { display: block; margin-bottom: .35rem; }
 .desk-window-name { font-size: .8125rem; font-weight: 600; }
 .desk-window-btns { margin-left: auto; display: flex; gap: .1rem; }
 .win-btn {
-  width: 1.9rem; height: 1.9rem; flex: none; display: grid; place-items: center;
-  border: 0; border-radius: 999px; background: none; color: var(--muted-fg);
+  width: 2.75rem; height: 2.75rem; flex: none; display: grid; place-items: center;
+  border: 0; border-radius: .5rem; background: none; color: var(--muted-fg);
   cursor: pointer; padding: 0;
 }
 .win-btn:hover { background: var(--muted); color: var(--fg); }
@@ -954,3 +954,8 @@ section[id] { scroll-margin-top: 8.5rem; }
 
 .stage-pause, .rail a { min-height: 2.75rem; display: inline-flex; align-items: center; }
 .show-card figcaption { align-self: stretch; }
+
+.reorder { display: flex; gap: .5rem; justify-content: center; margin-top: .75rem; }
+.reorder button { min-width: 2.75rem; min-height: 2.75rem; padding: .4rem .9rem; border-radius: .625rem; border: 1px solid var(--panel-border); background: var(--panel); color: var(--fg); font: inherit; font-weight: 600; cursor: pointer; }
+.reorder button:hover:not(:disabled) { border-color: var(--accent); }
+.reorder button:disabled { opacity: .5; cursor: default; }
