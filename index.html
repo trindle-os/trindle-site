@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trindle: in beta</title>
+<meta name="description" content="No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://trindle.org/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trindle">
+<meta property="og:title" content="Trindle: in beta">
+<meta property="og:description" content="No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.">
+<meta property="og:url" content="https://trindle.org/">
+<meta property="og:image" content="https://trindle.org/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Trindle ring, with programs round it">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/trindle.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<div class="top">
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <circle cx="32" cy="32" r="31" fill="#FBC711"/>
+  <circle cx="32" cy="32" r="21.5" fill="none" stroke="#111827" stroke-width="4.5"/>
+  <g fill="#111827">
+    <circle cx="32" cy="18.5" r="2.6"/><circle cx="41.55" cy="22.45" r="2.6"/>
+    <circle cx="45.5" cy="32" r="2.6"/><circle cx="41.55" cy="41.55" r="2.6"/>
+    <circle cx="32" cy="45.5" r="2.6"/><circle cx="22.45" cy="41.55" r="2.6"/>
+    <circle cx="18.5" cy="32" r="2.6"/><circle cx="22.45" cy="22.45" r="2.6"/>
+  </g>
+</svg><span>Trindle</span></a>
+    <nav class="nav" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a href="/blog" data-buildmorphic="blog">Blog</a><a href="/roadmap" data-buildmorphic="roadmap">Roadmap</a><a class="join" href="/community" data-buildmorphic="community">Join the community</a></nav>
+    <details class="menu">
+      <summary class="menu-btn" aria-label="Menu" title="Menu">
+        <svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </summary>
+      <div class="menu-sheet">
+        <nav class="menu-list" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a href="/blog" data-buildmorphic="blog">Blog</a><a href="/roadmap" data-buildmorphic="roadmap">Roadmap</a><a class="join" href="/community" data-buildmorphic="community">Join the community</a></nav>
+      </div>
+    </details>
+  </div>
+</header>
+</div>
+<main id="main">
+<section class="stage" data-motion="on" aria-labelledby="stage-title">
+  <div class="stage-glow" aria-hidden="true"><i></i><i></i></div>
+  <div class="wrap stage-grid">
+    <div class="stage-words">
+      <p class="stage-tag"><span>In beta</span><span>Written in Rust</span></p>
+      <h1 id="stage-title">
+        <span class="ln"><span>No bar.</span></span>
+        <span class="ln"><span>No dock.</span></span>
+        <span class="ln"><span>No menu.</span></span>
+        <span class="ln hot"><span>Just one ring.</span></span>
+      </h1>
+      <p class="stage-swap">
+        <span class="sr-only">Every open window shows live in the ring. Draw on a screenshot before you keep it. A snapshot before every change. A dot whenever something is watching or listening.</span>
+        <span class="swap" aria-hidden="true"><b>Every open window, live in the ring.</b><b>Draw on a screenshot before you keep it.</b><b>A snapshot before every change.</b><b>A dot whenever you are watched or heard.</b></span>
+      </p>
+      <p class="stage-lead">A new desktop for Debian. One circle holds the clock, your programs, your windows and every switch.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tour.html">See every part of it</a>
+        <a class="btn btn-quiet" href="demo.html">Try it in your browser</a>
+      </div>
+      <p class="stage-when">In beta testing now: version 0.9.0-beta.1. Download coming soon.</p>
+    </div>
+    <div class="orb" id="orb">
+      <div class="orb-pulse" aria-hidden="true"><i></i><i></i><i></i></div>
+      <svg class="orb-dots" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50.00" cy="3.00" r="1.7"/><circle cx="83.23" cy="16.77" r="1.7"/><circle cx="97.00" cy="50.00" r="1.7"/><circle cx="83.23" cy="83.23" r="1.7"/><circle cx="50.00" cy="97.00" r="1.7"/><circle cx="16.77" cy="83.23" r="1.7"/><circle cx="3.00" cy="50.00" r="1.7"/><circle cx="16.77" cy="16.77" r="1.7"/></svg>
+      <div class="orb-tilt"><img class="orb-img" src="img/hero-ring.jpg" width="640" height="640" alt="The Trindle ring open on the desktop: the time in the middle, with Settings, Firefox, Thunderbird, Writer, GIMP, VLC, Apps, Calculator and Folders round it."></div>
+    </div>
+  </div>
+  <button class="stage-pause" type="button" aria-pressed="false" hidden>Pause movement</button>
+</section>
+
+<section class="run" aria-label="A few of the things in Trindle now">
+  <div class="run-track">
+    <ul><li>One ring</li><li>Live window pictures</li><li>Draw on screenshots</li><li>A permission window like a phone&rsquo;s</li><li>A dot when you are watched</li><li>PocketKey</li><li>A snapshot before every change</li><li>A Rust compositor</li><li>Locked system files</li><li>Coding agents in a box</li></ul>
+    <ul aria-hidden="true"><li>One ring</li><li>Live window pictures</li><li>Draw on screenshots</li><li>A permission window like a phone&rsquo;s</li><li>A dot when you are watched</li><li>PocketKey</li><li>A snapshot before every change</li><li>A Rust compositor</li><li>Locked system files</li><li>Coding agents in a box</li></ul>
+  </div>
+</section>
+
+<section class="sell-band" aria-labelledby="set-apart">
+  <div class="wrap">
+    <div class="sell-head">
+      <h2 id="set-apart">What sets it apart</h2>
+      <p>Each of these works in the beta today.</p>
+    </div>
+    <div class="show">
+      <figure class="show-card show-wide reveal">
+        <img src="img/sell-windows.jpg" width="1280" height="800" loading="lazy" alt="The ring with four windows open: Firefox, Thunderbird, Folders and Writer, each in its own slice of the outer circle.">
+        <figcaption><b>Your windows live in the ring</b><span>Point at one and a small live picture of it appears. Click and it comes to the front.</span></figcaption>
+      </figure>
+      <figure class="show-card reveal d1">
+        <img src="img/settings-snapshots.jpg" width="1280" height="700" loading="lazy" alt="Settings, Snapshots: the page that takes and lists snapshots of the system.">
+        <figcaption><b>A photograph before every change</b><span>A snapshot before and after every install, update and removal, with old ones in the boot menu.</span></figcaption>
+      </figure>
+    </div>
+    <div class="sell-four">
+      <div class="panel lift reveal"><b>A clean screen</b><p>No bar, no panel and no clock on the desktop. The ring holds the time, sound, Wi-Fi, updates, your programs and your windows.</p></div>
+      <div class="panel lift reveal d1"><b>Draw before you keep</b><p>Press Print and the screen freezes. Mark it with arrows, boxes, blur or numbered spots, then copy, save or pin it.</p></div>
+      <div class="panel lift reveal d2"><b>A permission window like a phone&rsquo;s</b><p>Every app lists what it wants in plain words, with a switch for each, all off until you choose.</p></div>
+      <div class="panel lift reveal d3"><b>You know when you are watched</b><p>A dot in the corner whenever an app uses the camera, the microphone or records the screen.</p></div>
+      <div class="panel lift reveal"><b>PocketKey</b><p>A paired phone turns password prompts into one tap, and the screen locks when you walk away. The password always still works.</p></div>
+      <div class="panel lift reveal d1"><b>Its own compositor</b><p>The program that draws every window and takes every key is Trindle&rsquo;s own, written in Rust. No plugin can reach into it.</p></div>
+      <div class="panel lift reveal d2"><b>System files stay put</b><p>The programs Trindle and Debian install are locked, and open only while Trindle itself installs an update.</p></div>
+      <div class="panel lift reveal d3"><b>Coding agents in a box</b><p>Tools such as Claude Code can read logs and run commands, inside a fence that hides your personal files.</p></div>
+    </div>
+    <p class="show-more"><a class="btn btn-quiet" href="tour.html">See the whole desktop</a></p>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <circle cx="32" cy="32" r="31" fill="#FBC711"/>
+  <circle cx="32" cy="32" r="21.5" fill="none" stroke="#111827" stroke-width="4.5"/>
+  <g fill="#111827">
+    <circle cx="32" cy="18.5" r="2.6"/><circle cx="41.55" cy="22.45" r="2.6"/>
+    <circle cx="45.5" cy="32" r="2.6"/><circle cx="41.55" cy="41.55" r="2.6"/>
+    <circle cx="32" cy="45.5" r="2.6"/><circle cx="22.45" cy="41.55" r="2.6"/>
+    <circle cx="18.5" cy="32" r="2.6"/><circle cx="22.45" cy="22.45" r="2.6"/>
+  </g>
+</svg><span>Trindle</span></a>
+        <p class="lead" style="font-size:1rem;margin-top:.6rem">No bar, no dock, no menu. A desktop with just one ring, written in Rust and made for a mouse or a touchscreen.</p>
+      </div>
+      <div>
+        <h3>Try to accept our cookies</h3>
+        <div class="cookie-game"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><button class="cookie-btn" type="button" tabindex="-1"><span>Accept all cookies</span></button></div>
+        <p class="foot-small">Spoiler: there isn&rsquo;t one. We don&rsquo;t do cookies, so there is nothing to accept.</p>
+        <p class="foot-small foot-vow"><b>Your privacy is paramount.</b></p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tour.html">The desktop</a></li>
+          <li><a href="safety.html">Safety net</a></li>
+          <li><a href="install.html">Install</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="thanks.html">Thanks</a></li>
+          <li><a href="next.html">What is next</a></li>
+          <li data-buildmorphic="blog"><a href="/blog">Blog</a></li>
+          <li data-buildmorphic="roadmap"><a href="/roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="home.js" defer></script>
+</body>
+</html>

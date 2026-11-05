@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trindle in a virtual machine</title>
+<meta name="description" content="A virtual machine set up the way these programs set one up by default is slow at everything. Here is what to give it, so what you are judging is the desktop and not the machine.">
+<meta name="color-scheme" content="dark">
+<link rel="canonical" href="https://trindle.org/virtual-machine.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Trindle">
+<meta property="og:title" content="Trindle in a virtual machine">
+<meta property="og:description" content="A virtual machine set up the way these programs set one up by default is slow at everything. Here is what to give it, so what you are judging is the desktop and not the machine.">
+<meta property="og:url" content="https://trindle.org/virtual-machine.html">
+<meta property="og:image" content="https://trindle.org/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Trindle ring, with programs round it">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/trindle.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+<div class="top">
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="brand" href="index.html"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <circle cx="32" cy="32" r="31" fill="#FBC711"/>
+  <circle cx="32" cy="32" r="21.5" fill="none" stroke="#111827" stroke-width="4.5"/>
+  <g fill="#111827">
+    <circle cx="32" cy="18.5" r="2.6"/><circle cx="41.55" cy="22.45" r="2.6"/>
+    <circle cx="45.5" cy="32" r="2.6"/><circle cx="41.55" cy="41.55" r="2.6"/>
+    <circle cx="32" cy="45.5" r="2.6"/><circle cx="22.45" cy="41.55" r="2.6"/>
+    <circle cx="18.5" cy="32" r="2.6"/><circle cx="22.45" cy="22.45" r="2.6"/>
+  </g>
+</svg><span>Trindle</span></a>
+    <nav class="nav" aria-label="Pages"><a href="index.html">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html" aria-current="page">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a href="/blog" data-buildmorphic="blog">Blog</a><a href="/roadmap" data-buildmorphic="roadmap">Roadmap</a><a class="join" href="/community" data-buildmorphic="community">Join the community</a></nav>
+    <details class="menu">
+      <summary class="menu-btn" aria-label="Menu" title="Menu">
+        <svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </summary>
+      <div class="menu-sheet">
+        <nav class="menu-list" aria-label="Pages"><a href="index.html">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html" aria-current="page">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a href="/blog" data-buildmorphic="blog">Blog</a><a href="/roadmap" data-buildmorphic="roadmap">Roadmap</a><a class="join" href="/community" data-buildmorphic="community">Join the community</a></nav>
+      </div>
+    </details>
+  </div>
+</header>
+</div>
+<main id="main">
+
+<section class="hero" style="padding:3rem 0 2rem">
+  <div class="hero-wash"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <h1>In a virtual machine</h1>
+        <p class="lead">Trindle runs in a virtual machine, and it is a sensible way to look round before you write a USB stick. But a new machine in these programs can start with little memory, one processor and no 3D graphics, and on a machine like that Windows, videos and web pages feel slower than on a real computer. What you would be judging is the virtual machine, not the desktop.</p>
+        <p>Setting the machine up properly helps. The desktop itself works without help from a graphics card: on a machine with no graphics chip at all the processor does the drawing, and windows simply appear and go, without gliding in or shrinking away. The login screen there has a Light drawing switch, on to begin with.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="get/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>Download the image: coming soon</a>
+          <a class="btn btn-quiet" href="install.html">Putting it on a real computer</a>
+        </div>
+      </div>
+      <div class="panel">
+        <h2 style="font-size:1.0625rem;letter-spacing:0">What to give it</h2>
+        <div class="rows">
+          <div><b>Memory</b><span>8 GB if the computer has it to spare, as in the steps below.</span></div>
+          <div><b>Processors</b><span>4, as in the steps below.</span></div>
+          <div><b>Graphics</b><span>3D acceleration on, and 128 MB of video memory. This is the setting that matters most.</span></div>
+          <div><b>Disk</b><span>At least 20 GB, which the installer needs.</span></div>
+          <div><b>Firmware</b><span>UEFI. The installer can also set up an older BIOS start-up, but not on an encrypted disk.</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:1.25rem"><div class="note warn"><b>Even set up well, a virtual machine is slower than the computer it runs on.</b> Everything drawn on the screen goes through another layer of software first. Judge how Trindle looks and how it works in a virtual machine, by all means. Judge how fast it is from a USB stick on the real computer, which costs you nothing. Trindle says as much itself when it finds it is in a virtual machine, and leaves out its animations when there are no 3D graphics to draw them with.</div></div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:1rem">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The setting that matters</h2>
+      <p>Graphics. Everything else is memory and patience.</p>
+    </div>
+    <div class="grid g3">
+      <div class="panel lift reveal">
+        <h3>Boxes, or Virtual Machine Manager</h3>
+        <p>On Linux: the driver it needs is already in Trindle, so nothing has to be installed inside the machine for acceleration to work.</p>
+        <p>In Virtual Machine Manager, before you start it: <b>Memory</b> 8192, <b>CPUs</b> 4, and under <b>Video</b> set the model to <b>Virtio</b> and tick <b>3D acceleration</b>. Under <b>Display Spice</b>, tick <b>OpenGL</b>. Choose <b>UEFI</b> as the firmware on the last page before it is created; it cannot be changed afterwards.</p>
+        <p>Boxes has fewer knobs: set memory and disk in its settings, and it turns acceleration on by itself when the computer it is running on can do it.</p>
+      </div>
+      <div class="panel lift reveal d1">
+        <h3>QEMU, by hand</h3>
+        <p>If you would rather type it. This is the whole of it, with the image as a disc in the drive:</p>
+        <pre tabindex="0"><code>qemu-system-x86_64 \
+  -enable-kvm -m 8192 -smp 4 \
+  -bios /usr/share/ovmf/OVMF.fd \
+  -device virtio-vga-gl \
+  -display gtk,gl=on \
+  -cdrom IMAGE.iso</code></pre>
+        <p><code>-enable-kvm</code> is what makes it a virtual machine rather than an imitation of one, and <code>virtio-vga-gl</code> with <code>gl=on</code> is the graphics. Leave either out and it will be slow however much memory you give it.</p>
+      </div>
+      <div class="panel lift reveal d2">
+        <h3>VirtualBox</h3>
+        <p>On Windows, macOS or Linux. Whether the tick box below gives real 3D drawing depends on VirtualBox and its version, so check what Trindle says.</p>
+        <p><b>System, Motherboard</b>: tick <b>Enable EFI</b>, memory 8192. <b>System, Processor</b>: 4. <b>Display, Screen</b>: graphics controller <b>VMSVGA</b>, video memory <b>128 MB</b>, tick <b>Enable 3D Acceleration</b>.</p>
+        <p>Trindle tells you in its first window whether it found 3D graphics. If it did not, the processor draws everything, and windows appear and go without moving. That works, but it is not what the computer would do.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band reveal strip">
+  <div class="wrap">
+    <div class="band-in">
+      <div class="band-words">
+        <h2>If it still feels slow</h2>
+        <p>Three things, in this order.</p>
+        <ol class="steps">
+          <li><b>Is acceleration really on?</b><span>Trindle says when it finds no 3D graphics: its first window on the image and the note after installing both tell you, and the advice there is to turn on 3D acceleration in the virtual machine’s display settings.</span></li>
+          <li><b>How much memory did it actually get?</b><span>Not what you meant to give it. Look at what the program shows for the running machine.</span></li>
+          <li><b>Is the host busy?</b><span>A virtual machine gets what is left over. Close what you are not using on the real computer before you decide the desktop is slow.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>What a virtual machine cannot show you</h2>
+      <p>Some of it has to be a real computer.</p>
+    </div>
+    <div class="grid g3">
+      <div class="panel lift reveal">
+        <h3>How fast it is</h3>
+        <p>Windows moving, menus opening, a video playing. All of it goes through another layer before it reaches your eyes.</p>
+      </div>
+      <div class="panel lift reveal d1">
+        <h3>The machine itself</h3>
+        <p>Battery, sleeping and waking, the lid, screen brightness, Wi-Fi, a fingerprint reader, a printer. A virtual machine has none of them, or a pretend one.</p>
+      </div>
+      <div class="panel lift reveal d2">
+        <h3>Installing</h3>
+        <p>You can install into a virtual machine and it works. What it will not tell you is whether this computer&rsquo;s own disk, firmware and graphics are happy, which is the part worth knowing.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.25rem"><a class="btn btn-primary" href="install.html">When you are ready: putting it on a computer</a></p>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <circle cx="32" cy="32" r="31" fill="#FBC711"/>
+  <circle cx="32" cy="32" r="21.5" fill="none" stroke="#111827" stroke-width="4.5"/>
+  <g fill="#111827">
+    <circle cx="32" cy="18.5" r="2.6"/><circle cx="41.55" cy="22.45" r="2.6"/>
+    <circle cx="45.5" cy="32" r="2.6"/><circle cx="41.55" cy="41.55" r="2.6"/>
+    <circle cx="32" cy="45.5" r="2.6"/><circle cx="22.45" cy="41.55" r="2.6"/>
+    <circle cx="18.5" cy="32" r="2.6"/><circle cx="22.45" cy="22.45" r="2.6"/>
+  </g>
+</svg><span>Trindle</span></a>
+        <p class="lead" style="font-size:1rem;margin-top:.6rem">No bar, no dock, no menu. A desktop with just one ring, written in Rust and made for a mouse or a touchscreen.</p>
+      </div>
+      <div>
+        <h3>Try to accept our cookies</h3>
+        <div class="cookie-game"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><button class="cookie-btn" type="button" tabindex="-1"><span>Accept all cookies</span></button></div>
+        <p class="foot-small">Spoiler: there isn&rsquo;t one. We don&rsquo;t do cookies, so there is nothing to accept.</p>
+        <p class="foot-small foot-vow"><b>Your privacy is paramount.</b></p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tour.html">The desktop</a></li>
+          <li><a href="safety.html">Safety net</a></li>
+          <li><a href="install.html">Install</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="thanks.html">Thanks</a></li>
+          <li><a href="next.html">What is next</a></li>
+          <li data-buildmorphic="blog"><a href="/blog">Blog</a></li>
+          <li data-buildmorphic="roadmap"><a href="/roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="home.js" defer></script>
+</body>
+</html>

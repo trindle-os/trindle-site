@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" font-family="Trindle Sans, Helvetica, Arial, sans-serif">
+<rect width="1280" height="300" fill="#09090b"/>
+<g fill="#18181b" stroke="#3f3f46" stroke-width="2"><rect x="40" y="40" width="360" height="220" rx="18"/><rect x="460" y="40" width="360" height="220" rx="18"/><rect x="880" y="40" width="360" height="220" rx="18"/></g>
+<g fill="#fbc711"><circle cx="80" cy="80" r="20"/><circle cx="500" cy="80" r="20"/><circle cx="920" cy="80" r="20"/></g>
+<g font-size="24" font-weight="700" fill="#09090b" text-anchor="middle"><text x="80" y="89">1</text><text x="500" y="89">2</text><text x="920" y="89">3</text></g>
+<g font-size="30" font-weight="700" fill="#f4f4f5"><text x="116" y="90">Edit the pages</text><text x="536" y="90">Rebuild Help</text><text x="956" y="90">Publish</text></g>
+<g font-size="20" fill="#a1a1aa"><text x="70" y="150">Plain HTML and CSS,</text><text x="70" y="182">no build step.</text>
+<text x="490" y="150">tools/help.sh keeps the</text><text x="490" y="182">Help guide in step.</text>
+<text x="910" y="150">A comment-free copy goes</text><text x="910" y="182">to GitHub Pages.</text></g>
+<g stroke="#fbc711" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M410 150h40m-12 -12l12 12l-12 12"/><path d="M830 150h40m-12 -12l12 12l-12 12"/></g>
+</svg>
