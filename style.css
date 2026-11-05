@@ -762,3 +762,40 @@ section[id] { scroll-margin-top: 8.5rem; }
 .tour .split, .tour .grid { align-items: start; }
 .tour .split > .stick { position: sticky; top: 9.5rem; }
 @media (max-width: 68rem) { .tour .split > .stick { position: static; } }
+
+.cookie-game { position: relative; height: 136px;
+  display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); }
+.cookie-game > i { display: block; }
+.cookie-btn {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  transition: left .18s ease, top .18s ease;
+  background: var(--accent); color: var(--on-accent); border: none;
+  padding: 9px 16px; border-radius: 999px; font: inherit; font-weight: 700;
+  font-size: .8125rem; white-space: nowrap; pointer-events: none;
+}
+.cookie-game:hover .cookie-btn span { display: none; }
+.cookie-game:has(> i:nth-child(1):hover) .cookie-btn { left: 82%; top: 80%; }
+.cookie-game:has(> i:nth-child(1):hover) .cookie-btn::after { content: "Nice try"; }
+.cookie-game:has(> i:nth-child(2):hover) .cookie-btn { left: 50%; top: 82%; }
+.cookie-game:has(> i:nth-child(2):hover) .cookie-btn::after { content: "Still no"; }
+.cookie-game:has(> i:nth-child(3):hover) .cookie-btn { left: 18%; top: 80%; }
+.cookie-game:has(> i:nth-child(3):hover) .cookie-btn::after { content: "Too slow"; }
+.cookie-game:has(> i:nth-child(4):hover) .cookie-btn { left: 82%; top: 50%; }
+.cookie-game:has(> i:nth-child(4):hover) .cookie-btn::after { content: "Missed"; }
+.cookie-game:has(> i:nth-child(5):hover) .cookie-btn { left: 18%; top: 18%; }
+.cookie-game:has(> i:nth-child(5):hover) .cookie-btn::after { content: "Not there"; }
+.cookie-game:has(> i:nth-child(6):hover) .cookie-btn { left: 18%; top: 50%; }
+.cookie-game:has(> i:nth-child(6):hover) .cookie-btn::after { content: "Wrong way"; }
+.cookie-game:has(> i:nth-child(7):hover) .cookie-btn { left: 82%; top: 20%; }
+.cookie-game:has(> i:nth-child(7):hover) .cookie-btn::after { content: "Nope"; }
+.cookie-game:has(> i:nth-child(8):hover) .cookie-btn { left: 50%; top: 18%; }
+.cookie-game:has(> i:nth-child(8):hover) .cookie-btn::after { content: "No chance"; }
+.cookie-game:has(> i:nth-child(9):hover) .cookie-btn { left: 18%; top: 20%; }
+.cookie-game:has(> i:nth-child(9):hover) .cookie-btn::after { content: "There are none"; }
+.foot-small { margin: .1rem 0 0; font-size: 1rem; color: var(--muted-fg); line-height: 1.6; }
+.foot-small b { color: var(--fg); font-weight: 700; }
+.foot-vow { margin-top: auto; padding-top: .5rem; }
+
+.foot-grid > :nth-child(2) .foot-small { text-align: center; }
+@media (max-width: 62rem) { .foot-grid > :nth-child(2) .foot-small { text-align: left; } }
+@media (prefers-reduced-motion: reduce) { .cookie-btn { transition: none; } }
