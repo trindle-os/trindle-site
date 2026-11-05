@@ -11,7 +11,7 @@ This is the website for [Trindle](https://trindle.org), a small desktop for Debi
 
 Choose it if you want a site that loads fast, sets no cookies, loads nothing from another company, and says only what the beta can do today.
 
-<p align="center"><img src="img/hero-ring.jpg" width="420" alt="The Trindle ring open on the desktop: the time in the middle, with Settings, Firefox, Thunderbird, Writer, GIMP, VLC, Apps, Calculator and Folders round it."></p>
+<p align="center"><img src="img/hero-ring-cut.png" width="420" alt="The Trindle ring open on the desktop: the time in the middle, with Settings, Firefox, Thunderbird, Writer, GIMP, VLC, Apps, Calculator and Folders round it."></p>
 
 ## How it works
 
@@ -31,8 +31,8 @@ Then open <http://localhost:8000>. Every link between pages is relative, so the 
 
 <table>
 <tr>
-<td width="50%"><img src="img/sell-windows.jpg" alt="The ring with four windows open: Firefox, Thunderbird, Folders and Writer, each in its own slice of the outer circle."><br><b>Real pictures only.</b> Every screenshot comes from Trindle itself.</td>
-<td width="50%"><img src="img/settings-snapshots.jpg" alt="Settings, Snapshots: the page that takes and lists snapshots of the system."><br><b>Only what works today.</b> Features still being built are on the Next page, and nowhere else.</td>
+<td width="50%"><img src="img/windows-ring-cut.png" width="400" alt="The ring with four windows open: Firefox, Thunderbird, Folders and Writer, each in its own slice of the outer circle."><br><b>Real pictures only.</b> Every screenshot comes from Trindle itself.</td>
+<td width="50%"><img src="img/snapshots-card-cut.png" width="300" alt="Settings, Snapshots: a list of five snapshots, each with a restore arrow and a bin."><br><b>Only what works today.</b> Features still being built are on the Next page, and nowhere else.</td>
 </tr>
 </table>
 

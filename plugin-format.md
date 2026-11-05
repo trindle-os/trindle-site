@@ -54,7 +54,7 @@ org.example.Weather/            the one folder at the top (or none: see below)
 - **Links.** A symbolic link must be relative and stay inside the folder.
   Any link that leads outside is refused, whatever it points to.
 - **Libraries.** Trindle sets no library path. The box shows the system's `/usr`
-  read only, so a program that needs only libc and what Debian 13 always has
+  read only, so a program that needs only libc and what Debian stable always has
   can run as it is (Flow's script checks exactly that). Anything else must be
   carried in the folder and found by the program itself (an rpath such as
   `$ORIGIN/../lib`, or a small wrapper script).
