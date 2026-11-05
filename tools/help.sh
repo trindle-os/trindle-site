@@ -27,7 +27,7 @@ if printf '%s\n' "$lines" | grep -Eq "$banned"; then
     printf '%s\n' "$lines" | grep -E "$banned" | cut -c1-100 >&2
     exit 1
 fi
-if printf '%s\n' "$lines" | grep -q '—'; then
+if printf '%s\n' "$lines" | grep -q "$(printf '\342\200\224')"; then
     echo "help.sh: a note has an em dash" >&2
     exit 1
 fi
