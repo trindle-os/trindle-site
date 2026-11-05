@@ -19,7 +19,7 @@ out=$here/help.html
 
 [ -s "$notes" ] || { echo "help.sh: ../trindle/spec/help-notes.md is needed and is kept outside the public repository; help.html as published is the current guide" >&2; exit 1; }
 
-banned='Steam|keyd|Java|GNOME|KDE|Windows|Microsoft|Apple|Google|Canonical|Ubuntu|Fedora|macOS|other desktop'
+banned='Steam|keyd|Java|GNOME|KDE|Windows|Microsoft|Apple|Google|Canonical|Ubunt[u]|Fedora|macOS|other desktop'
 lines=$(grep '^- ' "$notes")
 
 if printf '%s\n' "$lines" | grep -Eq "$banned"; then
