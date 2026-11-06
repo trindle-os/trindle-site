@@ -19,7 +19,7 @@ out=$here/help.html
 
 [ -s "$notes" ] || { echo "help.sh: ../trindle/spec/help-notes.md is needed and is kept outside the public repository; help.html as published is the current guide" >&2; exit 1; }
 
-banned='Steam|keyd|Java|GNOME|KDE|Windows|Microsoft|Apple|Google|Canonical|Ubunt[u]|Fedora|macOS|other desktop'
+banned='Steam|keyd|Java|GNOME|KDE|Windows|Microsoft|Apple|Google|Canonical|Ubunt[u]|Fedor[a]|macOS|other desktop'
 lines=$(grep '^- ' "$notes")
 
 if printf '%s\n' "$lines" | grep -Eq "$banned"; then
@@ -41,7 +41,8 @@ tmp=$(mktemp)
 trap 'rm -f "$tmp"' EXIT
 
 # The head and the menu, made for this page.
-sed -n '1,/<main id="main">/p' "$tour" | sed \
+sed -n '1,/<main id="main"/p' "$tour" | sed \
+    -e 's|<main id="main" class="tour">|<main id="main">|' \
     -e 's|<title>[^<]*</title>|<title>Using Trindle, and why it works that way</title>|' \
     -e 's|\(name="description" content="\)[^"]*|\1How to use each part of Trindle, and the reason behind each choice, in plain words.|' \
     -e 's|\(property="og:description" content="\)[^"]*|\1How to use each part of Trindle, and the reason behind each choice, in plain words.|' \
