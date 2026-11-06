@@ -836,3 +836,13 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 
 @media (max-width: 64rem) { .foot-grid li a { display: flex; align-items: center; min-height: 2.75rem; } }
 @media (max-height: 30rem) { .rail { position: static; } }
+
+@media (min-width: 68.01rem) {
+  #notifications .split { grid-template-columns: 1fr 1.03fr; align-items: stretch; }
+}
+@media (min-width: 80rem) {
+  #clipboard .split { grid-template-columns: 1fr 1.32fr; align-items: stretch; }
+}
+@media (min-width: 85.4rem) {
+  #quick .split { grid-template-columns: 1fr 1fr; align-items: stretch; }
+}
