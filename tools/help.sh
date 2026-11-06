@@ -107,7 +107,8 @@ echo >> "$tmp"
 sed -n '/<\/main>/,$p' "$tour" >> "$tmp"
 
 if [ "${1:-}" = "--check" ]; then
-    if cmp -s "$tmp" "$out"; then echo "help.html is up to date"; else echo "help.html is out of date: run sh tools/help.sh" >&2; exit 1; fi
+    strip() { grep -v 'foot-updated\|id="ld"' "$1"; }
+    if [ "$(strip "$tmp" | cksum)" = "$(strip "$out" | cksum)" ]; then echo "help.html is up to date"; else echo "help.html is out of date: run sh tools/help.sh" >&2; exit 1; fi
 else
     cp "$tmp" "$out"
     echo "wrote help.html ($(grep -c '^- ' "$notes") notes)"

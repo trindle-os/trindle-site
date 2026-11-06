@@ -1,0 +1,24 @@
+# Trindle
+
+> Trindle is a whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It is written in Rust, licensed GPL-3.0-or-later, and in beta.
+
+## Pages
+
+- [Why Trindle was built this way](https://trindle.org/about.html): Written in Rust, its own compositor included, and made for a mouse, a trackpad or a finger.
+- [Accessibility | Trindle](https://trindle.org/accessibility.html): What has been done to make this site usable, what is still missing, and how to tell us when something shuts you out.
+- [Complaints | Trindle](https://trindle.org/complaints.html): How to complain about Trindle or this site, and what happens after you do.
+- [Cookies | Trindle](https://trindle.org/cookies.html): This site sets no cookies, runs no analytics and embeds nothing from anyone else. That is why there is no banner.
+- [Download Trindle: coming soon](https://trindle.org/get/): A desktop with no bar, no dock and no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.
+- [Using Trindle, and why it works that way](https://trindle.org/help.html): How to use each part of Trindle, and the reason behind each choice, in plain words.
+- [Trindle: in beta](https://trindle.org/): No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.
+- [Put Trindle on a computer](https://trindle.org/install.html): Write the image to a USB stick, look round before you change anything, and install in about three minutes.
+- [The eight pictures on the disk | Trindle](https://trindle.org/news/2026-09-wallpapers.html): The wallpapers that come with Trindle: new pictures in the manner of masters from the Netherlands, France, England and Spain, with the Trindle mark worked in.
+- [Eleven new pictures and four that move | Trindle](https://trindle.org/news/2026-10-wallpapers.html): Eleven new wallpapers made from the Trindle mark, and four that move: a mosaic, an orbit, ripples and a sunrise.
+- [No bar, no dock, no menu. Trindle beta is here | Trindle](https://trindle.org/news/2026-11-beta.html): Trindle has no bar along an edge, no menu at one end and no icons across the middle. What is in the beta, how to get it, and how updates arrive.
+- [News | Trindle](https://trindle.org/news/): Trindle writing: releases, changes of mind, and the odd nice picture.
+- [What is coming next | Trindle](https://trindle.org/next.html): The plans after the first release: help from a distance, a screen you can share with one click, and a health check for a computer you look after.
+- [Privacy | Trindle](https://trindle.org/privacy.html): Trindle runs on your own computer and sends nothing about you. This site sets no cookies and runs no analytics.
+- [Trindle: a photograph before every change](https://trindle.org/safety.html): A snapshot is taken before and after every install, update and removal, with its own entry in the boot menu if the computer will not start.
+- [Thanks](https://trindle.org/thanks.html): The projects Trindle is built on, with a link to each and a way to donate to those that accept it.
+- [A look round Trindle](https://trindle.org/tour.html): The ring, its quick panels, notifications, Settings, Apps and the rest, with a picture of each.
+- [Trindle in a virtual machine](https://trindle.org/virtual-machine.html): A virtual machine set up the way these programs set one up by default is slow at everything. Here is what to give it, so you judge the desktop, not the machine.

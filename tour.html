@@ -18,7 +18,8 @@
 <meta property="og:image:alt" content="The Trindle ring, with programs round it">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261109">
+<link rel="stylesheet" href="style.css?v=20261112">
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/tour.html#page","url":"https://trindle.org/tour.html","name":"A look round Trindle","description":"The ring, its quick panels, notifications, Settings, Apps and the rest, with a picture of each.","inLanguage":"en-GB","dateModified":"2026-11-06","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -91,7 +92,7 @@
     </div>
     <div class="panel reveal" style="margin-top:1.25rem">
       <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg><h3>Mouse-first, keyboard second, and a finger does just as well</h3></div>
-      <div class="grid g3" style="margin-top:.4rem">
+      <div class="grid g3 bal-ring" style="margin-top:.4rem">
         <p>Everything here is meant for a hand on a mouse or a trackball. A double click at the edge opens the ring, the ring holds the apps, the clock and the tray, and a quick panel opens in the same circle rather than in a window somewhere else. Nothing is more than a short move away and nothing has to be typed to get at it.</p>
         <p>It runs the other way from the keyboard-driven desktops that are in fashion, where speed comes from learning a list of key combinations first. Trindle asks you to remember nothing at all. The shortcuts on this page are there for people who enjoy them, and each one is only a faster route to something the pointer already does.</p>
         <p>On a computer with a touch screen it works the same way with a finger: a tap in either top corner of the screen, or a double tap on the empty desktop, opens the ring, the ring itself is a big circle of large round targets, the window buttons are 32-pixel round buttons, and everything in Settings is a full-width row. Trindle&rsquo;s own compositor puts every window and the ring on the screen, and for programs that leave the title bar to the desktop, such as the terminal, it draws one: a line to put the window away, a square to fill the screen and a cross to close it.</p>
@@ -102,7 +103,7 @@
 
 <section id="apps" style="padding-top:0">
   <div class="wrap">
-    <div class="grid g2">
+    <div class="grid g2 bal-apps">
       <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><h3>All apps</h3><p>Click the All apps band at the foot of the middle and every app that is not already a favourite appears round the outside, cut into pieces by kind: Internet, Office, Graphics, Sound and video, Games and so on. A kind with nothing left in it has no piece. Click All apps again to put them away.</p><p>Or just type while the ring is open. What you type shows in the middle where the time was, and the apps whose names start with it appear in one ring. Names of fewer words come first, so <em>fo</em> finds Folders before Font Viewer.</p></div>
       <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v8"/><path d="M7.5 6.5a7 7 0 1 0 9 0"/></svg><h3>Power</h3><p>Click Power in the middle of the ring and two rows of choices cover it. Stepping away: Lock, Screensaver, Suspend and, where the computer can, Hibernate. Leaving: Log out, Restart and Shut down. Lock and Screensaver happen at once. The others ask twice: the first click fills the button with the highlight colour and shows a tick, and the second does it. The cross goes back.</p></div>
           </div>
@@ -265,9 +266,11 @@
       <h2>Starting and stopping</h2>
       <p>From the boot menu to the login screen and back again, there is always something on the screen, and it is always the same thing.</p>
     </div>
-    <div class="grid g2">
+    <div class="grid g2 bal-start1">
       <div class="panel lift reveal"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 7v1.5"/></svg><h3>Never a black screen</h3></div><p>The Trindle mark is on a dark screen from the moment the boot menu starts, and turns in the middle while the computer starts, until the login screen or the desktop has finished drawing. No lines of text, no blinking cursor, no black gap while one part hands over to the next.</p><p>The same turning mark covers the moment between the login screen and the desktop, and turns while the computer shuts down or restarts. While the desktop comes up, &ldquo;One moment, please&rdquo; says it has not stopped.</p></div>
       <div class="panel lift reveal d1"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M10 2h4"/></svg><h3>Start-up times</h3></div><p>Every start of an installed computer is timed, from the power button to the login screen, using the firmware&rsquo;s own record of its part. Settings, About this computer, lists the last ten with their date and time, and saves the whole list to Downloads.</p><p>Time spent typing the disk password is left out, so the number is the computer&rsquo;s, not yours. Starts from a USB stick are not timed: that would mostly be timing the stick.</p></div>
+    </div>
+    <div class="grid g2 bal-start2" style="margin-top:1.25rem">
       <div class="panel lift reveal d2"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><h3>The disk password</h3></div><p>On a disk locked with a password, the box has an eye, like every other password box, to show what you typed. It can be clicked with a mouse, a touchpad or a finger. Tab does the same, for a computer where the mouse is not working yet.</p><p>The password is typed on the keyboard layout you chose when you installed, so the letters are where you expect them, and the screen says in a few keys how to work it.</p></div>
       <div class="panel lift reveal d3"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg><h3>The boot menu stays out of the way</h3></div><p>With only Trindle on the computer there is nothing to choose, so the boot menu is not shown. Press Esc while the computer starts and it appears.</p><p>With Windows or another Linux beside it, the menu is there each time, so you can pick. The computer&rsquo;s own list of what it can start calls it Trindle.</p></div>
     </div>
@@ -311,17 +314,17 @@
       <h2>Settings</h2>
       <p>One window, a list of pages down the side. Super and I opens it, and so does its place in the ring.</p>
     </div>
-    <div class="grid g3">
+    <div class="grid g3 bal-set1">
       <div class="panel lift reveal"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><h3>The screen and the machine</h3></div><ul><li>Displays, the size everything is drawn at, and night light</li><li>Sound, with a test chime and a level bar</li><li>Network, Tailscale, Blocking and Bluetooth</li><li>Power: dimming, the screensaver, locking, sleep and the lid</li><li>Network printers, found without any help</li></ul></div>
       <div class="panel lift reveal d1"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 0 18c1 0 1.7-.8 1.7-1.7 0-1.6 1.2-2.3 2.6-2.3H19a3 3 0 0 0 3-3 9 9 0 0 0-10-9z"/><circle cx="8" cy="11" r="1.2"/><circle cx="12" cy="8" r="1.2"/><circle cx="16" cy="11" r="1.2"/></svg><h3>How it looks and behaves</h3></div><ul><li>A built-in wallpaper switcher: one picture, a folder that changes, or a plain colour you type as a hex code</li><li>Appearance: a theme, light or dark, highlight colour, round or square icons, font, and pointer size</li><li>Ring: how it opens, the favourites, notifications and clipboard</li><li>Sounds for logging in, the charger and the battery</li><li>Keyboard and mouse, region, date and time</li><li>Which app opens what, and what starts at login</li></ul></div>
       <div class="panel lift reveal d2"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><h3>People and safety</h3></div><ul><li>Users, passwords and the picture at the login screen</li><li>Snapshots: take one, restore one</li><li>About this computer: its name, what it is made of, and ways into Activity, which shows what it is doing right now, and Drives, a window of its own for the drives and USB sticks</li><li>Thanks: the projects Trindle is built on</li><li>Help: the same plain wording as this site, offline</li></ul></div>
     </div>
-    <div class="grid g3" style="margin-top:1.25rem">
+    <div class="grid g3 bal-set2" style="margin-top:1.25rem">
       <div class="panel lift reveal"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="3" width="10" height="18" rx="5"/><path d="M12 7v3"/></svg><h3>Keyboard and mouse</h3></div><figure class="shot close" style="margin-bottom:1rem"><img src="img/settings-mouse.jpg" alt="Settings, Keyboard and mouse, the Mouse card: pointer speed, scroll speed, natural scrolling, left-handed and the clicking helper" loading="lazy" width="360" height="458"></figure><p>How fast the pointer and scrolling go, which way scrolling moves the page, and the buttons swapped for the left hand. On a laptop, the touchpad too: tap to click, and the touchpad off while you type. Each change works straight away.</p></div>
       <div class="panel lift reveal d1"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2"/><path d="M5 10v4M8 10v4M11 10v4"/></svg><h3>On a laptop</h3></div><p>Dimming, the moving clock, the screen going off and sleeping each have a time on the battery and a time plugged in, switched over as the charger goes in or out. Closing the lid can sleep, hibernate where the computer can, lock the screen, shut down or do nothing, again separately for each; with a second screen plugged in it does nothing, so you can carry on. Stop charging at 80% is there on a laptop that allows it, which is kinder to the battery.</p></div>
       <div class="panel lift reveal d2"><div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h3>About this computer</h3></div><p>A sentence saying which version of Trindle it is and how long the computer has been switched on, then two rings, for the memory and the disk, and arrows that open Activity and Drives.</p><p>Under them, the computer&rsquo;s name, which you can change, and what it is made of: the model, the processor, the graphics, the screen, the Debian and the kernel underneath, and how many apps are installed. The last ten start-up times are at the foot.</p></div>
     </div>
-    <div class="grid g3 reveal" style="margin-top:1.25rem">
+    <div class="grid g3 bal-set3 reveal" style="margin-top:1.25rem">
       <div><figure class="shot close"><img src="img/settings-appearance.jpg" alt="Settings on the Appearance page: a list of pages down the side, and cards for the theme, the highlight colours, the font, the icon shapes, the pointer and reading the screen" loading="lazy" width="1000" height="620"></figure><p style="font-size:1rem;color:var(--muted-fg);margin-top:.6rem">Settings: a list of pages down the side, and every setting on a full-width row of its own.</p></div>
       <div class="panel lift span2">
         <div class="note"><b>Nothing is stuck.</b> After a change to the screen size, a line at the foot asks whether to keep it. Do nothing for fifteen seconds and it goes back to how it was, so a wrong choice can never leave you staring at nothing.</div>
@@ -378,7 +381,7 @@
       <h2>Light, dark, warm and sound</h2>
       <p>Three small things that decide how a desktop feels to sit in front of all day.</p>
     </div>
-    <div class="grid g3">
+    <div class="grid g3 bal-look">
       <div class="panel reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg><h3>Light or dark</h3></div>
         <p>Dark to start with. In Settings, Appearance, choose Light when the screen is hard to see in bright sunshine, and Dark again later. Everything changes at once; apps installed from Apps change the next time they open.</p>
@@ -399,7 +402,7 @@
   </div>
 </section>
 
-<section id="reader" style="padding-top:0;padding-bottom:0">
+<section id="reader" style="padding-top:0;padding-bottom:1.5rem">
   <div class="wrap">
     <div class="split">
       <div class="panel reveal">
@@ -483,6 +486,7 @@
           </ul>
       </div>
     </div>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-06">6 November 2026</time></p>
   </div>
 </footer>
 
