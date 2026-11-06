@@ -846,3 +846,31 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 @media (min-width: 85.4rem) {
   #quick .split { grid-template-columns: 1fr 1fr; align-items: stretch; }
 }
+
+@media (min-width: 62rem) {
+  .rows.two.seven { grid-template-rows: repeat(7, auto); }
+  .rows.two.seven > :nth-child(4) { border-top: 1px solid var(--border); }
+  .rows.two.seven > :nth-child(8) { border-top: 0; }
+  #keys .rows.two > div { grid-template-columns: 13rem 1fr; }
+}
+.next-band { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.next-band > div:first-child { flex: 1 1 28rem; min-width: 0; }
+.next-band .actions { margin: 0; }
+.next-band p { margin-bottom: 0; }
+
+@media (min-width: 68.01rem) {
+  #screenshot .split { grid-template-columns: 1fr 1.9fr; }
+  #files .split { grid-template-columns: 1fr 1fr; }
+  #away .split { grid-template-columns: 1fr 1.1fr; }
+  #reader .split { grid-template-columns: 1fr 2.5fr; }
+  #appsband .split { grid-template-columns: 1.3fr 1fr; }
+  #files .split, #away .split, #reader .split, #appsband .split { align-items: stretch; }
+}
+@media (min-width: 75rem) { #screenshot .split { align-items: stretch; } }
+@media (max-width: 85.4rem) { #now .split { grid-template-columns: 1fr; } #now .split > .stick { position: static; } }
+@media (min-width: 85.41rem) { #now .split { grid-template-columns: 2.4fr 1fr; align-items: stretch; } }
+@media (min-width: 68.01rem) and (max-width: 79.99rem) {
+  #screenshot .split { grid-template-columns: 1fr 1.8fr; align-items: stretch; }
+  #clipboard .split { grid-template-columns: 1fr 1.1fr; align-items: stretch; }
+}
+@media (min-width: 68.01rem) and (max-width: 85.4rem) { #quick .split { align-items: center; } }
