@@ -666,7 +666,7 @@ article .hero .post-date { display: block; margin-bottom: .35rem; }
 @media (max-width: 30rem) { .swap b { white-space: normal; } .stage-swap { height: 3.4rem; } }
 .stage-lead { max-width: 34rem; margin: 0 0 1.5rem; font-size: 1.1875rem; color: var(--muted-fg); animation: fade-in .8s 1.2s both; }
 .stage .actions { animation: fade-in .8s 1.3s both; }
-.stage-when { margin: 1.1rem 0 0; color: var(--muted-fg); font-size: .9375rem; animation: fade-in .8s 1.4s both; }
+.stage-when { margin: 1.1rem 0 0; color: var(--muted-fg); font-size: 1rem; animation: fade-in .8s 1.4s both; }
 @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
 .orb { position: relative; width: min(46rem, 94vw); aspect-ratio: 1; justify-self: center; --rx: 0deg; --ry: 0deg; }
@@ -833,3 +833,6 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 @keyframes launch-sheen { from { background-position: 130% 0; } to { background-position: -30% 0; } }
 @media (prefers-reduced-motion: reduce) { .launch-bar { animation: none; background-image: none; } }
 @media (max-width: 40rem) { .launch-row { padding-block: .55rem; } .launch-left, .launch-local { margin-left: 0; display: block; } .launch-mark { display: none; } }
+
+@media (max-width: 64rem) { .foot-grid li a { display: flex; align-items: center; min-height: 2.75rem; } }
+@media (max-height: 30rem) { .rail { position: static; } }
