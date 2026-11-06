@@ -96,7 +96,7 @@ Without this repository beside it, the Trindle repository skips the Thanks check
 
 ## Licence
 
-GPL-3.0-or-later, in [LICENSE](LICENSE). The typeface in `fonts/` has its own licence in `fonts/OFL.txt`. Changes are listed in [CHANGELOG.md](CHANGELOG.md).
+Copyright The Trindle project. GPL-3.0-or-later, in [LICENSE](LICENSE). The typeface in `fonts/` has its own licence in `fonts/OFL.txt`. Changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
 ## Disclaimer
 

@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="The Trindle ring, with programs round it">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261112">
+<link rel="stylesheet" href="style.css?v=20261114">
 <script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/install.html#page","url":"https://trindle.org/install.html","name":"Put Trindle on a computer","description":"Write the image to a USB stick, look round before you change anything, and install in about three minutes.","inLanguage":"en-GB","dateModified":"2026-11-06","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
@@ -81,6 +81,15 @@
       </div>
     </div>
     <div style="margin-top:1.25rem"><div class="note warn"><b>Use at your own risk.</b> Trindle is provided as is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first. The people who make Trindle are not responsible for any loss of data, damage to the computer or any other harm that comes from installing or using it. See sections 15 and 16 of the LICENSE file.</div></div>
+    <div class="panel" style="margin-top:1.25rem">
+      <h2 style="font-size:1.0625rem;letter-spacing:0">What is in the image</h2>
+      <div class="rows">
+        <div><b>Based on Debian</b><span>Trindle is based on Debian, and the image is the only way to install it.</span></div>
+        <div><b>Firmware</b><span>The image includes non-free firmware from Debian, for Wi-Fi, Bluetooth, graphics and sound chips, so that more computers work straight away.</span></div>
+        <div><b>Source and licence</b><span>The source code is at <a href="https://github.com/trindle-os" target="_blank" rel="noopener">github.com/trindle-os<span class="sr-only"> (opens in a new tab)</span></a>. Trindle is under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU General Public License, version 3 or later<span class="sr-only"> (opens in a new tab)</span></a>.</span></div>
+        <div id="checksum" hidden><b>Check the download</b><span>SHA-256: <code id="sha256"></code> <a id="signature" href="#checksum">Signature</a></span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -225,6 +234,8 @@
           </ul>
       </div>
     </div>
+    <p class="foot-small foot-owner">&copy; The Trindle project</p>
+    <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
     <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-06">6 November 2026</time></p>
   </div>
 </footer>
