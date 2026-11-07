@@ -924,3 +924,16 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 .foot-marks a { display: inline-flex; align-items: center; justify-content: center; min-width: 2.75rem; min-height: 2.75rem; color: var(--muted-fg); }
 .foot-marks svg { width: 1.5rem; height: 1.5rem; }
 .foot-strip + .foot-owner { margin-top: .75rem; }
+.bm-panel { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 1rem 1.5rem; margin-top: 2rem; padding: 1.5rem; background: radial-gradient(60rem 16rem at 0% 0%, rgba(251,199,17,.14), transparent 60%), var(--panel); border: 1px solid var(--panel-border); border-radius: var(--panel-radius); box-shadow: var(--shadow-panel); }
+.bm-mark { display: inline-flex; border-radius: 16px; }
+.bm-mark img { width: 4rem; height: 4rem; border-radius: 16px; }
+.bm-text h3 { margin: 0 0 .25rem; font-size: 1.25rem; }
+.bm-text p { margin: 0; color: var(--muted-fg); }
+.bm-links { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .75rem; }
+@media (min-width: 68.01rem) { .bm-panel { grid-template-columns: auto 1fr auto; } .bm-links { grid-column: auto; justify-content: flex-end; } }
+.bm-panel + .foot-strip { margin-top: 1.5rem; }
+.bm-text { text-align: left; }
+.site-foot .bm-text h3 { text-align: left; text-transform: none; letter-spacing: 0; color: var(--fg); }
+.bm-links .btn-quiet { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.2); }
+.bm-links .btn-quiet:hover { border-color: var(--accent); }
+.bm-mark { align-self: start; }

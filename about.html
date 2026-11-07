@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="The Trindle ring, with programs round it">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261115">
+<link rel="stylesheet" href="style.css?v=20261119">
 <script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/about.html#page","url":"https://trindle.org/about.html","name":"Why Trindle was built this way","description":"Written in Rust, its own compositor included, and made for a mouse, a trackpad or a finger.","inLanguage":"en-GB","dateModified":"2026-11-07","isPartOf":{"@id":"https://trindle.org/#site"}},{"@type":"FAQPage","@id":"https://trindle.org/about.html#faq","mainEntity":[{"@type":"Question","name":"What is Trindle?","acceptedAnswer":{"@type":"Answer","text":"A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It installs only from its own image, and it is written in Rust with its own toolkit."}},{"@type":"Question","name":"Is Trindle free software?","acceptedAnswer":{"@type":"Answer","text":"Yes. Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on carries the same freedom with it."}},{"@type":"Question","name":"Does Trindle track me?","acceptedAnswer":{"@type":"Answer","text":"No. Trindle has no account and no telemetry. This site sets no cookies and counts no visitors."}},{"@type":"Question","name":"Is it ready for everyday use?","acceptedAnswer":{"@type":"Answer","text":"It is in beta. It is new, it has been tested on a small number of machines, and it keeps changing. Back up everything that matters before you install it, because it changes how the computer starts, logs in and manages its disks."}},{"@type":"Question","name":"What is it built on?","acceptedAnswer":{"@type":"Answer","text":"Debian stable underneath, with apt and Flatpak behaving exactly as they do anywhere else. The Debian underneath follows Debian stable’s own release programme. The Trindle desktop on top is a rolling release: new versions arrive as ordinary updates from Trindle’s own source, so you do not wait for a new version of the whole system to get a newer desktop. The sound is PipeWire, and the apps come from Flathub as Flatpaks, as AppImages or from Debian."}},{"@type":"Question","name":"Where do I get help?","acceptedAnswer":{"@type":"Answer","text":"There is no support desk. Bugs and questions go to distro@trindle.org. Bug reports are welcome, and so is someone telling us a screen is confusing."}},{"@type":"Question","name":"Can I send code?","acceptedAnswer":{"@type":"Answer","text":"Trindle is built to one specification, so pull requests are not the usual way in. Describe your fix or idea in a report instead. Forking it is welcome."}}]}]}</script>
 </head>
 <body>
@@ -201,13 +201,17 @@
           </ul>
       </div>
     </div>
-    <section class="foot-strip" aria-label="Trindle community on Buildmorphic">
-      <a class="foot-brand" href="https://buildmorphic.com" target="_blank" rel="noopener"><img src="img/buildmorphic.svg" alt="" width="32" height="32">Buildmorphic<span class="sr-only"> (opens in a new tab)</span></a>
-      <nav aria-label="Trindle community">
-        <a href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a>
-        <a data-buildmorphic="bugs" href="https://trindle.buildmorphic.com/bugs" target="_blank" rel="noopener">Known bugs<span class="sr-only"> (opens in a new tab)</span></a>
-        <a data-buildmorphic="roadmap" href="https://trindle.buildmorphic.com/roadmap" target="_blank" rel="noopener">Roadmap<span class="sr-only"> (opens in a new tab)</span></a>
-        <a data-buildmorphic="report" href="https://trindle.buildmorphic.com/report" target="_blank" rel="noopener">Report a bug<span class="sr-only"> (opens in a new tab)</span></a>
+    <section class="bm-panel" aria-labelledby="bm-title">
+      <a class="bm-mark" href="https://buildmorphic.com" target="_blank" rel="noopener" aria-label="Buildmorphic (opens in a new tab)"><img src="img/buildmorphic.svg" alt="" width="64" height="64"></a>
+      <div class="bm-text">
+        <h3 id="bm-title">The Trindle community</h3>
+        <p>Join in, read the known bugs and the roadmap, or report a bug. It all lives on Buildmorphic.</p>
+      </div>
+      <nav class="bm-links" aria-label="Trindle community">
+        <a class="btn btn-primary" href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a>
+        <a class="btn btn-quiet" href="https://trindle.buildmorphic.com/bugs" data-buildmorphic="bugs" target="_blank" rel="noopener">Known bugs<span class="sr-only"> (opens in a new tab)</span></a>
+        <a class="btn btn-quiet" href="https://trindle.buildmorphic.com/roadmap" data-buildmorphic="roadmap" target="_blank" rel="noopener">Roadmap<span class="sr-only"> (opens in a new tab)</span></a>
+        <a class="btn btn-quiet" href="https://trindle.buildmorphic.com/report" data-buildmorphic="report" target="_blank" rel="noopener">Report a bug<span class="sr-only"> (opens in a new tab)</span></a>
       </nav>
     </section>
     <section class="foot-strip" aria-label="Trindle source code">
