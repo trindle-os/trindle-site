@@ -947,3 +947,4 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 .foot-base .foot-legal a:hover { color: var(--accent); }
 .foot-base .foot-legal a { font-size: .8125rem; min-height: 1.5rem; }
 .foot-base + .foot-updated { margin-top: 1.25rem; }
+.foot-strip + .foot-base { margin-top: 0; }
