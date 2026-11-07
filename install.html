@@ -42,14 +42,14 @@
     <circle cx="18.5" cy="32" r="2.6"/><circle cx="22.45" cy="22.45" r="2.6"/>
   </g>
 </svg><span>Trindle</span></a>
-    <nav class="nav" aria-label="Pages"><a href="index.html">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html" aria-current="page">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/signup?next=%2Fcommunities%2Ftrindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
+    <nav class="nav" aria-label="Pages"><a href="index.html">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html" aria-current="page">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
     <details class="menu">
       <summary class="menu-btn" aria-label="Menu" title="Menu">
         <svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         <svg class="cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
       </summary>
       <div class="menu-sheet">
-        <nav class="menu-list" aria-label="Pages"><a href="index.html">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html" aria-current="page">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/signup?next=%2Fcommunities%2Ftrindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
+        <nav class="menu-list" aria-label="Pages"><a href="index.html">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html" aria-current="page">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
       </div>
     </details>
   </div>
@@ -66,7 +66,7 @@
         <p>Trindle is a whole operating system, and the image is the only way to install it. It cannot be added to a Debian you already have.</p>
         <p>Try it from the stick for as long as you like, and think twice before making it the only system on a computer you depend on. Installing replaces everything on the disk you choose, or makes an existing partition smaller to make room beside it, and that cannot always be undone.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="get/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>Download the image: coming soon</a>
+          <a class="btn btn-primary" href="https://github.com/trindle-os/trindle/releases/latest/download/trindle-amd64.iso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>Download the image</a>
         </div>
         <p style="margin-top:.9rem;font-size:1rem;color:var(--muted-fg)">For 64-bit Intel and AMD computers. Trying it in a virtual machine first? <a href="virtual-machine.html">See how it was tested</a>.</p>
       </div>
@@ -91,7 +91,7 @@
         <div><b>Firmware</b><span>The image includes firmware and drivers from Debian&rsquo;s non-free-firmware section, for Wi-Fi, Bluetooth, graphics and sound, and the NVIDIA detection tool from Debian&rsquo;s non-free section. None of it is free software.</span></div>
         <div><b>Source and licence</b><span>The source code is at <a href="https://github.com/trindle-os" target="_blank" rel="noopener">github.com/trindle-os<span class="sr-only"> (opens in a new tab)</span></a>. Trindle is under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU General Public License, version 3 or later<span class="sr-only"> (opens in a new tab)</span></a>.</span></div>
         <div><b>Background calls</b><span>A fresh Trindle contacts two servers by itself: network-test.debian.org about every five minutes, and Flathub for the app catalogue shortly after it first starts. <a href="privacy.html">Privacy has the details.</a></span></div>
-        <div id="checksum" hidden><b>Check the download</b><span>SHA-256: <code id="sha256"></code> <a id="signature" href="#checksum">Signature</a></span></div>
+        <div id="checksum"><b>Check the download</b><span>SHA-256: <code id="sha256">691ea2f7a0d9873510b6c0cbbdf9af64525a47aea457de3750700ff01e668150</code> <a id="signature" href="https://github.com/trindle-os/trindle/releases/latest/download/SHA256SUMS.sig">Signature</a></span></div>
       </div>
     </div>
   </div>
@@ -106,7 +106,7 @@
     <div class="split">
       <div class="panel reveal">
         <ol class="steps">
-          <li><b>Download the image.</b><span>One .iso file. Coming soon: Trindle is <a href="get/">in beta testing</a>, and the image will be on the download page once it is out of beta.</span></li>
+          <li><b>Download the image.</b><span>One .iso file, from the <a href="get/">download page</a>, which also shows its SHA-256 and signature. Trindle is in beta.</span></li>
           <li><b>Write it to a USB stick.</b><span>With Impression, balenaEtcher or dd, below. Everything already on the stick is replaced.</span></li>
           <li><b>Start the computer from the stick.</b><span>Plug it in, switch on and hold the key for the boot menu: F12 on many machines, F9 on others, Escape or F11 elsewhere. Trindle has not yet been tried with Secure Boot on. If the computer will not start from the stick, turn Secure Boot off in the firmware settings.</span></li>
           <li><b>Try Trindle.</b><span>It runs from the stick, with the ring, Apps and Settings all working. Nothing is written to the computer's own disk. Open the ring, look round, and decide.</span></li>
@@ -234,7 +234,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="thanks.html">Thanks</a></li>
           <li><a href="next.html">What is next</a></li>
-          <li><a href="https://buildmorphic.com/signup?next=%2Fcommunities%2Ftrindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></li>
           </ul>
       </div>
     </div>
