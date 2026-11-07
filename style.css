@@ -937,3 +937,5 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 .bm-links .btn-quiet { background: rgba(255,255,255,.05); border-color: rgba(255,255,255,.2); }
 .bm-links .btn-quiet:hover { border-color: var(--accent); }
 .bm-mark { align-self: start; }
+.site-foot .btn-primary, .site-foot .btn-primary:hover { color: var(--on-accent); }
+.site-foot .btn-quiet:hover { color: var(--fg); }
