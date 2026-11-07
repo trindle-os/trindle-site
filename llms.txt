@@ -1,6 +1,6 @@
 # Trindle
 
-> Trindle is a whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It is written in Rust, licensed GPL-3.0-or-later, and in beta.
+> Trindle is a whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It is written in Rust, and licensed GPL-3.0-or-later.
 
 ## Pages
 
@@ -10,7 +10,7 @@
 - [Cookies | Trindle](https://trindle.org/cookies.html): This site sets no cookies, runs no analytics and embeds nothing from anyone else. That is why there is no banner.
 - [Download Trindle](https://trindle.org/get/): A desktop with no bar, no dock and no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.
 - [Using Trindle, and why it works that way](https://trindle.org/help.html): How to use each part of Trindle, and the reason behind each choice, in plain words.
-- [Trindle: in beta](https://trindle.org/): No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.
+- [Trindle](https://trindle.org/): No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.
 - [Put Trindle on a computer](https://trindle.org/install.html): Write the image to a USB stick, look round before you change anything, and install in about three minutes.
 - [The eight pictures on the disk | Trindle](https://trindle.org/news/2026-09-wallpapers.html): The wallpapers that come with Trindle: new pictures in the manner of masters from the Netherlands, France, England and Spain, with the Trindle mark worked in.
 - [Eleven new pictures and four that move | Trindle](https://trindle.org/news/2026-10-wallpapers.html): Eleven new wallpapers made from the Trindle mark, and four that move: a mosaic, an orbit, ripples and a sunrise.

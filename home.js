@@ -87,21 +87,3 @@
   });
   hero.classList.add("live");
 })();
-
-(() => {
-  const bar = document.querySelector(".launch-bar");
-  if (!bar) return;
-  const at = Date.parse(bar.dataset.launch);
-  const left = bar.querySelector("[data-launch-left]");
-  const local = bar.querySelector("[data-launch-local]");
-  local.textContent = "Your time: " + new Date(at).toLocaleString([], { weekday: "short", hour: "2-digit", minute: "2-digit", timeZoneName: "short" });
-  const tick = () => {
-    const m = Math.floor((at - Date.now()) / 60000);
-    if (m < -60) { bar.remove(); return; }
-    if (m < 0) { left.textContent = "Launching now"; setTimeout(tick, 30000); return; }
-    const d = Math.floor(m / 1440), h = Math.floor((m % 1440) / 60);
-    left.textContent = "Starts in " + (d ? d + " d " : "") + (d || h ? h + " h " : "") + (m % 60) + " min";
-    setTimeout(tick, 30000);
-  };
-  tick();
-})();

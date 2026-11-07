@@ -80,7 +80,7 @@ sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps
     f"  <url><loc>{u}</loc><lastmod>{d.isoformat()}</lastmod></url>\n" for u, d in sitemap) + "</urlset>\n"
 home = "".join(f"- [{t}]({u}): {x}\n" for t, u, x in llms)
 lt = ("# Trindle\n\n> Trindle is a whole operating system built on Debian stable, with a desktop that lives in one ring and a "
-      "Wayland compositor of its own. It is written in Rust, licensed GPL-3.0-or-later, and in beta.\n\n## Pages\n\n" + home)
+      "Wayland compositor of its own. It is written in Rust, and licensed GPL-3.0-or-later.\n\n## Pages\n\n" + home)
 out["sitemap.xml"], out["llms.txt"] = sm, lt
 
 if "--check" in sys.argv:
