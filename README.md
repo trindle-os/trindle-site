@@ -9,7 +9,7 @@
 
 This is the website for [Trindle](https://trindle.org), a small desktop for Debian with no bar, no dock and no menu, only one ring. The pages are plain HTML and one style sheet.
 
-Choose it if you want a site that loads fast, sets no cookies, loads nothing from another company, and says only what the beta can do today.
+Choose it if you want a site that loads fast, sets no cookies, loads one small script from Buildmorphic and nothing else from another company, and says only what the beta can do today.
 
 <p align="center"><img src="img/hero-ring-cut.png" width="420" alt="The Trindle ring open on the desktop: the time in the middle, with Settings, Firefox, Thunderbird, Writer, GIMP, VLC, Apps, Calculator and Folders round it."></p>
 
