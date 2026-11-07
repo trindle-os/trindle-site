@@ -915,3 +915,12 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 .rows > [hidden] { display: none; }
 .foot-owner { margin-top: 1.5rem; }
 .foot-owner + .foot-legal { margin-top: .25rem; }
+.foot-strip { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 2rem; margin-top: 1.5rem; padding: .75rem 0; border-top: 1px solid var(--border); }
+.foot-strip nav { display: flex; flex-wrap: wrap; gap: 0 1.75rem; }
+.foot-strip nav a, .foot-brand { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.foot-brand { gap: .75rem; font-weight: 600; color: var(--fg); }
+.foot-brand img { border-radius: 8px; }
+.foot-marks { display: flex; align-items: center; gap: 1rem; }
+.foot-marks a { display: inline-flex; align-items: center; justify-content: center; min-width: 2.75rem; min-height: 2.75rem; color: var(--muted-fg); }
+.foot-marks svg { width: 1.5rem; height: 1.5rem; }
+.foot-strip + .foot-owner { margin-top: .75rem; }
