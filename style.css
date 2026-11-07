@@ -939,3 +939,9 @@ body:has(.launch-bar) { --launch-h: 2.75rem; }
 .bm-mark { align-self: start; }
 .site-foot .btn-primary, .site-foot .btn-primary:hover { color: var(--on-accent); }
 .site-foot .btn-quiet:hover { color: var(--fg); }
+.foot-strip, .foot-base { border-top: 1px solid rgba(255,255,255,.22); }
+.foot-base { display: flex; flex-wrap: wrap; align-items: center; gap: 0 1.5rem; margin-top: 1.5rem; padding-top: .5rem; }
+.foot-base .foot-owner, .foot-base .foot-legal { margin: 0; }
+.foot-base .foot-legal { gap: 0 1.25rem; }
+.foot-base .foot-legal a { color: var(--muted-fg); }
+.foot-base .foot-legal a:hover { color: var(--accent); }
