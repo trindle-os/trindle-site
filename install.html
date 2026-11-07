@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css?v=20261114">
-<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/install.html#page","url":"https://trindle.org/install.html","name":"Put Trindle on a computer","description":"Write the image to a USB stick, look round before you change anything, and install in about three minutes.","inLanguage":"en-GB","dateModified":"2026-11-06","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/install.html#page","url":"https://trindle.org/install.html","name":"Put Trindle on a computer","description":"Write the image to a USB stick, look round before you change anything, and install in about three minutes.","inLanguage":"en-GB","dateModified":"2026-11-07","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -68,13 +68,13 @@
         <div class="actions">
           <a class="btn btn-primary" href="get/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>Download the image: coming soon</a>
         </div>
-        <p style="margin-top:.9rem;font-size:1rem;color:var(--muted-fg)">For 64-bit Intel and AMD computers. Trying it in a virtual machine first? <a href="virtual-machine.html">Set the machine up properly</a>, or you will be judging the machine.</p>
+        <p style="margin-top:.9rem;font-size:1rem;color:var(--muted-fg)">For 64-bit Intel and AMD computers. Trying it in a virtual machine first? <a href="virtual-machine.html">See how it was tested</a>.</p>
       </div>
       <div class="panel">
         <h2 style="font-size:1.0625rem;letter-spacing:0">What you need</h2>
         <div class="rows">
           <div><b>A computer</b><span>64-bit Intel or AMD.</span></div>
-          <div><b>Disk space</b><span>A disk of at least 20 GB, whether Trindle takes the whole disk or room made beside another system.</span></div>
+          <div><b>Disk space</b><span>Tested on a 30 GB disk.</span></div>
           <div><b>A USB stick</b><span>Big enough for the image. Everything on it is replaced.</span></div>
           <div><b>Time</b><span>Enough not to be rushed. Do not start it just before you need the machine.</span></div>
         </div>
@@ -85,7 +85,7 @@
       <h2 style="font-size:1.0625rem;letter-spacing:0">What is in the image</h2>
       <div class="rows">
         <div><b>Based on Debian</b><span>Trindle is based on Debian, and the image is the only way to install it.</span></div>
-        <div><b>Firmware</b><span>The image includes non-free firmware from Debian, for Wi-Fi, Bluetooth, graphics and sound chips, so that more computers work straight away.</span></div>
+        <div><b>Firmware</b><span>The image includes firmware and drivers from Debian&rsquo;s non-free-firmware section, for Wi-Fi, Bluetooth, graphics and sound, and the NVIDIA detection tool from Debian&rsquo;s non-free section. None of it is free software.</span></div>
         <div><b>Source and licence</b><span>The source code is at <a href="https://github.com/trindle-os" target="_blank" rel="noopener">github.com/trindle-os<span class="sr-only"> (opens in a new tab)</span></a>. Trindle is under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU General Public License, version 3 or later<span class="sr-only"> (opens in a new tab)</span></a>.</span></div>
         <div><b>Background calls</b><span>A fresh Trindle contacts two servers by itself: network-test.debian.org about every five minutes, and Flathub for the app catalogue shortly after it first starts. <a href="privacy.html">Privacy has the details.</a></span></div>
         <div id="checksum" hidden><b>Check the download</b><span>SHA-256: <code id="sha256"></code> <a id="signature" href="#checksum">Signature</a></span></div>
@@ -237,7 +237,7 @@
     </div>
     <p class="foot-small foot-owner">&copy; The Trindle project</p>
     <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
-    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-06">6 November 2026</time></p>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-07">7 November 2026</time></p>
   </div>
 </footer>
 

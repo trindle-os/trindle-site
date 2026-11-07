@@ -21,4 +21,4 @@
 - [Trindle: a photograph before every change](https://trindle.org/safety.html): A snapshot is taken before and after every install, update and removal, with its own entry in the boot menu if the computer will not start.
 - [Thanks](https://trindle.org/thanks.html): The projects Trindle is built on, with a link to each and a way to donate to those that accept it.
 - [A look round Trindle](https://trindle.org/tour.html): The ring, its quick panels, notifications, Settings, Apps and the rest, with a picture of each.
-- [Trindle in a virtual machine](https://trindle.org/virtual-machine.html): A virtual machine set up the way these programs set one up by default is slow at everything. Here is what to give it, so you judge the desktop, not the machine.
+- [Trindle in a virtual machine](https://trindle.org/virtual-machine.html): Trindle has been tested in a QEMU virtual machine with 4 GB of memory, 4 processors and a 30 GB disk. Here is that setup.
