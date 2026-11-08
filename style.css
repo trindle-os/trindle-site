@@ -227,6 +227,8 @@ section { padding: 3.25rem 0; }
 .btn svg { width: 17px; height: 17px; flex: none; }
 .btn-primary { background: var(--accent); color: var(--on-accent); }
 .btn-primary:hover { background: var(--accent-hover); color: var(--on-accent); }
+.btn-light { background: #fff; color: #09090b; }
+.btn-light:hover { background: #e4e4e7; color: #09090b; }
 .btn-quiet { background: var(--panel); border-color: var(--border); color: var(--fg); }
 .btn-quiet:hover { border-color: var(--accent); color: var(--fg); }
 
@@ -667,7 +669,6 @@ article .hero .post-date { display: block; margin-bottom: .35rem; }
 @media (max-width: 30rem) { .swap b { white-space: normal; } .stage-swap { height: 3.4rem; } }
 .stage-lead { max-width: 34rem; margin: 0 0 1.5rem; font-size: 1.1875rem; color: var(--muted-fg); animation: fade-in .8s 1.2s both; }
 .stage .actions { animation: fade-in .8s 1.3s both; }
-.stage-when { margin: 1.1rem 0 0; color: var(--muted-fg); font-size: 1rem; animation: fade-in .8s 1.4s both; }
 @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
 .orb { position: relative; width: min(46rem, 94vw); aspect-ratio: 1; justify-self: center; --rx: 0deg; --ry: 0deg; }
@@ -814,14 +815,12 @@ section[id] { scroll-margin-top: 8.5rem; }
   .stage:not(.stage-short) h1 { margin-bottom: .8rem; }
   .stage:not(.stage-short) h1 { font-size: clamp(2.4rem, min(8.2vw, calc((100svh - var(--beta-h, 0rem)) * .077)), 6.4rem); }
   .stage:not(.stage-short) .stage-lead { margin-bottom: 1rem; font-size: 1.0625rem; }
-  .stage:not(.stage-short) .stage-when { margin-top: .6rem; }
-}
+  .stage:not(.stage-short) }
 @media (min-width: 62rem) and (max-height: 40rem) {
   .stage:not(.stage-short) h1 { font-size: clamp(2.2rem, calc((100svh - var(--beta-h, 0rem)) * .068), 6.4rem); margin-bottom: .5rem; }
   .stage:not(.stage-short) .stage-tag, .stage:not(.stage-short) .stage-swap { margin-bottom: .5rem; }
   .stage:not(.stage-short) .stage-lead { margin-bottom: .6rem; }
-  .stage:not(.stage-short) .stage-when { margin-top: .4rem; }
-}
+  .stage:not(.stage-short) }
 
 body:has(.beta-bar) { --beta-h: 2.75rem; }
 .beta-bar { background: var(--accent); color: var(--on-accent); }
