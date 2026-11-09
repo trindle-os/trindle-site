@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://trindle.org/about.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/accessibility.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/complaints.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/cookies.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/get/</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/help.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://trindle.org/about.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/accessibility.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/complaints.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/cookies.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/get/</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/help.html</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://trindle.org/</loc><lastmod>2026-11-08</lastmod></url>
-  <url><loc>https://trindle.org/install.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/news/2026-09-wallpapers.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/news/2026-10-wallpapers.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/news/2026-11-beta.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/news/</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/next.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/privacy.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/safety.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/thanks.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/tour.html</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://trindle.org/virtual-machine.html</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://trindle.org/install.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/news/2026-09-wallpapers.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/news/2026-10-wallpapers.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/news/2026-11-beta.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/news/</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/next.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/privacy.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/safety.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/security.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/thanks.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/tour.html</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://trindle.org/virtual-machine.html</loc><lastmod>2026-11-08</lastmod></url>
 </urlset>

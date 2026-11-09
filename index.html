@@ -42,14 +42,14 @@
     <circle cx="18.5" cy="32" r="2.6"/><circle cx="22.45" cy="22.45" r="2.6"/>
   </g>
 </svg><span>Trindle</span></a>
-    <nav class="nav" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
+    <nav class="nav" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="tour.html">The desktop</a><a href="security.html">Security</a><a href="safety.html">Safety net</a><a href="install.html">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
     <details class="menu">
       <summary class="menu-btn" aria-label="Menu" title="Menu">
         <svg class="bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         <svg class="cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
       </summary>
       <div class="menu-sheet">
-        <nav class="menu-list" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="tour.html">The desktop</a><a href="safety.html">Safety net</a><a href="install.html">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
+        <nav class="menu-list" aria-label="Pages"><a href="index.html" aria-current="page">Home</a><a href="tour.html">The desktop</a><a href="security.html">Security</a><a href="safety.html">Safety net</a><a href="install.html">Install</a><a href="about.html">About</a><a href="next.html">What is next</a><a class="join" href="https://buildmorphic.com/join/trindle" data-buildmorphic="community" target="_blank" rel="noopener">Join the community<span class="sr-only"> (opens in a new tab)</span></a></nav>
       </div>
     </details>
   </div>
@@ -88,8 +88,8 @@
 
 <section class="run" aria-label="A few of the things in Trindle now">
   <div class="run-track">
-    <ul><li>One ring</li><li>Live window pictures</li><li>Draw on screenshots</li><li>A permission window like a phone&rsquo;s</li><li>A dot when you are watched</li><li>A snapshot before every change</li><li>A Rust compositor</li><li>Locked system files</li><li>Coding agents in a box</li></ul>
-    <ul aria-hidden="true"><li>One ring</li><li>Live window pictures</li><li>Draw on screenshots</li><li>A permission window like a phone&rsquo;s</li><li>A dot when you are watched</li><li>A snapshot before every change</li><li>A Rust compositor</li><li>Locked system files</li><li>Coding agents in a box</li></ul>
+    <ul><li>One ring</li><li>Live window pictures</li><li>Draw on screenshots</li><li>A permission window like a phone&rsquo;s</li><li>A dot when you are watched</li><li>A snapshot before every change</li><li>A Rust compositor</li><li>Adverts blocked for every app</li><li>Coding agents in a box</li></ul>
+    <ul aria-hidden="true"><li>One ring</li><li>Live window pictures</li><li>Draw on screenshots</li><li>A permission window like a phone&rsquo;s</li><li>A dot when you are watched</li><li>A snapshot before every change</li><li>A Rust compositor</li><li>Adverts blocked for every app</li><li>Coding agents in a box</li></ul>
   </div>
 </section>
 
@@ -116,10 +116,23 @@
       <div class="panel lift reveal d3"><b>You know when you are watched</b><p>A dot in the corner whenever an app uses the camera, the microphone or records the screen.</p></div>
       <div class="panel lift reveal"><b>Apps cannot stop it starting</b><p>Only what the computer itself needs is installed system-wide. Apps may not add drivers or background services.</p></div>
       <div class="panel lift reveal d1"><b>Its own compositor</b><p>The program that draws every window and takes every key is Trindle&rsquo;s own, written in Rust. No plugin can reach into it.</p></div>
-      <div class="panel lift reveal d2"><b>System files stay put</b><p>The programs Trindle and Debian install are locked, and open only while Trindle itself installs an update.</p></div>
+      <div class="panel lift reveal d2"><b>Adverts and bad sites blocked</b><p>One switch blocks adverts, trackers and known bad sites for every browser and app, with private name lookups.</p></div>
       <div class="panel lift reveal d3"><b>Coding agents in a box</b><p>Coding assistants can read logs and run commands, inside a fence that hides your personal files.</p></div>
     </div>
     <p class="show-more"><a class="btn btn-quiet" href="tour.html">See the whole desktop</a></p>
+  </div>
+</section>
+<section class="sell-band" aria-labelledby="boxes-title">
+  <div class="wrap">
+    <div class="sell-head">
+      <h2 id="boxes-title">Kept apart, and in your hands</h2>
+      <p>Programs live in boxes, an assistant works inside a fence, and every change can be undone.</p>
+    </div>
+    <div class="sell-three">
+      <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 7v10l8 4 8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg><b>Programs live in boxes</b><p>Every .deb, Flatpak, AppImage and plugin runs in a box that starts with no network, no microphone and none of your files. An app gets only what you allow.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#boxes">How the boxes work</a></p></div>
+      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><b>An assistant, inside a fence</b><p>A built-in MCP server lets an assistant such as Claude see how the computer is doing, once you point it there. It asks on screen before any change, takes a snapshot first, and can undo.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#assistant">About the assistant</a></p></div>
+      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A way back, and a locked disk</b><p>A snapshot is taken around every change, and your home folder is copied each day. At install you can encrypt the disk with a password or the computer&rsquo;s TPM chip, or leave it open.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#locked">Snapshots and encryption</a></p></div>
+    </div>
   </div>
 </section>
 </main>
@@ -150,6 +163,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="tour.html">The desktop</a></li>
+          <li><a href="security.html">Security</a></li>
           <li><a href="safety.html">Safety net</a></li>
           <li><a href="install.html">Install</a></li>
           <li><a href="about.html">About</a></li>
