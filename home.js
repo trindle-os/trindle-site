@@ -87,3 +87,19 @@
   });
   hero.classList.add("live");
 })();
+
+(() => {
+  const box = document.querySelector(".video");
+  const btn = box && box.querySelector(".video-play");
+  if (!btn) return;
+  btn.addEventListener("click", () => {
+    const f = document.createElement("iframe");
+    f.src = "https://www.youtube-nocookie.com/embed/" + box.dataset.id + "?autoplay=1&rel=0";
+    f.title = box.dataset.title;
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    f.referrerPolicy = "strict-origin-when-cross-origin";
+    box.replaceChildren(f);
+    f.focus();
+  });
+})();

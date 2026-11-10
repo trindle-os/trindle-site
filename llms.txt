@@ -7,7 +7,7 @@
 - [Why Trindle was built this way](https://trindle.org/about.html): Written in Rust, its own compositor included, and made for a mouse, a trackpad or a finger.
 - [Accessibility | Trindle](https://trindle.org/accessibility.html): What has been done to make this site usable, what is still missing, and how to tell us when something shuts you out.
 - [Complaints | Trindle](https://trindle.org/complaints.html): How to complain about Trindle or this site, and what happens after you do.
-- [Cookies | Trindle](https://trindle.org/cookies.html): This site sets no cookies, runs no analytics and embeds nothing from anyone else. That is why there is no banner.
+- [Cookies | Trindle](https://trindle.org/cookies.html): This site sets no cookies, runs no analytics and loads nothing from anyone else until you press play on the video. That is why there is no banner.
 - [Download Trindle](https://trindle.org/get/): A desktop with no bar, no dock and no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.
 - [Using Trindle, and why it works that way](https://trindle.org/help.html): How to use each part of Trindle, and the reason behind each choice, in plain words.
 - [Trindle](https://trindle.org/): No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.
