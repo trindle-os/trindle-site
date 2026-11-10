@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/Manrope-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("fonts/Manrope-VariableFont_wght.woff2") format("woff2");
   font-weight: 200 800;
   font-display: swap;
 }
@@ -384,8 +384,8 @@ h3 > a { display: inline-block; padding-block: .7rem; margin-block: -.7rem; }
 
 .ring-note { font-size: 1rem; color: var(--muted-fg); margin-top: .8rem; }
 
-.manner-line { display: inline-block; font-size: 1rem; font-weight: 600;
-  color: var(--on-accent-container); background: var(--accent-container);
+.panel .manner-line, .manner-line { display: inline-block; font-size: 1rem; font-weight: 600;
+  color: var(--fg); background: var(--accent-container);
   border-radius: 999px; padding: .2rem .7rem; }
 
 .posts { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
@@ -943,3 +943,9 @@ body:has(.beta-bar) { --beta-h: 2.75rem; }
 .foot-base .foot-legal a { font-size: .8125rem; min-height: 1.5rem; }
 .foot-base + .foot-updated { margin-top: 1.25rem; }
 .foot-strip + .foot-base { margin-top: 0; }
+
+@media (max-width: 63.99rem) {
+  .foot-base .foot-legal a, .thanks-grid h3 a, .thanks-grid .thanks-give a, .post-back a, .crumb a, .crumbs a { display: inline-flex; align-items: center; min-height: 2.75rem; min-width: 2.75rem; }
+}
+
+a, button, summary { touch-action: manipulation; }

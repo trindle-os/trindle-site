@@ -6,6 +6,7 @@
 <title>Trindle: programs in boxes, and you in charge</title>
 <meta name="description" content="Apps, downloaded files and AI coding agents run in sealed boxes, every permission starts off, and an assistant can run Trindle only inside a fence.">
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#09090b">
 <link rel="canonical" href="https://trindle.org/security.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Trindle">
@@ -18,7 +19,8 @@
 <meta property="og:image:alt" content="The Trindle ring inside glowing gold rings, with the words No bar, No dock, No menu">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261128">
+<link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=20261130">
 <script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/security.html#page","url":"https://trindle.org/security.html","name":"Trindle: programs in boxes, and you in charge","description":"Apps, downloaded files and AI coding agents run in sealed boxes, every permission starts off, and an assistant can run Trindle only inside a fence.","inLanguage":"en-GB","dateModified":"2026-11-10","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
@@ -26,7 +28,7 @@
 <div class="beta-bar">
   <div class="wrap beta-row">
     <svg class="beta-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="32" cy="10" r="5" fill="currentColor"/><circle cx="48" cy="48" r="5" fill="currentColor"/></svg>
-    <p><b>Beta</b> Trindle is still being tested. The first beta launched on Saturday 7 November 2026.</p>
+    <p><b>Beta</b> Trindle is still in beta. The official release day is Wednesday 11 November 2026.</p>
   </div>
 </div>
 <div class="top">
@@ -62,7 +64,7 @@
     <div class="hero-grid">
       <div>
         <h1>Programs in boxes, and you in charge</h1>
-        <p class="lead">Every .deb, Flatpak, AppImage and plugin runs in a box that starts with nothing. A window like a phone&rsquo;s asks before anything is shared, and every switch starts off.</p>
+        <p class="lead">Every .deb, Flatpak, AppImage and plugin runs in a box that starts with nothing. A window like a phone's asks before anything is shared, and every switch starts off.</p>
       </div>
       <div class="stats" style="grid-template-columns:1fr">
         <div class="stat"><b>A box each</b><span>Debian programs, Flatpaks, AppImages, plugins and AI agents are fenced in</span></div>
@@ -80,7 +82,7 @@
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 7v10l8 4 8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg><h2 style="font-size:1.6rem">The boxes</h2></div>
         <p class="lead" style="color:var(--fg)">A box is a fence around a program, built with bubblewrap, the same tool Flatpak uses.</p>
         <div class="rows">
-          <div><b>Each .deb apart</b><span>It goes into a folder of its own with its own libraries and runs in a box. There is no &ldquo;install for the whole computer&rdquo;. Remove the app and everything of it goes.</span></div>
+          <div><b>Each .deb apart</b><span>It goes into a folder of its own with its own libraries and runs in a box. There is no "install for the whole computer". Remove the app and everything of it goes.</span></div>
           <div><b>Starts closed</b><span>A new box has no network, sound, microphone, older-style windows or files of yours. System folders are read only. Nothing else is given until you allow it.</span></div>
           <div><b>Refused if it cannot fit</b><span>A .deb that holds a driver or a background service is turned down in plain words.</span></div>
           <div><b>Kept patched</b><span>When Debian fixes a package a box carries, a daily timer replaces the copy, on mains power only.</span></div>
@@ -93,8 +95,8 @@
           <div><b>Your files</b><span>None until you allow them. Allowing shows only Documents, Downloads, Pictures, Music, Videos and Desktop, never the whole home folder and never hidden settings files, so nothing in the box can make itself start outside it.</span></div>
           <div><b>The screen</b><span>A box cannot take screenshots, read what you copy at any moment, fake a key press or draw over other windows, unless you allow the screen.</span></div>
           <div><b>The microphone</b><span>Playing sound and listening are separate. A box allowed sound gets a small guard that passes playback and refuses every request to record.</span></div>
-          <div><b>Older programs</b><span>When a box needs X11 it gets an Xwayland of its own, never the desktop&rsquo;s, so it cannot watch other apps.</span></div>
-          <div><b>Your computer&rsquo;s details</b><span>A box sees only the few parts of the hardware list that graphics need, not the make, the serial number or the full parts list.</span></div>
+          <div><b>Older programs</b><span>When a box needs X11 it gets an Xwayland of its own, never the desktop's, so it cannot watch other apps.</span></div>
+          <div><b>Your computer's details</b><span>A box sees only the few parts of the hardware list that graphics need, not the make, the serial number or the full parts list.</span></div>
           <div><b>Risky requests</b><span>A short filter refuses what ordinary apps never need: typing into the terminal that started them, loading kernel parts, tracing other programs, changing the clock, building a box inside the box.</span></div>
         </div>
       </div>
@@ -111,7 +113,7 @@
           <div><b>AI coding agents</b><span>In a fence of their own, <a href="#agents">described below</a>.</span></div>
         </div>
       </div>
-      <div class="note warn" style="align-self:start"><b>A limit, said plainly.</b> A program you start outside a box, from a shell or from your browser&rsquo;s own Open button, is not fenced. Trindle tells you afterwards, once, when one first reaches the network or has your files open, but it cannot stop it. Trindle&rsquo;s own parts and the system itself stay outside the boxes.</div>
+      <div class="note warn" style="align-self:start"><b>A limit, said plainly.</b> A program you start outside a box, from a shell or from your browser's own Open button, is not fenced. Trindle tells you afterwards, once, when one first reaches the network or has your files open, but it cannot stop it. Trindle's own parts and the system itself stay outside the boxes.</div>
     </div>
   </div>
 </section>
@@ -122,7 +124,7 @@
       <div class="panel reveal">
         <h3>What a permission window shows</h3>
         <div class="rows">
-          <div><b>Plain words</b><span>&ldquo;Your Documents and Pictures folders&rdquo;, &ldquo;take pictures of your screen&rdquo;, &ldquo;your microphone&rdquo;. Each line says what goes wrong without it.</span></div>
+          <div><b>Plain words</b><span>"Your Documents and Pictures folders", "take pictures of your screen", "your microphone". Each line says what goes wrong without it.</span></div>
           <div><b>Off until you choose</b><span>Every switch starts off. Allow all switches on everything that can be allowed, and every warning stays in view.</span></div>
           <div><b>A warning when it looks odd</b><span>A calculator asking for the internet, or a photo app asking for your keyboard, comes with a plain warning. Risky permissions always carry one.</span></div>
           <div><b>Who decides</b><span>You do. A Flatpak or a plugin says what it wants. A .deb says nothing, so Trindle works out what it probably needs from what it is built with and its category, and says so.</span></div>
@@ -135,7 +137,7 @@
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 5 6v5c0 4.5 3 8 7 10 4-2 7-5.5 7-10V6z"/><path d="m9 12 2 2 4-4"/></svg><h2 style="font-size:1.6rem">Permissions</h2></div>
         <p class="lead">When an app is installed, Trindle lists everything it wants in plain words, with a switch for each, all off until you choose.</p>
         <p>A box can ask for the internet, sound, the microphone, your folders, the camera and plugged-in devices, Bluetooth, notifications, to start by itself at login, the screen, older windows, or to work outside its box (meant for terminals). A plugin can also ask to share your mouse and keyboard with another computer, read the files you copy, or reach your home network only.</p>
-        <div class="panel" style="margin-top:1rem;padding:1.1rem"><b>You always know who is watching or listening.</b><p style="margin:.4rem 0 0">A dot shows in the top right corner while any app uses the camera, the microphone or records the screen: orange for the microphone, teal for the camera, blue for the screen. It sits on the app&rsquo;s window tab too. One button in the ring cuts the microphone for every program, and only your own press turns it back on.</p></div>
+        <div class="panel" style="margin-top:1rem;padding:1.1rem"><b>You always know who is watching or listening.</b><p style="margin:.4rem 0 0">A dot shows in the top right corner while any app uses the camera, the microphone or records the screen: orange for the microphone, teal for the camera, blue for the screen. It sits on the app's window tab too. One button in the ring cuts the microphone for every program, and only your own press turns it back on.</p></div>
       </div>
     </div>
   </div>
@@ -146,9 +148,9 @@
     <div class="split">
       <div class="panel reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h2 style="font-size:1.6rem">AI coding agents in a box</h2></div>
-        <p>Programs such as Claude Code, Codex, Cursor&rsquo;s agent, Gemini, Aider, OpenCode, Goose and Amp (the list can be edited) run in a fence of their own. They can read the system, the logs and the installed programs, and run commands, but they cannot see your files.</p>
-        <p>They see an empty private home folder, kept between runs, not yours. Other people&rsquo;s homes, mail, your keyring, ssh-agent and the session are hidden, other programs are invisible to them, and anything that looks like a key or token is cleaned out of their environment. They get no screen, sound or keyboard, so they cannot see the screen or press keys.</p>
-        <div class="note warn" style="margin-top:1rem"><b>Limited protection, not a guarantee.</b> A determined program, a flaw in the computer&rsquo;s software, or you approving a request can let something through. The network is open by default, so anything an agent can read it could send out; an optional switch limits it to hosts you list.</div>
+        <p>Programs such as Claude Code, Codex, Cursor's agent, Gemini, Aider, OpenCode, Goose and Amp (the list can be edited) run in a fence of their own. They can read the system, the logs and the installed programs, and run commands, but they cannot see your files.</p>
+        <p>They see an empty private home folder, kept between runs, not yours. Other people's homes, mail, your keyring, ssh-agent and the session are hidden, other programs are invisible to them, and anything that looks like a key or token is cleaned out of their environment. They get no screen, sound or keyboard, so they cannot see the screen or press keys.</p>
+        <div class="note warn" style="margin-top:1rem"><b>Limited protection, not a guarantee.</b> A determined program, a flaw in the computer's software, or you approving a request can let something through. The network is open by default, so anything an agent can read it could send out; an optional switch limits it to hosts you list.</div>
       </div>
       <div class="panel reveal d1">
         <h3>You choose what the fence shares</h3>
@@ -171,14 +173,14 @@
           <div><b>Devices</b><span>Speakers, microphones, Bluetooth, Wi-Fi in range and drives.</span></div>
         </div>
         <h3 style="margin-top:1.1rem">What it can do only after you say yes</h3>
-        <p>An on-screen window asks first. The cross, Escape, closing it or two minutes of silence all mean no. It can then start an app, bring a window to the front, close a window, change one Trindle setting from a fixed list, set light or dark and the accent colour, install or remove a Flathub app, change a Flathub app&rsquo;s permissions, join a known or open Wi-Fi network, pair a Bluetooth device, or undo a previous change.</p>
+        <p>An on-screen window asks first. The cross, Escape, closing it or two minutes of silence all mean no. It can then start an app, bring a window to the front, close a window, change one Trindle setting from a fixed list, set light or dark and the accent colour, install or remove a Flathub app, change a Flathub app's permissions, join a known or open Wi-Fi network, pair a Bluetooth device, or undo a previous change.</p>
       </div>
       <div class="reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h2 style="font-size:1.6rem">An assistant, inside a fence</h2></div>
         <p class="lead">Trindle has a small MCP server, the standard way an AI assistant such as Claude talks to programs on your computer. It runs on your computer only and is not a network service.</p>
         <div class="rows">
           <div><b>Off until you say</b><span>It does nothing until your assistant is told, in its own settings, to start <code>trindle-mcp</code>. Settings has no switch for it.</span></div>
-          <div><b>A snapshot first</b><span>Before each change it saves Trindle&rsquo;s settings, every Flathub app&rsquo;s permissions and the list of apps. Before an install or removal it takes a whole-system snapshot too.</span></div>
+          <div><b>A snapshot first</b><span>Before each change it saves Trindle's settings, every Flathub app's permissions and the list of apps. Before an install or removal it takes a whole-system snapshot too.</span></div>
           <div><b>Out of bounds</b><span>It can never touch the core, the compositor or the packaging system, switch snapshots off, or change its own rules. A tool not on its built-in list does not exist.</span></div>
           <div><b>Not your files</b><span>No tool opens documents, photos or your home folder. What it reads, such as window titles, is treated as data it must never obey. It never sends Wi-Fi passwords.</span></div>
         </div>
@@ -193,7 +195,7 @@
     <div class="sell-three">
       <div class="panel reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>Snapshots before and after</b><p>A snapshot is taken before and after every software change, and the start-up menu lists the last twelve, so you can start from one even if the computer will not start. This needs the Btrfs disk the Trindle Installer makes.</p><p style="margin-top:.75rem"><a class="btn btn-quiet" href="safety.html">The safety net</a></p></div>
       <div class="panel reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A daily copy of your files</b><p>A snapshot of your home folder is taken each day and kept for a week by default, or three days, two weeks or a month. One switch turns it off. Opening an older copy from Folders is still being built.</p></div>
-      <div class="panel reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A locked disk, or not</b><p>The installer asks first whether to encrypt the disk: not at all (the starting choice), with a password typed at every start, or with this computer&rsquo;s TPM chip, which needs a TPM 2 chip. Encryption needs a computer that starts with UEFI. There is no separate recovery key: the password is the way back in.</p><p style="margin-top:.75rem"><a class="btn btn-quiet" href="safety.html#encryption">The three choices</a></p></div>
+      <div class="panel reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A locked disk, or not</b><p>The installer asks first whether to encrypt the disk: not at all (the starting choice), with a password typed at every start, or with this computer's TPM chip, which needs a TPM 2 chip. Encryption needs a computer that starts with UEFI. There is no separate recovery key: the password is the way back in.</p><p style="margin-top:.75rem"><a class="btn btn-quiet" href="safety.html#encryption">The three choices</a></p></div>
     </div>
   </div>
 </section>
@@ -203,14 +205,14 @@
     <div class="panel reveal">
       <h3>Updates, plugins, the network and the sockets</h3>
       <div class="rows">
-        <div><b>Security updates</b><span>Debian&rsquo;s security fixes install by themselves every day. They are on by default, and you can turn them off with the Security updates switch in Settings. Debian&rsquo;s package system checks Debian&rsquo;s own signatures.</span></div>
+        <div><b>Security updates</b><span>Debian's security fixes install by themselves every day. They are on by default, and you can turn them off with the Security updates switch in Settings. Debian's package system checks Debian's own signatures.</span></div>
         <div><b>Plugins from a signed list</b><span>Plugins come only from a catalogue Trindle signs. The signature is checked over the exact bytes before the list is read, and each plugin file is checked against its SHA-256. There is no way to install a plugin from anywhere else.</span></div>
         <div><b>A downloaded .deb</b><span>When you open one, Apps shows the site it came from and checks it against a public list of bad sites, on your computer. It says the list is not complete.</span></div>
         <div><b>Ports only for what you allow</b><span>Trindle can manage the firewall. A program that needs other computers to reach it names its ports, and Trindle opens only those, to home-network addresses only, and closes them when you take the permission away.</span></div>
         <div><b>Adverts and bad sites blocked</b><span>One switch blocks adverts, trackers and known bad sites for every browser and every app, with private, encrypted name lookups. It runs on your own computer.</span></div>
         <div><b>A Wi-Fi that cannot follow you</b><span>Each Wi-Fi network sees a made-up hardware address of its own for your computer, so shops and stations cannot follow it between places.</span></div>
         <div><b>A strange keyboard</b><span>While the screen is locked, a new keyboard or mouse plugged in does nothing until you unlock.</span></div>
-        <div><b>Thunderbolt asks first</b><span>A Thunderbolt or USB4 device can reach the computer&rsquo;s memory directly, so Trindle names it and asks: allow it always, just this time, or not at all.</span></div>
+        <div><b>Thunderbolt asks first</b><span>A Thunderbolt or USB4 device can reach the computer's memory directly, so Trindle names it and asks: allow it always, just this time, or not at all.</span></div>
       </div>
     </div>
   </div>
@@ -223,9 +225,9 @@
       <p>These are planned and are not in Trindle yet.</p>
       <ul>
         <li>Locking the system files. The way to lock them exists, but the installer does not turn it on yet.</li>
-        <li>Opening yesterday&rsquo;s version of a file from Folders.</li>
+        <li>Opening yesterday's version of a file from Folders.</li>
         <li>The Permissions page listing the boxes round AppImages and programs started from Folders.</li>
-        <li>An assistant that can restart a misbehaving program, change that program&rsquo;s own settings or clear its cache, and never change Trindle itself.</li>
+        <li>An assistant that can restart a misbehaving program, change that program's own settings or clear its cache, and never change Trindle itself.</li>
         <li>A signed whole-system image, and a signed start-up for Trindle itself.</li>
       </ul>
     </div>
@@ -251,7 +253,7 @@
       <div>
         <h3>Try to accept our cookies</h3>
         <div class="cookie-game"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><button class="cookie-btn" type="button" tabindex="-1"><span>Accept all cookies</span></button></div>
-        <p class="foot-small">Spoiler: there isn&rsquo;t one. We don&rsquo;t do cookies, so there is nothing to accept.</p>
+        <p class="foot-small">Spoiler: there isn't one. We don't do cookies, so there is nothing to accept.</p>
         <p class="foot-small foot-vow"><b>Your privacy is paramount.</b></p>
       </div>
       <div>

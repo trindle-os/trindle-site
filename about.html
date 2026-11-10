@@ -6,6 +6,7 @@
 <title>Why Trindle was built this way</title>
 <meta name="description" content="Written in Rust, its own compositor included, and made for a mouse, a trackpad or a finger.">
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#09090b">
 <link rel="canonical" href="https://trindle.org/about.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Trindle">
@@ -18,7 +19,8 @@
 <meta property="og:image:alt" content="The Trindle ring inside glowing gold rings, with the words No bar, No dock, No menu">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261128">
+<link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css?v=20261130">
 <script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/about.html#page","url":"https://trindle.org/about.html","name":"Why Trindle was built this way","description":"Written in Rust, its own compositor included, and made for a mouse, a trackpad or a finger.","inLanguage":"en-GB","dateModified":"2026-11-10","isPartOf":{"@id":"https://trindle.org/#site"}},{"@type":"FAQPage","@id":"https://trindle.org/about.html#faq","mainEntity":[{"@type":"Question","name":"What is Trindle?","acceptedAnswer":{"@type":"Answer","text":"A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It installs only from its own image, and it is written in Rust with its own toolkit."}},{"@type":"Question","name":"Is Trindle free software?","acceptedAnswer":{"@type":"Answer","text":"Yes. Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on carries the same freedom with it."}},{"@type":"Question","name":"Does Trindle track me?","acceptedAnswer":{"@type":"Answer","text":"No. Trindle has no account and no telemetry. This site sets no cookies and counts no visitors."}},{"@type":"Question","name":"Is it ready for everyday use?","acceptedAnswer":{"@type":"Answer","text":"It is new, it has been tested on a small number of machines, and it keeps changing. Back up everything that matters before you install it, because it changes how the computer starts, logs in and manages its disks."}},{"@type":"Question","name":"What is it built on?","acceptedAnswer":{"@type":"Answer","text":"Debian stable underneath, with apt and Flatpak behaving as they do anywhere else. The desktop on top is a rolling release, so new versions arrive as ordinary updates without waiting for a new version of the whole system."}},{"@type":"Question","name":"Where do I get help?","acceptedAnswer":{"@type":"Answer","text":"There is no support desk. Bugs and questions go to distro@trindle.org. Bug reports are welcome, and so is someone telling us a screen is confusing."}},{"@type":"Question","name":"Can I send code?","acceptedAnswer":{"@type":"Answer","text":"Trindle is built to one specification, so pull requests are not the usual way in. Describe your fix or idea in a report instead. Forking it is welcome."}}]}]}</script>
 </head>
 <body>
@@ -26,7 +28,7 @@
 <div class="beta-bar">
   <div class="wrap beta-row">
     <svg class="beta-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="32" cy="10" r="5" fill="currentColor"/><circle cx="48" cy="48" r="5" fill="currentColor"/></svg>
-    <p><b>Beta</b> Trindle is still being tested. The first beta launched on Saturday 7 November 2026.</p>
+    <p><b>Beta</b> Trindle is still in beta. The official release day is Wednesday 11 November 2026.</p>
   </div>
 </div>
 <div class="top">
@@ -63,7 +65,7 @@
       <div>
         <h1>Why this exists</h1>
         <p class="lead">Desktops have grown a bar at the top, a dock at the bottom, a tray in one corner and a search box that wants the keyboard. Trindle puts all of it in one circle that is not there until you ask for it.</p>
-        <p>It is still new to other people&rsquo;s computers, and it keeps changing.</p>
+        <p>It is still new to other people's computers, and it keeps changing.</p>
       </div>
       <div class="panel">
         <h2 style="font-size:1.0625rem;letter-spacing:0">In short</h2>
@@ -92,22 +94,22 @@
           <div><b>Only one runs as root</b><span><code>trindle-admin</code>, through pkexec. It checks every argument and reads passwords from standard input only.</span></div>
         </div>
       </div>
-      <div class="panel reveal d1"><figure><img class="fig" src="img/windows-ring-cut.png" alt="The ring open with four windows running: Firefox, Thunderbird, Folders and Writer, each a tab along the bottom of the outer ring" loading="lazy" width="626" height="626"><figcaption>The ring with four windows open, drawn by the ring&rsquo;s own code. Each window is a tab along the bottom of the outer ring.</figcaption></figure></div>
+      <div class="panel reveal d1"><figure><img class="fig" src="img/windows-ring-cut.png" alt="The ring open with four windows running: Firefox, Thunderbird, Folders and Writer, each a tab along the bottom of the outer ring" loading="lazy" width="626" height="626"><figcaption>The ring with four windows open, drawn by the ring's own code. Each window is a tab along the bottom of the outer ring.</figcaption></figure></div>
     </div>
     <div class="grid g2 reveal" style="margin-top:1.25rem">
       <div class="panel lift"><h3>What it is built on</h3><div class="rows">
-          <div><b>Debian stable</b><span>Underneath, with apt and Flatpak behaving as they do anywhere else, and following Debian&rsquo;s own release programme.</span></div>
-          <div><b>A rolling desktop</b><span>Trindle on top arrives as ordinary updates from Trindle&rsquo;s own source, so you do not wait for a new version of the whole system.</span></div>
-          <div><b>Parts used</b><span>PipeWire, NetworkManager, BlueZ, CUPS and snapper, with Trindle&rsquo;s own Rust toolkit for windows and Smithay for the compositor.</span></div>
+          <div><b>Debian stable</b><span>Underneath, with apt and Flatpak behaving as they do anywhere else, and following Debian's own release programme.</span></div>
+          <div><b>A rolling desktop</b><span>Trindle on top arrives as ordinary updates from Trindle's own source, so you do not wait for a new version of the whole system.</span></div>
+          <div><b>Parts used</b><span>PipeWire, NetworkManager, BlueZ, CUPS and snapper, with Trindle's own Rust toolkit for windows and Smithay for the compositor.</span></div>
         </div></div>
-      <div class="panel lift"><h3>What it deliberately is not</h3><p style="color:var(--muted-fg)">There is no X11 session and no GNOME session, and Trindle&rsquo;s own windows use neither GTK nor Qt. Xwayland is installed for older programs written for X11, and Trindle&rsquo;s compositor starts it with the desktop, never at the login screen. Nothing is installed with recommended extras, and every package is listed in the README.</p></div>
+      <div class="panel lift"><h3>What it deliberately is not</h3><p style="color:var(--muted-fg)">There is no X11 session and no GNOME session, and Trindle's own windows use neither GTK nor Qt. Xwayland is installed for older programs written for X11, and Trindle's compositor starts it with the desktop, never at the login screen. Nothing is installed with recommended extras, and every package is listed in the README.</p></div>
     </div>
   </div>
 </section>
 <section class="band reveal"><div class="wrap"><div class="band-in"><div class="band-media"><div class="panel"><figure><img class="fig" src="img/settings-appearance.jpg" alt="Settings on the Appearance page: a list of pages down the side, and cards for the theme, the highlight colours, the font, the icon shapes, the pointer and reading the screen" loading="lazy" width="1000" height="620"><figcaption>Settings: one window, a list of pages down the side, switches and choices on the right.</figcaption></figure></div></div><div class="band-words">
   <div class="holder">
     <h2>Ordinary underneath</h2>
-    <p class="lead" style="color:var(--fg)">Underneath the desktop are standard parts. The snapshots are snapper&rsquo;s, the sound is PipeWire, the apps come from Flathub as Flatpaks, as AppImages or from Debian, and your settings are plain files in your home folder.</p>
+    <p class="lead" style="color:var(--fg)">Underneath the desktop are standard parts. The snapshots are snapper's, the sound is PipeWire, the apps come from Flathub as Flatpaks, as AppImages or from Debian, and your settings are plain files in your home folder.</p>
   </div>
 </div></div></div></section>
 
@@ -192,7 +194,7 @@
       <div>
         <h3>Try to accept our cookies</h3>
         <div class="cookie-game"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><button class="cookie-btn" type="button" tabindex="-1"><span>Accept all cookies</span></button></div>
-        <p class="foot-small">Spoiler: there isn&rsquo;t one. We don&rsquo;t do cookies, so there is nothing to accept.</p>
+        <p class="foot-small">Spoiler: there isn't one. We don't do cookies, so there is nothing to accept.</p>
         <p class="foot-small foot-vow"><b>Your privacy is paramount.</b></p>
       </div>
       <div>
