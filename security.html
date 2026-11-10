@@ -18,8 +18,8 @@
 <meta property="og:image:alt" content="The Trindle ring inside glowing gold rings, with the words No bar, No dock, No menu">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=20261127">
-<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/security.html#page","url":"https://trindle.org/security.html","name":"Trindle: programs in boxes, and you in charge","description":"Apps, downloaded files and AI coding agents run in sealed boxes, every permission starts off, and an assistant can run Trindle only inside a fence.","inLanguage":"en-GB","dateModified":"2026-11-08","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
+<link rel="stylesheet" href="style.css?v=20261128">
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/security.html#page","url":"https://trindle.org/security.html","name":"Trindle: programs in boxes, and you in charge","description":"Apps, downloaded files and AI coding agents run in sealed boxes, every permission starts off, and an assistant can run Trindle only inside a fence.","inLanguage":"en-GB","dateModified":"2026-11-10","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -78,9 +78,13 @@
     <div class="split">
       <div class="panel reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 7v10l8 4 8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg><h2 style="font-size:1.6rem">The boxes</h2></div>
-        <p>A box is a fence around a program, built with bubblewrap, the same tool Flatpak uses. A .deb you open goes into a folder of its own with its own libraries, and runs inside a box. There is no &ldquo;install for the whole computer&rdquo; choice. Remove the app and its folder and private home go with it, leaving nothing behind.</p>
-        <p>A new box has no network, no sound, no microphone, no older-style windows and none of your files. It sees the system folders read only, its own private home folder, and a screen connection of its own. Nothing else is given until you allow it.</p>
-        <p>A .deb that holds a driver or a background service is refused in plain words, because it cannot work in a box. Boxes are patched: when Debian fixes a package a box carries, a daily timer replaces the box&rsquo;s copy, on mains power only.</p>
+        <p class="lead" style="color:var(--fg)">A box is a fence around a program, built with bubblewrap, the same tool Flatpak uses.</p>
+        <div class="rows">
+          <div><b>Each .deb apart</b><span>It goes into a folder of its own with its own libraries and runs in a box. There is no &ldquo;install for the whole computer&rdquo;. Remove the app and everything of it goes.</span></div>
+          <div><b>Starts closed</b><span>A new box has no network, sound, microphone, older-style windows or files of yours. System folders are read only. Nothing else is given until you allow it.</span></div>
+          <div><b>Refused if it cannot fit</b><span>A .deb that holds a driver or a background service is turned down in plain words.</span></div>
+          <div><b>Kept patched</b><span>When Debian fixes a package a box carries, a daily timer replaces the copy, on mains power only.</span></div>
+        </div>
         <div class="note info" style="margin-top:1rem"><b>Restricted by default, not sealed off.</b> Boxes still share the screen and the graphics card with everything else.</div>
       </div>
       <div class="panel reveal d1">
@@ -172,9 +176,12 @@
       <div class="reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><h2 style="font-size:1.6rem">An assistant, inside a fence</h2></div>
         <p class="lead">Trindle has a small MCP server, the standard way an AI assistant such as Claude talks to programs on your computer. It runs on your computer only and is not a network service.</p>
-        <p>It is built in and does nothing until an assistant is pointed at it: your assistant has to be told, in its own settings, to start <code>trindle-mcp</code>. Leave that out and it is never connected. Settings has no switch for it.</p>
-        <p>Before each change it takes a snapshot of Trindle&rsquo;s settings, every Flathub app&rsquo;s permissions and the list of apps, and before installing or removing an app it takes a whole-system snapshot too. It can never touch the core, the compositor or the packaging system, switch snapshots off, or change its own rules. The list of things it can do is built in, so a tool not on it does not exist.</p>
-        <p>It reads the live computer, not your personal files: no tool opens documents, photos or your home folder. Everything it reads, such as window titles and log lines, is passed on as data it must never obey, so text planted by a stranger cannot pass for an instruction. It never sends Wi-Fi passwords: you type them yourself.</p>
+        <div class="rows">
+          <div><b>Off until you say</b><span>It does nothing until your assistant is told, in its own settings, to start <code>trindle-mcp</code>. Settings has no switch for it.</span></div>
+          <div><b>A snapshot first</b><span>Before each change it saves Trindle&rsquo;s settings, every Flathub app&rsquo;s permissions and the list of apps. Before an install or removal it takes a whole-system snapshot too.</span></div>
+          <div><b>Out of bounds</b><span>It can never touch the core, the compositor or the packaging system, switch snapshots off, or change its own rules. A tool not on its built-in list does not exist.</span></div>
+          <div><b>Not your files</b><span>No tool opens documents, photos or your home folder. What it reads, such as window titles, is treated as data it must never obey. It never sends Wi-Fi passwords.</span></div>
+        </div>
         <p style="color:var(--muted-fg)">Nothing needs an assistant. Everything can still be done by hand, offline, with the mouse and keyboard.</p>
       </div>
     </div>
@@ -292,7 +299,7 @@
     <p class="foot-small foot-owner">&copy; The Trindle project</p>
     <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
     </div>
-    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-08">8 November 2026</time></p>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-10">10 November 2026</time></p>
   </div>
 </footer>
 
