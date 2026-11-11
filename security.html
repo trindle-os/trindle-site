@@ -180,7 +180,7 @@
         <p class="lead">Trindle has a small MCP server, the standard way an AI assistant such as Claude talks to programs on your computer. It runs on your computer only and is not a network service.</p>
         <div class="rows">
           <div><b>Off until you say</b><span>It does nothing until your assistant is told, in its own settings, to start <code>trindle-mcp</code>. Settings has no switch for it.</span></div>
-          <div><b>A snapshot first</b><span>Before each change it saves Trindle's settings, every Flathub app's permissions and the list of apps. Before an install, update or removal it takes a whole-system snapshot too.</span></div>
+          <div><b>A snapshot first</b><span>Before each change it saves Trindle's settings, every Flathub app's permissions and the list of apps. On a computer set up by the Trindle Installer, it takes a whole-system snapshot before it installs or removes an app too. Undo puts back settings and permissions only, not an app install.</span></div>
           <div><b>Out of bounds</b><span>It can never touch the core, the compositor or the packaging system, switch snapshots off, or change its own rules. A tool not on its built-in list does not exist.</span></div>
           <div><b>Not your files</b><span>No tool opens documents, photos or your home folder. What it reads, such as window titles, is treated as data it must never obey. It never sends Wi-Fi passwords.</span></div>
         </div>
@@ -193,7 +193,7 @@
 <section id="locked">
   <div class="wrap">
     <div class="sell-three">
-      <div class="panel reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>Snapshots before and after</b><p>A snapshot is taken before and after every software change, and the start-up menu lists the last twelve, so you can start from one even if the computer will not start. This needs the Btrfs disk the Trindle Installer makes.</p><p style="margin-top:.75rem"><a class="btn btn-quiet" href="safety.html">The safety net</a></p></div>
+      <div class="panel reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>Snapshots before and after</b><p>A snapshot is taken before and after every package change, and the start-up menu lists the last twelve, so you can start from one even if the computer will not start. This needs the Btrfs disk the Trindle Installer makes.</p><p style="margin-top:.75rem"><a class="btn btn-quiet" href="safety.html">The safety net</a></p></div>
       <div class="panel reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A daily copy of your files</b><p>A snapshot of your home folder is taken each day and kept for a week by default, or three days, two weeks or a month. One switch turns it off. Opening an older copy from Folders is still being built.</p></div>
       <div class="panel reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A locked disk, or not</b><p>The installer asks first whether to encrypt the disk: not at all (the starting choice), with a password typed at every start, or with this computer's TPM chip, which needs a TPM 2 chip. Encryption needs a computer that starts with UEFI. There is no separate recovery key: the password is the way back in.</p><p style="margin-top:.75rem"><a class="btn btn-quiet" href="safety.html#encryption">The three choices</a></p></div>
     </div>
@@ -271,9 +271,9 @@
       </div>
     </div>
     <section class="bm-panel" aria-labelledby="bm-title">
-      <a class="bm-mark" href="https://buildmorphic.com" target="_blank" rel="noopener" aria-label="Buildmorphic (opens in a new tab)"><img src="img/buildmorphic-logo.svg" alt="" width="64" height="64"></a>
+      <a class="bm-mark" data-buildmorphic="mark" href="https://buildmorphic.com" target="_blank" rel="noopener" aria-label="Buildmorphic (opens in a new tab)"><img src="img/buildmorphic-logo.svg" alt="" width="64" height="64"></a>
       <div class="bm-text">
-        <h3 id="bm-title">The Trindle community on Buildmorphic</h3>
+        <h3 id="bm-title" data-buildmorphic="title">The Trindle community on Buildmorphic</h3>
         <p>Join in, read the known bugs and the roadmap, or report a bug.</p>
       </div>
       <nav class="bm-links" aria-label="Trindle community">
@@ -306,6 +306,6 @@
 </footer>
 
 <script src="home.js" defer></script>
-<script src="https://buildmorphic.com/join/trindle/link.js" defer></script>
+<script src="https://buildmorphic.com/join/trindle/link.js" defer data-buildmorphic="script"></script>
 </body>
 </html>

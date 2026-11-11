@@ -18,7 +18,7 @@
 - [News | Trindle](https://trindle.org/news/): Trindle writing: releases, changes of mind, and the odd nice picture.
 - [What is coming next | Trindle](https://trindle.org/next.html): The plans after the first release: help from a distance, a screen you can share with one click, and a health check for a computer you look after.
 - [Privacy | Trindle](https://trindle.org/privacy.html): Trindle runs on your own computer and sends nothing about you. This site sets no cookies and runs no analytics.
-- [Trindle: a photograph before every change](https://trindle.org/safety.html): A system snapshot is taken before and after every install, update and removal, with its own entry in the boot menu if the computer will not start.
+- [Trindle: a photograph before every package change](https://trindle.org/safety.html): A system snapshot is taken before and after every package install, update and removal, with its own entry in the boot menu if the computer will not start.
 - [Trindle: programs in boxes, and you in charge](https://trindle.org/security.html): Apps, downloaded files and AI coding agents run in sealed boxes, every permission starts off, and an assistant can run Trindle only inside a fence.
 - [Thanks](https://trindle.org/thanks.html): The projects Trindle is built on, with a link to each and a way to donate to those that accept it.
 - [A look round Trindle](https://trindle.org/tour.html): The ring, its quick panels, notifications, Settings, Apps and the rest, with a picture of each.
