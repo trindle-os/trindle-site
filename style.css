@@ -963,3 +963,14 @@ a, button, summary { touch-action: manipulation; }
 @media (prefers-reduced-motion: reduce) { .video-play svg { transition: none; } }
 @media (max-width: 40rem) { .video-band { padding-top: 2.5rem; } .video-play svg { width: 3.25rem; height: 3.25rem; right: 4%; bottom: 6%; } }
 .video-play:focus-visible { outline-offset: -6px; }
+
+.safeguards .panel { display: flex; flex-direction: column; }
+.safeguards figure { margin: 1rem 0 1rem; }
+.safeguards .fig .t, .safeguards .fig .t-on { font-size: 16px; }
+.safeguards .fig .t-dim { font-size: 14px; }
+.safeguards .rows { margin-top: .5rem; }
+.safeguards .rows div { grid-template-columns: 1fr; gap: .15rem; }
+.safeguards .muted-line { margin: auto 0 0; padding-top: 1rem; color: var(--muted-fg); font-size: .9375rem; }
+.sell-more { text-align: center; margin: 1.75rem 0 0; color: var(--muted-fg); }
+.sell-more a { color: var(--fg); font-weight: 600; }
+@media (max-width: 40rem) { .safeguards .fig .t, .safeguards .fig .t-on { font-size: 24px; } .safeguards .fig .t-dim { font-size: 20px; } }

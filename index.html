@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261136">
+<link rel="stylesheet" href="style.css?v=20261139">
 <script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trindle.org/#org","name":"Trindle","url":"https://trindle.org/","logo":"https://trindle.org/img/trindle.svg","email":"distro@trindle.org","sameAs":["https://github.com/trindle-os"]},{"@type":"WebSite","@id":"https://trindle.org/#site","url":"https://trindle.org/","name":"Trindle","inLanguage":"en-GB","publisher":{"@id":"https://trindle.org/#org"}},{"@type":"WebPage","@id":"https://trindle.org/#page","url":"https://trindle.org/","name":"Trindle","description":"No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.","inLanguage":"en-GB","dateModified":"2026-11-11","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
@@ -95,6 +95,38 @@
   </div>
 </section>
 
+<section class="sell-band safeguards" aria-labelledby="safe-title">
+  <div class="wrap">
+    <div class="sell-head">
+      <h2 id="safe-title">Hard to break, easy to undo</h2>
+      <p>Trindle locks its own system files, and takes a snapshot around every change.</p>
+    </div>
+    <div class="grid g2">
+      <div class="panel reveal">
+        <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><h3>Locked system files</h3></div>
+        <figure><svg class="fig" viewBox="0 0 540 156" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lockfig"><title id="lockfig">Programs and system files are locked while the computer runs. Your files, settings and apps stay open as before.</title><text class="t-dim" x="10" y="20" font-size="13">Locked while the computer runs</text><rect x="10" y="30" width="520" height="40" rx="10" class="chip-on"/><text class="t-on" x="30" y="56" font-size="15">Programs and system files</text><text class="t-dim" x="10" y="102" font-size="13">Open, as before</text><rect x="10" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="26" y="135" font-size="14">Your files</text><rect x="187" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="203" y="135" font-size="14">Settings</text><rect x="364" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="380" y="135" font-size="14">Your apps</text></svg></figure>
+        <div class="rows">
+          <div><b>Locked while you work</b><span>Programs and system files are read-only while the computer runs, so an accident, or malware without administrator rights, cannot change them.</span></div>
+          <div><b>Open for one change</b><span>They unlock for a single install or update, then lock again straight away, even if the power goes off.</span></div>
+          <div><b>Nothing to relearn</b><span>apt, Flatpak, your apps, settings and files all work as before.</span></div>
+        </div>
+        <p class="muted-line">The owner can still unlock them. This guards against accidents and malware, not against you.</p>
+      </div>
+      <div class="panel reveal d1">
+        <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><h3>A snapshot around every change</h3></div>
+        <figure><svg class="fig" viewBox="0 0 540 156" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="snapfig"><title id="snapfig">A line of snapshots: one before a software change, one after it, and another before the next change.</title><path d="M40 78h470" class="line" stroke-width="2"/><path d="M70 78h260" class="line-on" stroke-width="3"/><circle cx="70" cy="78" r="11" class="chip-on"/><text class="t-dim" x="70" y="112" text-anchor="middle" font-size="13">Before</text><circle cx="200" cy="78" r="8" class="chip"/><text class="t-dim" x="200" y="112" text-anchor="middle" font-size="13">Update</text><circle cx="330" cy="78" r="11" class="chip-on"/><text class="t-dim" x="330" y="112" text-anchor="middle" font-size="13">After</text><circle cx="460" cy="78" r="11" class="chip-on"/><text class="t-dim" x="460" y="112" text-anchor="middle" font-size="13">Before</text><text class="t" x="200" y="46" text-anchor="middle" font-size="15">a software change</text><text class="t-dim" x="270" y="144" text-anchor="middle" font-size="13">go back to any of them from the boot menu</text></svg></figure>
+        <div class="rows">
+          <div><b>Before and after</b><span>A snapshot of the whole system is taken before and after every install, update and removal, and again when the computer starts.</span></div>
+          <div><b>Go back, even from a dead start</b><span>Pick one from the boot menu, even when the computer will not start. About ten are kept.</span></div>
+          <div><b>Your files stay apart</b><span>Snapshots cover programs and system settings, not your documents. One copy a day of your home folder is there if you switch it on in Settings.</span></div>
+        </div>
+        <p class="muted-line">Needs the Btrfs disk format, which the Trindle Installer sets up.</p>
+      </div>
+    </div>
+    <p class="sell-more"><a href="safety.html">How the safety net works</a> and <a href="security.html">what is locked</a></p>
+  </div>
+</section>
+
 <section class="video-band" aria-labelledby="video-title">
   <div class="wrap">
     <h2 class="sr-only" id="video-title">Watch the video</h2>
@@ -122,7 +154,7 @@
       </figure>
       <figure class="show-card reveal d1">
         <img src="img/snapshots-card-cut.png" width="394" height="467" loading="lazy" alt="Settings, Snapshots: a list of five snapshots, each with a restore arrow and a bin.">
-        <figcaption><b>A photograph before every change</b><span>A snapshot before and after every install, update and removal, with old ones in the boot menu.</span></figcaption>
+        <figcaption><b>A photograph before every change</b><span>A system snapshot before and after every install, update and removal, with old ones in the boot menu.</span></figcaption>
       </figure>
     </div>
     <div class="sell-four">
