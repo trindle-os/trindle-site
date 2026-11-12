@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trindle: a photograph before every package change</title>
-<meta name="description" content="A system snapshot is taken before and after every package install, update and removal, with its own entry in the boot menu if the computer will not start.">
+<title>Trindle: a snapshot before every package change</title>
+<meta name="description" content="A system snapshot is taken before and after every package install, update and removal, with its own entry in the boot menu if the computer won't start.">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#09090b">
 <link rel="canonical" href="https://trindle.org/safety.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Trindle">
-<meta property="og:title" content="Trindle: a photograph before every package change">
-<meta property="og:description" content="A system snapshot is taken before and after every package install, update and removal, with its own entry in the boot menu if the computer will not start.">
+<meta property="og:title" content="Trindle: a snapshot before every package change">
+<meta property="og:description" content="A system snapshot is taken before and after every package install, update and removal, with its own entry in the boot menu if the computer won't start.">
 <meta property="og:url" content="https://trindle.org/safety.html">
 <meta property="og:image" content="https://trindle.org/img/share-ring.jpg">
 <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css?v=20261139">
-<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/safety.html#page","url":"https://trindle.org/safety.html","name":"Trindle: a photograph before every package change","description":"A system snapshot is taken before and after every package install, update and removal, with its own entry in the boot menu if the computer will not start.","inLanguage":"en-GB","dateModified":"2026-11-11","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/safety.html#page","url":"https://trindle.org/safety.html","name":"Trindle: a snapshot before every package change","description":"A system snapshot is taken before and after every package install, update and removal, with its own entry in the boot menu if the computer won't start.","inLanguage":"en-GB","dateModified":"2026-11-12","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -68,7 +68,7 @@
       </div>
       <div class="stats" style="grid-template-columns:1fr">
         <div class="stat"><b>Before and after</b><span>A system snapshot around every package install, update and removal</span></div>
-        <div class="stat"><b>From the boot menu</b><span>Start from an old snapshot even when the computer will not start</span></div>
+        <div class="stat"><b>From the boot menu</b><span>Start from an old snapshot even when the computer won't start</span></div>
         <div class="stat"><b>One file</b><span>Your apps, their data and your settings, carried to another computer</span></div>
       </div>
     </div>
@@ -81,15 +81,15 @@
     <div class="split">
       <div class="panel reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/></svg><h2 style="font-size:1.6rem">Snapshots</h2></div>
-        <p>When the system is on Btrfs, a snapshot of it is taken before and after every package change: installing, updating or removing a Debian package, whether from Apps or typed at the terminal. Flatpak apps and ordinary Settings changes are not part of it. The work is done by snapper, the same tool other Linux systems use for this.</p>
-        <p>Settings, Snapshots lists them all. The camera button takes one now, which is what you want before trying something you may wish to undo.</p>
-        <div class="note info" style="margin-top:1rem"><b>Your files are not in them.</b> When Trindle was put on with the Trindle Installer, your home folder has a part of the disk of its own and is left out of the snapshots, so restoring never touches your documents. Settings, Snapshots says so plainly if this computer is laid out differently. The home folder has snapshots of its own, switched on from the first start: one a day, kept for a week unless you choose another time, so an older version of a file can be had back from Folders.</div>
+        <p>When the system is on Btrfs, Trindle takes a snapshot of it before and after every package change: installing, updating or removing a Debian package, whether from Apps or typed at the terminal. Flatpak apps and ordinary Settings changes are not part of it. The work is done by snapper, the same tool other Linux systems use for this.</p>
+        <p>Settings, Snapshots lists them all. The camera button takes one now, which is what you want before you try something you may want to undo.</p>
+        <div class="note info" style="margin-top:1rem"><b>Your files are not in them.</b> If you installed Trindle with the Trindle Installer, your home folder has its own part of the disk and is left out of the snapshots, so restoring never touches your documents. Settings, Snapshots tells you plainly if this computer is laid out differently. On a new install, your home folder has snapshots of its own, switched on from the first start: one a day, kept for a week unless you choose another time. You can switch them off in Settings.</div>
       </div>
       <div class="panel reveal d1">
         <h3>Putting one back</h3>
         <ol class="steps">
           <li><b>Open Settings and choose Snapshots.</b><span>Every snapshot is listed with what was happening when it was taken.</span></li>
-          <li><b>Press the restore arrow beside the one from before things went wrong.</b><span>It asks a second time to be sure.</span></li>
+          <li><b>Press the restore arrow beside the one from before things went wrong.</b><span>Trindle asks a second time, to be sure.</span></li>
           <li><b>Restart.</b><span>The system is as it was then. What it was a moment ago is set aside, not deleted, so you can change your mind.</span></li>
         </ol>
       </div>
@@ -102,24 +102,24 @@
       <div class="panel"><figure><svg class="fig" viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labeledby="bootfig"><title id="bootfig">The boot menu, listing Trindle, Trindle snapshots, advanced options and another operating system.</title><rect x="0" y="0" width="460" height="250" rx="14" class="panel-fill"/><text class="t-dim" x="20" y="34">Choose what to start</text><rect x="20" y="56" width="420" height="34" rx="10" class="chip-on"/><text class="t-on" x="40" y="78" font-size="13">Trindle</text><rect x="20" y="100" width="420" height="34" rx="10" class="chip"/><text class="t" x="40" y="122" font-size="13">Trindle snapshots</text><rect x="20" y="144" width="420" height="34" rx="10" class="chip"/><text class="t" x="40" y="166" font-size="13">Advanced options</text><rect x="20" y="188" width="420" height="34" rx="10" class="chip"/><text class="t" x="40" y="210" font-size="13">Windows Boot Manager</text></svg><figcaption>Other systems on the disk keep their place in the boot menu, and the snapshots have an entry of their own.</figcaption></figure></div>
       <div class="panel">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg><h3>If the computer will not start</h3></div>
-        <p>Hold Esc as the computer starts to bring up the boot menu, which stays out of sight when Trindle is the only system on the disk. Choose <b style="color:var(--fg)">Trindle snapshots</b>, then a snapshot. It starts as it was then, with a writable layer held in memory: nothing you do there is kept, so you can look round safely. If it is the one you want, restore it in Settings and it becomes the real system.</p>
+        <p>Hold Esc as the computer starts to bring up the boot menu. The menu stays hidden when Trindle is the only system on the disk. Choose <b style="color:var(--fg)">Trindle snapshots</b>, then a snapshot. The computer starts as it was then, with a writable layer held in memory. Nothing you do there is kept, so you can look round safely. If it is the one you want, restore it in Settings and it becomes the real system.</p>
         <p>Other systems on the disk keep their own entries in the same menu, so a computer that dual boots still boots both.</p>
-        <div class="note info"><b>Or drop to text.</b> Ctrl, Alt and F2 gives an ordinary text login if the login screen itself fails. Ctrl, Alt and F7 goes back.</div>
+        <div class="note info"><b>Or switch to a text screen.</b> Ctrl, Alt and F2 gives you an ordinary text login if the login screen itself fails. Ctrl, Alt and F7 takes you back.</div>
       </div>
     </div>
   </div>
 </section>
-<section class="band reveal strip"><div class="wrap"><div class="band-in"><div class="band-media"><figure class="shot close"><img src="img/apps-move-your-apps.jpg" alt="Apps on its Move your apps page: switches for what to take, a button to make the backup, and a place to choose a backup file to put back" loading="lazy" width="1278" height="741"></figure><p style="font-size:1rem;color:var(--muted-fg);margin-top:.6rem">Move your apps sits in Apps' own list, under Software sources.</p></div><div class="band-words">
+<section class="band reveal strip"><div class="wrap"><div class="band-in"><div class="band-media"><figure class="shot close"><img src="img/apps-move-your-apps.jpg" alt="Apps on its Move your apps page: switches for what to take, a button to make the backup, and a place to choose a backup file to put back" loading="lazy" width="1278" height="741"></figure><p style="font-size:1rem;color:var(--muted-fg);margin-top:.6rem">Move your apps is in Apps' own list, under Software sources.</p></div><div class="band-words">
   <div class="split">
     <div class="holder" style="max-width:none">
       <h2>Take your desktop with you</h2>
-      <p class="lead" style="color:var(--fg)">In Apps, choose <b>Move your apps</b>. Switch on what to take: your apps, their own data, your AppImages and Trindle's settings. One backup file is made in your home folder. Copy it to a USB stick or to cloud storage.</p>
-      <p style="color:var(--fg)">On the other computer, open the same page, press Choose a backup file and pick the file. The apps are installed fresh from Flathub, and their data and your settings are put back. Log out and back in to see every setting.</p>
-      <p style="color:var(--fg)">Trindle Flat makes the same kind of file, ending in .fmpack, so it can open a Trindle backup, and a backup or app list made by Flat can be chosen here.</p>
+      <p class="lead" style="color:var(--fg)">In Apps, choose <b>Move your apps</b>. Switch on what to take: your apps, their own data, your AppImages and Trindle's settings. Trindle makes one backup file in your home folder. Copy it to a USB stick or to cloud storage.</p>
+      <p style="color:var(--fg)">On the other computer, open the same page, press Choose a backup file and pick the file. Trindle installs the apps fresh from Flathub and puts back their data and your settings. Log out and back in to see every setting.</p>
+      <p style="color:var(--fg)">Trindle Flat makes the same kind of file, ending in .fmpack, It can open a Trindle backup, and you can choose a backup or app list made by Flat here.</p>
     </div>
     <div class="grid" style="gap:.75rem">
       <div class="panel"><h3>What goes in</h3><ul><li>The list of your Flatpak apps</li><li>Those apps' own settings and data</li><li>Your AppImages</li><li>Trindle's own settings</li></ul></div>
-      <div class="panel"><h3>What does not</h3><ul><li>Your documents, pictures and other files</li><li>Wi-Fi passwords</li><li>Your GitHub key</li></ul><p style="margin-top:.5rem">Copy those over yourself. Apps already on the other computer keep their own settings; only the apps it installs get theirs back.</p></div>
+      <div class="panel"><h3>What does not</h3><ul><li>Your documents, pictures and other files</li><li>Wi-Fi passwords</li><li>Your GitHub key</li></ul><p style="margin-top:.5rem">Copy those over yourself. Apps already on the other computer keep their own settings. Only the apps Trindle installs get their settings back.</p></div>
     </div>
   </div>
 </div></div></div></section>
@@ -127,18 +127,18 @@
 <section id="updates">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Why an update need not strand you</h2>
-      <p>Three kinds of update, each done in its own place, and each with a way back.</p>
+      <h2>Why an update won't leave you stranded</h2>
+      <p>There are three kinds of update. Each is done in its own place, and each has a way back.</p>
     </div>
     <div class="grid g3">
-      <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg><h3>Apps you installed</h3><p>Open Apps and choose Updates, then press the update button. Flatpak apps are installed for you alone, so a broken app is yours to remove and cannot stop the computer starting.</p></div>
-      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg><h3>Debian itself</h3><p>Apps, then Updates: one button fetches Debian's own updates and installs them. A snapshot is taken around it, so an update that breaks something can be put back. Debian's security fixes go in by themselves every day unless you switch off Check for updates in Settings, About this computer. No terminal, and nothing to type.</p></div>
-      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg><h3>Trindle</h3><p>Trindle comes from its own update source, apt.trindle.org, on the same Updates page as everything else: one button, with a snapshot around it. Some updates ask for a restart, and the page says when.</p></div>
+      <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg><h3>Apps you installed</h3><p>Open Apps and choose Updates, then press the update button. Flatpak apps are installed for you alone, so a broken app only affects you. You can remove it, and it can't stop the computer starting.</p></div>
+      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg><h3>Debian itself</h3><p>Open Apps, then Updates. One button fetches Debian's own updates and installs them. Trindle takes a snapshot around it, so you can put back an update that breaks something. Debian's security fixes go in by themselves every day unless you switch off Security updates in Settings, About this computer. You don't need a terminal or to type anything.</p></div>
+      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/></svg><h3>Trindle</h3><p>Trindle comes from its own update source, apt.trindle.org. You update it on the same Updates page as everything else, with one button and a snapshot around it. Some updates need a restart, and the page tells you when.</p></div>
     </div>
     <div class="grid g3 reveal" style="margin-top:1.25rem">
       <div class="panel span2">
-        <div class="note"><b>Kept through all of it.</b> Your settings, your apps and your files are in your own home folder, which updates to Debian and Trindle do not touch.</div>
-        <p style="margin-top:1rem;color:var(--muted-fg)">Trindle is built on Debian stable, which is 13 at the time of writing, and comes as a whole operating system.</p>
+        <div class="note"><b>Kept through all of it.</b> Your settings, your apps and your files are in your own home folder, and updates to Debian and Trindle don't touch it.</div>
+        <p style="margin-top:1rem;color:var(--muted-fg)">Trindle is built on Debian stable, which is version 13 at the time of writing, and comes as a whole operating system.</p>
       </div>
       <div class="panel" style="padding:1.1rem"><figure><img class="fig" src="img/settings-snapshots-list.jpg" alt="The Snapshots list: five snapshots, each with the day and time, what was happening, a restore arrow and a bin" loading="lazy" width="500" height="250"><figcaption>Settings, Snapshots: one taken before and one after each package change, a camera to take one now, and a restore arrow beside each.</figcaption></figure></div>
     </div>
@@ -151,17 +151,17 @@
       <div class="panel reveal">
         <h3>The two ways to unlock it</h3>
         <div class="rows">
-          <div><b>A password</b><span>You type it each time the computer starts, before anything else appears. Nothing but that password opens the disk, and nothing else needs to be trusted.</span></div>
-          <div><b>This computer's chip</b><span>The TPM chip opens the disk, so nothing is typed at start-up and the computer goes straight to the login screen. The password you chose is still your way back in if the board is replaced or the chip refuses.</span></div>
+          <div><b>A password</b><span>You type it every time the computer starts, before anything else appears. Only that password opens the disk, so you don't have to trust anything else.</span></div>
+          <div><b>This computer's chip</b><span>The TPM chip opens the disk, so you type nothing at start-up and the computer goes straight to the login screen. The password you chose is still your way back in if the board is replaced or the chip refuses to open the disk.</span></div>
           <div><b>Neither</b><span>You can leave the disk unlocked. Anyone who takes the drive out can read everything on it.</span></div>
         </div>
-        <p style="margin-top:.9rem;color:var(--muted-fg)">The installer can suggest a passphrase if you would rather not invent one. No password is ever refused: a bar shows how strong the one you typed is and roughly how long a computer would take to guess it. It is asked for twice, so a typo cannot lock you out.</p>
+        <p style="margin-top:.9rem;color:var(--muted-fg)">The installer can suggest a passphrase if you would rather not make one up. It never refuses a password. A bar shows how strong your password is and roughly how long a computer would take to guess it. The installer asks for the password twice, so a typing mistake can't lock you out.</p>
       </div>
       <div class="reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><h2 style="font-size:1.6rem">A disk nobody else can read</h2></div>
-        <p class="lead">The Trindle Installer offers to encrypt the part of the disk Trindle goes on, where the system and your files live, using LUKS, the standard Linux way of doing it. An encrypted disk cannot be read by anyone who takes it out of this computer.</p>
-        <p>This is the one choice that cannot be changed afterwards without installing again, so it is worth a moment on the installer's Privacy page rather than pressing Next.</p>
-        <div class="note warn" style="margin-top:1rem"><b>Lose the password and the disk is gone.</b> There is no spare key and nobody can recover it for you. Write it down and keep it somewhere safe.</div>
+        <p class="lead">The Trindle Installer offers to encrypt the part of the disk Trindle goes on, where the system and your files live, using LUKS, the standard Linux method. If someone takes the disk out of this computer, they can't read it.</p>
+        <p>You can't change this choice afterwards without installing again, so take a moment on the installer's Privacy page instead of just pressing Next.</p>
+        <div class="note warn" style="margin-top:1rem"><b>If you lose the password, the disk is gone.</b> There is no spare key, and nobody can recover it for you. Write the password down and keep it somewhere safe.</div>
         <div class="panel enc-card" style="margin-top:1rem;padding:1.1rem"><figure><svg class="fig enc-fig" viewBox="0 0 600 318" xmlns="http://www.w3.org/2000/svg" role="img" aria-labeledby="encfig"><title id="encfig">The same disk twice: unlocked in this computer its files are there as you left them, locked or taken out its contents are unreadable.</title>
           <rect x="0.5" y="0.5" width="599" height="317" rx="14" class="panel-fill"/>
           <rect x="0.5" y="0.5" width="599" height="26" rx="14" class="plate"/>
@@ -184,7 +184,7 @@
             <text class="t-dim" x="82" y="86">Nothing on it can be read</text>
             <text class="t-dim" x="28" y="120" font-family="DejaVu Sans Mono, ui-monospace, monospace" font-size="12" letter-spacing="1.5">7b 2f a9 0c e4 51 d8 36 bb 9a 04 7e c3 18 6d f2</text><text class="t-dim" x="28" y="154" font-family="DejaVu Sans Mono, ui-monospace, monospace" font-size="12" letter-spacing="1.5">1c 88 5d f0 23 ae 6b 94 c7 12 3f d1 08 5a e7 30 9c</text><text class="t-dim" x="28" y="188" font-family="DejaVu Sans Mono, ui-monospace, monospace" font-size="12" letter-spacing="1.5">a4 09 6e b2 57 cc 31 8f 0d 75 e9 22 4b d6 10 87</text><text class="t-dim" x="28" y="222" font-family="DejaVu Sans Mono, ui-monospace, monospace" font-size="12" letter-spacing="1.5">5e d3 47 1b 90 fa 2c 68 b5 03 8e c6 71 24 df 39 0b</text><text class="t-dim" x="28" y="256" font-family="DejaVu Sans Mono, ui-monospace, monospace" font-size="12" letter-spacing="1.5">c2 7a 05 96 6f b8 41 0e da 53 27 e5 9b 14 68 f3</text><text class="t-dim" x="28" y="290" font-family="DejaVu Sans Mono, ui-monospace, monospace" font-size="12" letter-spacing="1.5">38 e1 5c 0a 84 d9 26 7d b3 4f 11 c8 60 a2 75 ef 09</text>
           </g>
-        </svg><figcaption>In this computer it is your disk as usual. Out of it, there is nothing on it anybody can read.</figcaption></figure></div>
+        </svg><figcaption>In this computer it is your disk as usual. Taken out of it, there is nothing on it that anybody can read.</figcaption></figure></div>
       </div>
     </div>
   </div>
@@ -197,11 +197,11 @@
       <p>Things put in because they were needed, not because they made a list look longer.</p>
     </div>
     <div class="grid g3">
-      <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><h3>A screen change undoes itself</h3><p>Change the screen size and Settings asks you to press Keep. Do nothing for fifteen seconds and it goes back, so a wrong choice never leaves you staring at nothing.</p></div>
-      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg><h3>The system disk is guarded</h3><p>Drives can erase a USB stick or another drive, and asks twice. For the disk the computer runs on it offers one change only: making room for a new partition, on Btrfs, after a snapshot.</p></div>
-      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v4M15 12v3"/></svg><h3>Changes that need root go through one helper</h3><p>Settings and Apps ask <code>trindle-admin</code>, through pkexec. It checks every argument it is given and reads passwords from standard input only.</p></div>
+      <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><h3>A screen change undoes itself</h3><p>When you change the screen size, Settings asks you to press Keep. If you do nothing for fifteen seconds, it goes back, so a wrong choice never leaves you staring at nothing.</p></div>
+      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg><h3>The system disk is guarded</h3><p>Drives can erase a USB stick or another drive, and it asks twice. For the disk the computer runs on, it offers only one change: making room for a new partition, on Btrfs, after a snapshot.</p></div>
+      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v4M15 12v3"/></svg><h3>Changes that need root go through one helper</h3><p>Settings and Apps ask <code>trindle-admin</code>, through pkexec. It checks every argument it is given, and it reads passwords only from standard input.</p></div>
       <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="4" width="12" height="16" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg><h3>The clipboard forgets</h3><p>A password copied from a password manager is never kept in the history, and the clipboard is emptied 30 seconds later. The rest of the history clears itself on the schedule you chose.</p></div>
-      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg><h3>A record of each session</h3><p>Kept in <code>.local/state/trindle/session.log</code> in your home folder, which is what to look at when something went wrong.</p></div>
+      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg><h3>A record of each session</h3><p>Trindle keeps it in <code>.local/state/trindle/session.log</code> in your home folder. Look there when something has gone wrong.</p></div>
       <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><h3>No account, no telemetry</h3><p>No account and nothing that tracks you. The update checks happen by themselves, and one switch in Settings, About this computer, turns them off. Everything the computer sends is listed on the <a href="privacy.html">privacy page</a>.</p></div>
     </div>
   </div>
@@ -212,9 +212,9 @@
     <div class="split">
       <div class="panel reveal">
         <h2 style="margin-bottom:.35rem">Ready to put it on a computer?</h2>
-        <p style="color:var(--muted-fg)">What you need, writing the image to a USB stick, and every question the Trindle Installer asks.</p>
+        <p style="color:var(--muted-fg)">Everything you need, how to write the image to a USB stick, and every question the Trindle Installer asks.</p>
         <div class="actions"><a class="btn btn-primary" href="install.html">How to install it</a></div>
-        <div style="margin-top:1.2rem"><div class="note warn"><b>Use at your own risk.</b> Trindle is provided as is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first.</div></div>
+        <div style="margin-top:1.2rem"><div class="note warn"><b>Use at your own risk.</b> Trindle is provided as it is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first.</div></div>
       </div>
       <figure class="shot close"><img src="img/installer-welcome.jpg" alt="The Trindle Installer's first page, with the mark at the start of a line of eight steps and boxes for language, keyboard and time" loading="lazy" width="920" height="600"></figure>
     </div>
@@ -288,7 +288,7 @@
     <p class="foot-small foot-owner">&copy; The Trindle project</p>
     <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
     </div>
-    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-11">11 November 2026</time></p>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-12">12 November 2026</time></p>
   </div>
 </footer>
 

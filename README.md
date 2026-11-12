@@ -15,7 +15,7 @@ Choose it if you want a site that loads fast, sets no cookies, loads one small s
 
 ## How it works
 
-<img src="docs/images/how-it-works.png" alt="Three steps from left to right: edit the pages, rebuild the Help guide with tools/help.sh, then publish a comment-free copy to GitHub Pages.">
+<img src="docs/images/how-it-works.png" alt="Three steps from left to right: edit the pages, rebuild the Help guide with the help script, then publish a comment-free copy to GitHub Pages.">
 
 ## Quick start
 
@@ -68,12 +68,7 @@ There is no build step, and `style.css` is the one style sheet. Two pages are ma
 
 ### Checking the pages
 
-Rebuild or check the Help guide:
-
-```sh
-sh tools/help.sh            # write help.html
-sh tools/help.sh --check    # say whether help.html is up to date
-```
+The script that rebuilds and checks the Help guide, `tools/help.sh`, is kept in the project's working copy and is not part of this repository.
 
 The Help pages are built by Help's docs builder, `trindle-help/tools/site/docs.rs`, in the Trindle Help repository. It checks banned words, em dashes, missing alt text, broken links, heading case and colour contrast:
 

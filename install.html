@@ -21,7 +21,7 @@
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css?v=20261139">
-<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/install.html#page","url":"https://trindle.org/install.html","name":"Put Trindle on a computer","description":"Write the image to a USB stick, look round before you change anything, and install in about three minutes.","inLanguage":"en-GB","dateModified":"2026-11-11","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/install.html#page","url":"https://trindle.org/install.html","name":"Put Trindle on a computer","description":"Write the image to a USB stick, look round before you change anything, and install in about three minutes.","inLanguage":"en-GB","dateModified":"2026-11-12","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -76,23 +76,23 @@
         <h2 style="font-size:1.0625rem;letter-spacing:0">What you need</h2>
         <div class="rows">
           <div><b>A computer</b><span>64-bit Intel or AMD.</span></div>
-          <div><b>Disk space</b><span>The installer needs a disk of at least 20 GB. Tested on a 30 GB disk.</span></div>
+          <div><b>Disk space</b><span>The installer needs a disk of at least 20 GB. It has been tested on a 30 GB disk.</span></div>
           <div><b>Memory</b><span>The installer needs at least 1 GB of memory.</span></div>
-          <div><b>Encryption</b><span>The installer will not encrypt the disk on a computer that starts the old BIOS way, only on one that starts with UEFI.</span></div>
-          <div><b>Windows</b><span>If Windows was left hibernated or in fast start-up, the installer will not shrink it or write to it.</span></div>
-          <div><b>A USB stick</b><span>Big enough for the image. Everything on it is replaced.</span></div>
-          <div><b>Time</b><span>Enough not to be rushed. Do not start it just before you need the machine.</span></div>
+          <div><b>Encryption</b><span>The installer can encrypt the disk only on a computer that starts with UEFI, not on one that starts the old BIOS way.</span></div>
+          <div><b>Windows</b><span>If Windows was left hibernated or in fast start-up, the installer won't shrink it or write to it.</span></div>
+          <div><b>A USB stick</b><span>A stick big enough for the image. Everything on it is replaced.</span></div>
+          <div><b>Time</b><span>Allow enough time so you aren't rushed. Don't start it just before you need the computer.</span></div>
         </div>
       </div>
     </div>
-    <div style="margin-top:1.25rem"><div class="note warn"><b>Use at your own risk.</b> Trindle is provided as is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first. The people who make Trindle are not responsible for any loss of data, damage to the computer or any other harm that comes from installing or using it. See sections 15 and 16 of the LICENSE file.</div></div>
+    <div style="margin-top:1.25rem"><div class="note warn"><b>Use at your own risk.</b> Trindle is provided as it is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first. The people who make Trindle are not responsible for any loss of data, damage to the computer or any other harm that comes from installing or using it. See sections 15 and 16 of the LICENSE file.</div></div>
     <div class="panel" style="margin-top:1.25rem">
       <h2 style="font-size:1.0625rem;letter-spacing:0">What is in the image</h2>
       <div class="rows">
         <div><b>Based on Debian</b><span>Trindle is based on Debian, and the image is the only way to install it.</span></div>
         <div><b>Firmware</b><span>The image includes firmware and drivers from Debian's non-free-firmware section, for Wi-Fi, Bluetooth, graphics and sound, and the NVIDIA detection tool from Debian's non-free section. None of it is free software.</span></div>
         <div><b>Source and licence</b><span>The source code is at <a href="https://github.com/trindle-os" target="_blank" rel="noopener">github.com/trindle-os<span class="sr-only"> (opens in a new tab)</span></a>. Trindle is under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU General Public License, version 3 or later<span class="sr-only"> (opens in a new tab)</span></a>.</span></div>
-        <div><b>Background calls</b><span>A fresh Trindle contacts two servers by itself: network-test.debian.org about every five minutes, and Flathub for the app catalogue shortly after it first starts. <a href="privacy.html">Privacy has the details.</a></span></div>
+        <div><b>Background calls</b><span>A fresh Trindle contacts two servers by itself: network-test.debian.org about every five minutes, and Flathub for the app catalogue shortly after it first starts. <a href="privacy.html">The privacy page has the details.</a></span></div>
         <div id="checksum"><b>Check the download</b><span>SHA-256: <code id="sha256">691ea2f7a0d9873510b6c0cbbdf9af64525a47aea457de3750700ff01e668150</code> <a id="signature" href="https://github.com/trindle-os/trindle/releases/latest/download/SHA256SUMS.sig">Signature</a></span></div>
       </div>
     </div>
@@ -109,13 +109,13 @@
       <div class="panel reveal">
         <ol class="steps">
           <li><b>Download the image.</b><span>One .iso file, from the <a href="get/">download page</a>, which also shows its SHA-256 and signature.</span></li>
-          <li><b>Write it to a USB stick.</b><span>With Impression, balenaEtcher or dd, below. Everything already on the stick is replaced.</span></li>
-          <li><b>Start the computer from the stick.</b><span>Plug it in, switch on and hold the key for the boot menu: F12 on many machines, F9 on others, Escape or F11 elsewhere. Trindle has not yet been tried with Secure Boot on. If the computer will not start from the stick, turn Secure Boot off in the firmware settings.</span></li>
+          <li><b>Write it to a USB stick.</b><span>Use Impression, balenaEtcher or dd, described below. Everything already on the stick is replaced.</span></li>
+          <li><b>Start the computer from the stick.</b><span>Plug it in, switch on and hold the key for the boot menu. That is F12 on many computers, F9 on others, and Escape or F11 elsewhere. We haven't tried Trindle with Secure Boot on yet. If the computer won't start from the stick, turn Secure Boot off in the firmware settings.</span></li>
           <li><b>Try Trindle.</b><span>It runs from the stick, with the ring, Apps and Settings all working. Nothing is written to the computer's own disk. Open the ring, look round, and decide.</span></li>
-          <li><b>Press Install Trindle.</b><span>It is the main button on the welcome window, and it sits among the favourites in the ring too. This is the Trindle Installer, and it still changes nothing until you press Install on its Ready page.</span></li>
+          <li><b>Press Install Trindle.</b><span>It is the main button on the welcome window, and it is among the favourites in the ring too. This starts the Trindle Installer, which still changes nothing until you press Install on its Ready page.</span></li>
         </ol>
       </div>
-      <div><div class="note warn" style="margin-top:1.1rem"><b>Read this before you write a USB stick.</b> Put it on a spare computer, or beside a system you can still start, and back up anything on the disk that matters to you.</div></div>
+      <div><div class="note warn" style="margin-top:1.1rem"><b>Read this before you write a USB stick.</b> Install it on a spare computer, or alongside a system you can still start, and back up anything on the disk that matters to you.</div></div>
     </div>
     <div class="grid g3" style="margin-top:1.25rem">
       <div class="panel lift reveal">
@@ -124,7 +124,7 @@
       </div>
       <div class="panel lift reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21V6"/><circle cx="12" cy="4" r="2"/><path d="M12 14l4-3V8"/><rect x="14" y="5" width="4" height="4" rx="1"/><path d="M12 17l-4-3V11"/><circle cx="8" cy="10" r="2"/></svg><h3>balenaEtcher</h3></div>
-        <p>On Windows, macOS or Linux. Flash from file, select target, Flash. It checks what it wrote afterwards, which is worth the extra minute.</p>
+        <p>Works on Windows, macOS or Linux. Choose Flash from file, select the target, then press Flash. It checks what it wrote afterwards, which is worth the extra minute.</p>
       </div>
       <div class="panel lift reveal d2">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg><h3>dd</h3></div>
@@ -139,7 +139,7 @@
 <section class="band reveal strip"><div class="wrap"><div class="band-in"><div class="band-media"><figure class="shot close"><img src="img/installer-welcome.jpg" alt="The Trindle Installer's first page, with the mark at the start of a line of eight steps and boxes for language, keyboard and time" loading="lazy" width="920" height="600"></figure></div><div class="band-words">
   <div class="holder" style="max-width:none">
     <h2>What the Trindle Installer asks</h2>
-    <p class="lead" style="color:var(--fg)">Four questions, then a summary written in sentences. The mark rolls one stop along its line for each step, so you can always see where you are and how much is left. Back works until the install starts, and nothing is written until you press Install on the Ready page and then press it again to confirm.</p>
+    <p class="lead" style="color:var(--fg)">The installer asks four questions, then shows a summary in sentences. The mark rolls one stop along its line at each step, so you can always see where you are and how much is left. The Back button works until the install starts. Nothing is written until you press Install on the Ready page and then press it again to confirm.</p>
   </div>
   <div class="panel" style="margin-top:1.25rem"><figure><img class="fig" src="img/installer-steps.jpg" alt="The line of steps at the top of the Trindle Installer, Welcome, Disk, Privacy, Password, You, Ready, Installing and Done, with the mark stopped at Privacy, the third" loading="lazy" width="920" height="130"><figcaption>The Trindle Installer marks where you are: the mark rolls one stop along the line for each step.</figcaption></figure></div>
 </div></div></div></section>
@@ -149,35 +149,35 @@
     <div class="grid g2">
       <div class="panel lift reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><h3>Language</h3></div>
-        <p>Choose it once and the keyboard and the time follow it, each still changeable. There is a box to type in so you can check the keyboard is really the one you meant before you rely on it for a password.</p>
+        <p>Choose it once and the keyboard and the time follow it. You can still change each one. There is a box to type in, so you can check the keyboard is really the one you meant before you rely on it for a password.</p>
       </div>
       <div class="panel lift reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/></svg><h3>The disk</h3></div>
-        <p>Use the whole disk, replacing everything on it. Or keep what is there, Windows or another Linux, and share the disk: a slider chooses how much room each side gets, and it says in plain words how much is left for what is there now and how much goes to Trindle.</p>
+        <p>You can use the whole disk, which replaces everything on it. Or you can keep what is there, Windows or another Linux, and share the disk. A slider chooses how much room each side gets, and the installer says in plain words how much is left for what is there now and how much goes to Trindle.</p>
         <p>Each disk is named by what is on it, so on a computer with two you pick the right one.</p>
       </div>
       <div class="panel lift reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 12h8M8 15h5"/></svg><h3>A swap file</h3></div>
         <figure class="shot close" style="margin-bottom:1rem"><img src="img/installer-swap.jpg" alt="The swap file card in the Trindle Installer: a swap file of 16 GB, switched on, with its note about hibernating and room to spare" loading="lazy" width="315" height="185"></figure>
-        <p>Offered the size of the computer's memory, on to begin with, and only made where the disk has plenty of room to spare. It is room to hibernate, keeping everything open with the power off, and somewhere to turn when memory runs short. It is kept out of the snapshots.</p>
+        <p>The installer offers a swap file the size of the computer's memory. It is on to begin with, and the installer makes it only where the disk has plenty of room to spare. It gives the computer room to hibernate, which keeps everything open while the power is off, and somewhere to turn when memory runs short. It is kept out of the snapshots.</p>
         <p>If Secure Boot is on, the installer says plainly that this computer can't hibernate, and that the swap file still helps when memory runs short.</p>
       </div>
       <div class="panel lift reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><h3>Whether to encrypt the disk</h3></div>
-        <p>A password you type before anything else appears, or this computer's TPM chip, which unlocks the disk itself so that, after the first start, nothing is typed at start-up. The first start still asks for the password once, while the chip learns the computer. The installer says which of the two this computer can do. Or leave it unencrypted. The password is asked for twice and there is a button that suggests a passphrase.</p>
-        <p>At each start the password is typed on the keyboard you chose under Language, and the box has an eye to show what you typed; Tab does the same.</p>
+        <p>You can choose a password that you type before anything else appears, or this computer's TPM chip. The chip unlocks the disk itself, so after the first start you type nothing at start-up. The first start still asks for the password once, while the chip learns the computer. The installer says which of the two this computer can do. Or you can leave the disk unencrypted. The installer asks for the password twice, and a button suggests a passphrase.</p>
+        <p>At each start you type the password on the keyboard you chose under Language. The box has an eye to show what you typed, and Tab does the same.</p>
       </div>
       <div class="panel lift reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v4M15 12v3"/></svg><h3>You</h3></div>
-        <p>Your name, the name you sign in with, a name for the computer, and your password twice. Then a Ready page that says the whole plan back to you in sentences, and nothing has been changed yet.</p>
+        <p>Enter your name, the name you sign in with, a name for the computer, and your password twice. Then a Ready page tells you the whole plan in sentences. Nothing has been changed yet.</p>
       </div>
     </div>
     <div class="split reveal" style="margin-top:1.25rem">
       <div class="panel">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg><h3>Dual boot</h3></div>
-        <p>If there is a Windows partition, or a Linux one of the ext2, ext3 or ext4 kind, with room in it, the installer offers to keep it and share the disk. It makes that partition smaller, leaving a margin of free space inside it, and puts Trindle in the space that opens up. It shares the boot partition that is already there; a disk with no boot partition to share cannot take Trindle beside what is on it, and the installer says so rather than guessing.</p>
-        <p>Afterwards both systems are in the boot menu, and the computer starts whichever you choose. With Trindle on its own, the menu stays out of sight, since there is nothing to choose; press Esc while the computer starts to see it.</p>
-        <div class="note warn"><b>Before you resize anything,</b> back up the other system, and let Windows shut down properly rather than hibernate, or its partition cannot be made smaller.</div>
+        <p>If there is a Windows partition, or a Linux one of the ext2, ext3 or ext4 kind, with room in it, the installer offers to keep it and share the disk. It makes that partition smaller, leaving a margin of free space inside it, and puts Trindle in the space that opens up. It shares the boot partition that is already there. A disk with no boot partition to share can't take Trindle alongside what is on it, and the installer tells you so instead of guessing.</p>
+        <p>Afterwards both systems are in the boot menu, and the computer starts whichever you choose. If Trindle is on its own, the menu stays hidden because there is nothing to choose. Press Esc while the computer starts to see it.</p>
+        <div class="note warn"><b>Before you resize anything,</b> back up the other system. Let Windows shut down properly instead of hibernating, or its partition can't be made smaller.</div>
       </div>
       <div class="panel"><figure><svg class="fig" viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-labeledby="bootfig"><title id="bootfig">The boot menu, listing Trindle, Trindle snapshots, advanced options and another operating system.</title><rect x="0" y="0" width="460" height="250" rx="14" class="panel-fill"/><text class="t-dim" x="20" y="34">Choose what to start</text><rect x="20" y="56" width="420" height="34" rx="10" class="chip-on"/><text class="t-on" x="40" y="78" font-size="13">Trindle</text><rect x="20" y="100" width="420" height="34" rx="10" class="chip"/><text class="t" x="40" y="122" font-size="13">Trindle snapshots</text><rect x="20" y="144" width="420" height="34" rx="10" class="chip"/><text class="t" x="40" y="166" font-size="13">Advanced options</text><rect x="20" y="188" width="420" height="34" rx="10" class="chip"/><text class="t" x="40" y="210" font-size="13">Windows Boot Manager</text></svg><figcaption>Other systems on the disk keep their place in the boot menu, and the snapshots have an entry of their own.</figcaption></figure></div>
     </div>
@@ -189,17 +189,17 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>The first ten minutes afterwards</h2>
-      <p>What to do once you are logged in and looking at the desktop and nothing else.</p>
+      <p>What to do once you are logged in and looking at the desktop.</p>
     </div>
     <div class="grid g4">
       <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5"/><path d="M12 13v8"/></svg><h3>Pick some apps</h3><p>The Welcome offers common apps. Pick what you want and press Install the chosen apps. Almost nothing is installed to begin with, and that includes a web browser.</p></div>
       <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2.5 9a15 15 0 0 1 19 0"/><path d="M6 12.5a10 10 0 0 1 12 0"/><path d="M9.5 16a5 5 0 0 1 5 0"/><circle cx="12" cy="19.5" r="1"/></svg><h3>Join the Wi-Fi</h3><p>Open the ring, click the Wi-Fi icon in the middle, switch Wi-Fi on, press Connect beside your network and, if it asks, type the password and press Join.</p></div>
-      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8"/></svg><h3>Set the screen size</h3><p>Settings, Display, Size. If a change looks wrong, do nothing and it puts itself back after fifteen seconds.</p></div>
-      <div class="panel lift reveal d3"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><h3>Switch locking on</h3><p>Settings, Power. Locking is off to begin with. Once it is on, your password unlocks, or a four-digit PIN if you choose one as well.</p></div>
+      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M18.4 5.6l-1.8 1.8M7.4 16.6l-1.8 1.8"/></svg><h3>Set the screen size</h3><p>Open Settings, Display, Size. If a change looks wrong, do nothing and it puts itself back after fifteen seconds.</p></div>
+      <div class="panel lift reveal d3"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><h3>Switch locking on</h3><p>Open Settings, Power. Locking is off to begin with. Once it is on, your password unlocks the computer, or a four-digit PIN if you also choose one.</p></div>
     </div>
     <div class="grid g2 reveal" style="margin-top:1.25rem">
-      <div class="note"><b>Help is in the machine.</b> Settings has a Help page, and it works with the network off. Every page in Settings has a small i beside its name that explains the page.</div>
-      <div class="note warn"><b>Use at your own risk.</b> Trindle is provided as is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first.</div>
+      <div class="note"><b>Help is built in.</b> Settings has a Help page, and it works with the network off. Every page in Settings has a small i beside its name that explains the page.</div>
+      <div class="note warn"><b>Use at your own risk.</b> Trindle is provided as it is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first.</div>
     </div>
   </div>
 </section>
@@ -271,7 +271,7 @@
     <p class="foot-small foot-owner">&copy; The Trindle project</p>
     <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
     </div>
-    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-11">11 November 2026</time></p>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-12">12 November 2026</time></p>
   </div>
 </footer>
 

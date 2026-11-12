@@ -21,7 +21,7 @@
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css?v=20261139">
-<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trindle.org/#org","name":"Trindle","url":"https://trindle.org/","logo":"https://trindle.org/img/trindle.svg","email":"distro@trindle.org","sameAs":["https://github.com/trindle-os"]},{"@type":"WebSite","@id":"https://trindle.org/#site","url":"https://trindle.org/","name":"Trindle","inLanguage":"en-GB","publisher":{"@id":"https://trindle.org/#org"}},{"@type":"WebPage","@id":"https://trindle.org/#page","url":"https://trindle.org/","name":"Trindle","description":"No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.","inLanguage":"en-GB","dateModified":"2026-11-11","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://trindle.org/#org","name":"Trindle","url":"https://trindle.org/","logo":"https://trindle.org/img/trindle.svg","email":"distro@trindle.org","sameAs":["https://github.com/trindle-os"]},{"@type":"WebSite","@id":"https://trindle.org/#site","url":"https://trindle.org/","name":"Trindle","inLanguage":"en-GB","publisher":{"@id":"https://trindle.org/#org"}},{"@type":"WebPage","@id":"https://trindle.org/#page","url":"https://trindle.org/","name":"Trindle","description":"No bar, no dock, no menu: everything lives in one circle, built for your cursor and your fingertip. Written in Rust.","inLanguage":"en-GB","dateModified":"2026-11-12","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -70,10 +70,10 @@
         <span class="ln hot"><span>Just one ring.</span></span>
       </h1>
       <p class="stage-swap">
-        <span class="sr-only">Every open window shows live in the ring. Draw on a screenshot before you keep it. A snapshot around package changes. A dot whenever something is watching or listening.</span>
-        <span class="swap" aria-hidden="true"><b>Every open window, live in the ring.</b><b>Draw on a screenshot before you keep it.</b><b>A snapshot around package changes.</b><b>A dot whenever you are watched or heard.</b></span>
+        <span class="sr-only">Every open window appears live in the ring. Draw on a screenshot before you keep it. Trindle takes a snapshot around package changes. A dot appears whenever something is watching or listening.</span>
+        <span class="swap" aria-hidden="true"><b>Every open window, live in the ring.</b><b>Draw on a screenshot before you keep it.</b><b>Trindle takes a snapshot around package changes.</b><b>A dot appears whenever you are watched or heard.</b></span>
       </p>
-      <p class="stage-lead">A new desktop for Debian. One circle holds the clock, your programs, your windows and every switch.</p>
+      <p class="stage-lead">A new desktop for Debian. One ring holds the clock, your programs, your windows and all your switches.</p>
       <div class="actions">
         <a class="btn btn-primary" href="tour.html">See every part of it</a>
         <a class="btn btn-light" href="get/">Download it</a>
@@ -99,28 +99,29 @@
   <div class="wrap">
     <div class="sell-head">
       <h2 id="safe-title">Hard to break, easy to undo</h2>
-      <p>Trindle locks its own system files, and takes a snapshot around every package change.</p>
+      <p>Trindle can lock its own system files, and it takes a snapshot around every package change.</p>
     </div>
     <div class="grid g2">
       <div class="panel reveal">
-        <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><h3>Locked system files</h3></div>
-        <figure><svg class="fig" viewBox="0 0 540 156" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lockfig"><title id="lockfig">Programs and system files are locked while the computer runs. Your files, settings and apps stay open as before.</title><text class="t-dim" x="10" y="20" font-size="13">Locked while the computer runs</text><rect x="10" y="30" width="520" height="40" rx="10" class="chip-on"/><text class="t-on" x="30" y="56" font-size="15">Programs and system files</text><text class="t-dim" x="10" y="102" font-size="13">Open, as before</text><rect x="10" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="26" y="135" font-size="14">Your files</text><rect x="187" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="203" y="135" font-size="14">Settings</text><rect x="364" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="380" y="135" font-size="14">Your apps</text></svg></figure>
+        <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><h3>System files you can lock</h3></div>
+        <figure><svg class="fig" viewBox="0 0 540 156" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="lockfig"><title id="lockfig">Programs and system files can be locked while the computer runs. Your files, settings and apps stay open as before.</title><text class="t-dim" x="10" y="20" font-size="13">Locked while the computer runs, once switched on</text><rect x="10" y="30" width="520" height="40" rx="10" class="chip-on"/><text class="t-on" x="30" y="56" font-size="15">Programs and system files</text><text class="t-dim" x="10" y="102" font-size="13">Open, as before</text><rect x="10" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="26" y="135" font-size="14">Your files</text><rect x="187" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="203" y="135" font-size="14">Settings</text><rect x="364" y="112" width="166" height="36" rx="10" class="chip"/><text class="t" x="380" y="135" font-size="14">Your apps</text></svg></figure>
         <div class="rows">
-          <div><b>Locked while you work</b><span>Programs and system files are read-only while the computer runs, so an accident, or a program running without administrator rights, cannot change them.</span></div>
-          <div><b>Open for one change</b><span>They unlock for a single install or update, then lock again, and lock again at every start, so a power cut part-way cannot leave them open.</span></div>
-          <div><b>Nothing to relearn</b><span>apt, Flatpak, your apps, settings and files all work as before.</span></div>
+          <div><b>Locked while you work</b><span>Once you switch it on, programs and system files are read-only while the computer is running. An accident, or a program running without administrator rights, can't change them.</span></div>
+          <div><b>Open for one change</b><span>They unlock for one install or update, then lock again. They also lock at every start, so a power cut part-way through can't leave them open.</span></div>
+          <div><b>Off to begin with</b><span>The Trindle Installer doesn't switch the lock on yet. Turn it on in Settings, Snapshots, with the System files locked switch.</span></div>
+          <div><b>Nothing to relearn</b><span>apt, Flatpak, your apps, your settings and your files all work as they did before.</span></div>
         </div>
-        <p class="muted-line">The owner can still unlock them. This guards against accidents and malware, not against you.</p>
+        <p class="muted-line">You, as the owner, can still unlock them. This protects against accidents and malware, not against you.</p>
       </div>
       <div class="panel reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h3l2-2h6l2 2h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><h3>A snapshot around package changes</h3></div>
         <figure><svg class="fig" viewBox="0 0 540 156" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="snapfig"><title id="snapfig">A line of snapshots: one before a software change, one after it, and another before the next change.</title><path d="M40 78h470" class="line" stroke-width="2"/><path d="M70 78h260" class="line-on" stroke-width="3"/><circle cx="70" cy="78" r="11" class="chip-on"/><text class="t-dim" x="70" y="112" text-anchor="middle" font-size="13">Before</text><circle cx="200" cy="78" r="8" class="chip"/><text class="t-dim" x="200" y="112" text-anchor="middle" font-size="13">Update</text><circle cx="330" cy="78" r="11" class="chip-on"/><text class="t-dim" x="330" y="112" text-anchor="middle" font-size="13">After</text><circle cx="460" cy="78" r="11" class="chip-on"/><text class="t-dim" x="460" y="112" text-anchor="middle" font-size="13">Before</text><text class="t" x="200" y="46" text-anchor="middle" font-size="15">a software change</text><text class="t-dim" x="270" y="144" text-anchor="middle" font-size="13">go back to any of them from the boot menu</text></svg></figure>
         <div class="rows">
-          <div><b>Before and after</b><span>A snapshot of the whole system is taken before and after every package install, update and removal, and again when the computer starts.</span></div>
-          <div><b>Go back, even from a dead start</b><span>Pick one from the boot menu, even when the computer will not start. About ten are kept.</span></div>
-          <div><b>Your files stay apart</b><span>Snapshots cover programs and system settings, not your documents. One copy a day of your home folder is there if you switch it on in Settings.</span></div>
+          <div><b>Before and after</b><span>Trindle takes a snapshot of the whole system before and after every package install, update and removal.</span></div>
+          <div><b>Go back, even if the computer won't start</b><span>Choose one from the boot menu. The menu lists the last twelve.</span></div>
+          <div><b>Your files stay separate</b><span>Snapshots cover programs and system settings, not your documents. On a new install, Trindle also copies your home folder once a day, and you can turn that off in Settings.</span></div>
         </div>
-        <p class="muted-line">Needs the Btrfs disk format, which the Trindle Installer sets up.</p>
+        <p class="muted-line">This needs the Btrfs disk format, which the Trindle Installer sets up.</p>
       </div>
     </div>
     <p class="sell-more"><a href="safety.html">How the safety net works</a> and <a href="security.html">what is locked</a></p>
@@ -150,22 +151,22 @@
     <div class="show">
       <figure class="show-card show-wide reveal">
         <img src="img/windows-ring-cut.png" width="626" height="626" loading="lazy" alt="The ring with four windows open: Firefox, Thunderbird, Folders and Writer, each in its own slice of the outer circle.">
-        <figcaption><b>Your windows live in the ring</b><span>Point at one and a small live picture of it appears. Click and it comes to the front.</span></figcaption>
+        <figcaption><b>Your windows live in the ring</b><span>Point at one and a small live picture of it appears. Click it to bring it to the front.</span></figcaption>
       </figure>
       <figure class="show-card reveal d1">
         <img src="img/snapshots-card-cut.png" width="394" height="467" loading="lazy" alt="Settings, Snapshots: a list of five snapshots, each with a restore arrow and a bin.">
-        <figcaption><b>A photograph before every package change</b><span>A system snapshot before and after every package install, update and removal, with old ones in the boot menu.</span></figcaption>
+        <figcaption><b>A snapshot before every package change</b><span>A system snapshot before and after every package install, update and removal, with old ones in the boot menu.</span></figcaption>
       </figure>
     </div>
     <div class="sell-four">
       <div class="panel lift reveal"><b>A clean screen</b><p>No bar, no panel and no clock on the desktop. The ring holds the time, sound, Wi-Fi, updates, your programs and your windows.</p></div>
       <div class="panel lift reveal d1"><b>Draw before you keep</b><p>Press Print and the screen freezes. Mark it with arrows, boxes, blur or numbered spots, then copy, save or pin it.</p></div>
-      <div class="panel lift reveal d2"><b>A permission window like a phone's</b><p>Every app lists what it wants in plain words, with a switch for each, all off until you choose.</p></div>
-      <div class="panel lift reveal d3"><b>You know when you are watched</b><p>A dot in the corner whenever an app uses the camera, the microphone or records the screen.</p></div>
-      <div class="panel lift reveal"><b>Apps cannot stop it starting</b><p>Only what the computer itself needs is installed system-wide. Apps may not add drivers or background services.</p></div>
-      <div class="panel lift reveal d1"><b>Its own compositor</b><p>The program that draws every window and takes every key is Trindle's own, written in Rust. No plugin can reach into it.</p></div>
-      <div class="panel lift reveal d2"><b>Adverts and bad sites blocked</b><p>One switch blocks adverts, trackers and known bad sites for every browser and app, with private name lookups.</p></div>
-      <div class="panel lift reveal d3"><b>Coding agents in a box</b><p>Coding assistants can read logs and run commands, inside a fence that hides your personal files.</p></div>
+      <div class="panel lift reveal d2"><b>A permission window like a phone's</b><p>Every app lists what it wants in plain words, with a switch for each one. All the switches start off.</p></div>
+      <div class="panel lift reveal d3"><b>You know when you are watched</b><p>A dot appears in the corner whenever an app uses the camera or the microphone, or records the screen.</p></div>
+      <div class="panel lift reveal"><b>Apps can't stop your computer starting</b><p>Only what the computer itself needs is installed for the whole system. Apps can't add drivers or background services.</p></div>
+      <div class="panel lift reveal d1"><b>Its own compositor</b><p>The program that draws every window and receives every key press is Trindle's own, written in Rust. No plugin can reach inside it.</p></div>
+      <div class="panel lift reveal d2"><b>Adverts and bad sites blocked</b><p>One switch blocks adverts, trackers and known bad sites in every browser and app. Name lookups stay private too.</p></div>
+      <div class="panel lift reveal d3"><b>Coding agents in a box</b><p>Coding assistants can read logs and run commands, but only inside a fenced-off area that hides your personal files.</p></div>
     </div>
     <p class="show-more"><a class="btn btn-quiet" href="tour.html">See the whole desktop</a></p>
   </div>
@@ -174,12 +175,12 @@
   <div class="wrap">
     <div class="sell-head">
       <h2 id="boxes-title">Kept apart, and in your hands</h2>
-      <p>Programs live in boxes, an assistant works inside a fence, and every change can be undone.</p>
+      <p>Programs run in boxes, an assistant works inside a fence, and you can undo every package change.</p>
     </div>
     <div class="sell-three">
       <div class="panel lift reveal"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3 4 7v10l8 4 8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg><b>Programs live in boxes</b><p>Every .deb, Flatpak, AppImage and plugin runs in a box that starts with no network, no microphone and none of your files. An app gets only what you allow.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#boxes">How the boxes work</a></p></div>
-      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><b>An assistant, inside a fence</b><p>A built-in MCP server lets an assistant such as Claude see how the computer is doing, once you point it there. It asks you on screen before it changes anything, saves your settings and app permissions first, and can put them back. On a computer set up by the Trindle Installer, it also takes a snapshot of the whole system before it installs or removes an app.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#assistant">About the assistant</a></p></div>
-      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A way back, and a locked disk</b><p>A snapshot is taken around every package change, and your home folder is copied each day. At install you can encrypt the disk with a password or the computer's TPM chip, or leave it open.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#locked">Snapshots and encryption</a></p></div>
+      <div class="panel lift reveal d1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="5" width="16" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><b>An assistant, inside a fence</b><p>Trindle has a built-in MCP server. Once you point an assistant such as Claude at it, the assistant can see how your computer is doing. It asks you on screen before it changes anything. It saves your settings and app permissions first, and it can put them back. On a computer set up by the Trindle Installer, it also takes a snapshot of the whole system before it installs or removes an app.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#assistant">About the assistant</a></p></div>
+      <div class="panel lift reveal d2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>A way back, and a locked disk</b><p>Trindle takes a snapshot around every package change, and, on a new install, it copies your home folder once a day. You can turn that off in Settings. When you install, you can encrypt the disk with a password or the computer's TPM chip, or leave it unencrypted.</p><p style="margin-top:.9rem"><a class="btn btn-quiet" href="security.html#locked">Snapshots and encryption</a></p></div>
     </div>
   </div>
 </section>
@@ -251,7 +252,7 @@
     <p class="foot-small foot-owner">&copy; The Trindle project</p>
     <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
     </div>
-    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-11">11 November 2026</time></p>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-12">12 November 2026</time></p>
   </div>
 </footer>
 

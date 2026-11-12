@@ -21,7 +21,7 @@
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css?v=20261139">
-<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/about.html#page","url":"https://trindle.org/about.html","name":"Why Trindle was built this way","description":"Written in Rust, its own compositor included, and made for a mouse, a trackpad or a finger.","inLanguage":"en-GB","dateModified":"2026-11-11","isPartOf":{"@id":"https://trindle.org/#site"}},{"@type":"FAQPage","@id":"https://trindle.org/about.html#faq","mainEntity":[{"@type":"Question","name":"What is Trindle?","acceptedAnswer":{"@type":"Answer","text":"A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It installs only from its own image, and it is written in Rust with its own toolkit."}},{"@type":"Question","name":"Is Trindle free software?","acceptedAnswer":{"@type":"Answer","text":"Yes. Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on carries the same freedom with it."}},{"@type":"Question","name":"Does Trindle track me?","acceptedAnswer":{"@type":"Answer","text":"No. Trindle has no account and no telemetry. This site sets no cookies and counts no visitors."}},{"@type":"Question","name":"Is it ready for everyday use?","acceptedAnswer":{"@type":"Answer","text":"It is new, it has been tested on a small number of machines, and it keeps changing. Back up everything that matters before you install it, because it changes how the computer starts, logs in and manages its disks."}},{"@type":"Question","name":"What is it built on?","acceptedAnswer":{"@type":"Answer","text":"Debian stable underneath, with apt and Flatpak behaving as they do anywhere else. The desktop on top is a rolling release, so new versions arrive as ordinary updates without waiting for a new version of the whole system."}},{"@type":"Question","name":"Where do I get help?","acceptedAnswer":{"@type":"Answer","text":"There is no support desk. Bugs and questions go to distro@trindle.org. Bug reports are welcome, and so is someone telling us a screen is confusing."}},{"@type":"Question","name":"Can I send code?","acceptedAnswer":{"@type":"Answer","text":"Trindle is built to one specification, so pull requests are not the usual way in. Describe your fix or idea in a report instead. Forking it is welcome."}}]}]}</script>
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/about.html#page","url":"https://trindle.org/about.html","name":"Why Trindle was built this way","description":"Written in Rust, its own compositor included, and made for a mouse, a trackpad or a finger.","inLanguage":"en-GB","dateModified":"2026-11-12","isPartOf":{"@id":"https://trindle.org/#site"}},{"@type":"FAQPage","@id":"https://trindle.org/about.html#faq","mainEntity":[{"@type":"Question","name":"What is Trindle?","acceptedAnswer":{"@type":"Answer","text":"A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. You can install it only from its own image, and it is written in Rust with its own toolkit."}},{"@type":"Question","name":"Is Trindle free software?","acceptedAnswer":{"@type":"Answer","text":"Yes. Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on keeps the same freedom."}},{"@type":"Question","name":"Does Trindle track me?","acceptedAnswer":{"@type":"Answer","text":"No. Trindle has no account and no telemetry. This site sets no cookies and counts no visitors."}},{"@type":"Question","name":"Is it ready for everyday use?","acceptedAnswer":{"@type":"Answer","text":"It is new, it has been tested on only a small number of machines, and it keeps changing. Back up everything that matters before you install it, because it changes how the computer starts, logs in and manages its disks."}},{"@type":"Question","name":"What is it built on?","acceptedAnswer":{"@type":"Answer","text":"It is built on Debian stable, with apt and Flatpak working as they do anywhere else. The desktop on top is a rolling release, so new versions arrive as ordinary updates and you don't have to wait for a new version of the whole system."}},{"@type":"Question","name":"Where do I get help?","acceptedAnswer":{"@type":"Answer","text":"There is no support desk. Please send bugs and questions to distro@trindle.org. Bug reports are welcome. So is telling us that a screen is confusing."}},{"@type":"Question","name":"Can I send code?","acceptedAnswer":{"@type":"Answer","text":"Trindle is built to one specification, so pull requests are not the usual way in. Please describe your fix or idea in a report instead. You are welcome to fork it."}}]}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -64,17 +64,17 @@
     <div class="hero-grid">
       <div>
         <h1>Why this exists</h1>
-        <p class="lead">Desktops have grown a bar at the top, a dock at the bottom, a tray in one corner and a search box that wants the keyboard. Trindle puts all of it in one circle that is not there until you ask for it.</p>
-        <p>It is still new to other people's computers, and it keeps changing.</p>
+        <p class="lead">Desktops have grown a bar at the top, a dock at the bottom, a tray in one corner and a search box that wants the keyboard. Trindle puts all of it in one ring, which stays hidden until you ask for it.</p>
+        <p>It hasn't been tried on many computers yet, and it keeps changing.</p>
       </div>
       <div class="panel">
         <h2 style="font-size:1.0625rem;letter-spacing:0">In short</h2>
         <div class="rows">
-          <div><b>What</b><span>A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It installs only from its own image</span></div>
-          <div><b>Written in</b><span>Rust, with its own toolkit</span></div>
-          <div><b>Shape</b><span>One program, beside its own compositor and the disk-password screen. Every other trindle- command is a link to the same binary</span></div>
+          <div><b>What it is</b><span>A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. You can only install it from its own image.</span></div>
+          <div><b>Written in</b><span>Rust, with its own toolkit.</span></div>
+          <div><b>How it is built</b><span>One main program, plus its own compositor and the disk-password screen. Every other <code>trindle-</code> command is a link to that main program.</span></div>
           <div><b>Licence</b><span>GPL-3.0-or-later</span></div>
-          <div><b>Releases</b><span>Ready to download</span></div>
+          <div><b>Releases</b><span>Ready to download.</span></div>
         </div>
       </div>
     </div>
@@ -86,30 +86,30 @@
     <div class="split">
       <div class="panel reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg><h2 style="font-size:1.6rem">One program, not a pile of them</h2></div>
-        <p class="lead" style="color:var(--fg)">The ring, Settings, Apps, Screenshot, Activity, Drives, the login screen, the lock screen and the Installer are all the same Rust binary.</p>
+        <p class="lead" style="color:var(--fg)">The ring, Settings, Apps, Screenshot, Activity, Drives, the login screen, the lock screen and the Trindle Installer are all one Rust program.</p>
         <div class="rows">
-          <div><b>One program</b><span>Nearly every <code>trindle-</code> command is a link to it, and it picks its tool by the name it was started as. <code>trindle --names</code> lists them.</span></div>
-          <div><b>Its own compositor</b><span><code>trindle-compose</code>, written in Rust on Smithay, puts every window on the screen and runs the login screen too. It is a program of its own, so nothing else loads what drawing the screen needs.</span></div>
-          <div><b>Why</b><span>One set of colours, one stylesheet, one place a bug gets fixed. A new Settings page is one file and one line in a list.</span></div>
-          <div><b>Only one runs as root</b><span><code>trindle-admin</code>, through pkexec. It checks every argument and reads passwords from standard input only.</span></div>
+          <div><b>One program</b><span>Nearly every <code>trindle-</code> command is a link to it. It decides which tool to run from the name you started it with. <code>trindle --names</code> lists them.</span></div>
+          <div><b>Its own compositor</b><span><code>trindle-compose</code> is written in Rust on Smithay. It puts every window on the screen and runs the login screen too. It is a separate program, so nothing else has to load the code that draws the screen.</span></div>
+          <div><b>Why</b><span>There is one set of colours, one stylesheet and one place to fix a bug. A new Settings page is one file and one line in a list.</span></div>
+          <div><b>Only one part runs as root</b><span>That part is <code>trindle-admin</code>, started through pkexec. It checks every argument, and it reads passwords only from standard input.</span></div>
         </div>
       </div>
-      <div class="panel reveal d1"><figure><img class="fig" src="img/windows-ring-cut.png" alt="The ring open with four windows running: Firefox, Thunderbird, Folders and Writer, each a tab along the bottom of the outer ring" loading="lazy" width="626" height="626"><figcaption>The ring with four windows open, drawn by the ring's own code. Each window is a tab along the bottom of the outer ring.</figcaption></figure></div>
+      <div class="panel reveal d1"><figure><img class="fig" src="img/windows-ring-cut.png" alt="The ring open with four windows running: Firefox, Thunderbird, Folders and Writer, each a tab along the bottom of the outer ring" loading="lazy" width="626" height="626"><figcaption>The ring with four windows open, drawn by Trindle's own code. Each window is a tab along the bottom of the outer ring.</figcaption></figure></div>
     </div>
     <div class="grid g2 reveal" style="margin-top:1.25rem">
       <div class="panel lift"><h3>What it is built on</h3><div class="rows">
-          <div><b>Debian stable</b><span>Underneath, with apt and Flatpak behaving as they do anywhere else, and following Debian's own release programme.</span></div>
-          <div><b>A rolling desktop</b><span>Trindle on top arrives as ordinary updates from Trindle's own source, so you do not wait for a new version of the whole system.</span></div>
-          <div><b>Parts used</b><span>PipeWire, NetworkManager, BlueZ, CUPS and snapper, with Trindle's own Rust toolkit for windows and Smithay for the compositor.</span></div>
+          <div><b>Debian stable</b><span>This is the base, with apt and Flatpak working as they do anywhere else. It follows Debian's own release programme.</span></div>
+          <div><b>A rolling desktop</b><span>Trindle's desktop arrives as ordinary updates from Trindle's own source, so you don't have to wait for a new version of the whole system.</span></div>
+          <div><b>Parts used</b><span>PipeWire, NetworkManager, BlueZ, CUPS and snapper, with Trindle's own Rust toolkit for its windows and Smithay for the compositor.</span></div>
         </div></div>
-      <div class="panel lift"><h3>What it deliberately is not</h3><p style="color:var(--muted-fg)">There is no X11 session and no GNOME session, and Trindle's own windows use neither GTK nor Qt. Xwayland is installed for older programs written for X11, and Trindle's compositor starts it with the desktop, never at the login screen. Nothing is installed with recommended extras, and every package is listed in the README.</p></div>
+      <div class="panel lift"><h3>What it deliberately is not</h3><p style="color:var(--muted-fg)">There is no X11 session and no GNOME session, and Trindle's own windows use neither GTK nor Qt. Xwayland is installed for older programs written for X11. Trindle's compositor starts it with the desktop, never at the login screen. Nothing is installed with recommended extras, and the README lists every package.</p></div>
     </div>
   </div>
 </section>
-<section class="band reveal"><div class="wrap"><div class="band-in"><div class="band-media"><div class="panel"><figure><img class="fig" src="img/settings-appearance.jpg" alt="Settings on the Appearance page: a list of pages down the side, and cards for the theme, the highlight colours, the font, the icon shapes, the pointer and reading the screen" loading="lazy" width="1000" height="620"><figcaption>Settings: one window, a list of pages down the side, switches and choices on the right.</figcaption></figure></div></div><div class="band-words">
+<section class="band reveal"><div class="wrap"><div class="band-in"><div class="band-media"><div class="panel"><figure><img class="fig" src="img/settings-appearance.jpg" alt="Settings on the Appearance page: a list of pages down the side, and cards for the theme, the highlight colours, the font, the icon shapes, the pointer and reading the screen" loading="lazy" width="1000" height="620"><figcaption>Settings is one window, with a list of pages down the side and switches and choices on the right.</figcaption></figure></div></div><div class="band-words">
   <div class="holder">
     <h2>Ordinary underneath</h2>
-    <p class="lead" style="color:var(--fg)">Underneath the desktop are standard parts. The snapshots are snapper's, the sound is PipeWire, the apps come from Flathub as Flatpaks, as AppImages or from Debian, and your settings are plain files in your home folder.</p>
+    <p class="lead" style="color:var(--fg)">Underneath the desktop are standard parts. Snapper takes the snapshots, PipeWire handles the sound, and the apps come from Flathub as Flatpaks, as AppImages or from Debian. Your settings are plain files in your home folder.</p>
   </div>
 </div></div></div></section>
 
@@ -117,21 +117,21 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>Things worth saying plainly</h2>
-      <p>The parts that a features list would leave out.</p>
+      <p>The things a list of features would leave out.</p>
     </div>
         <div class="grid g2">
       <div class="panel reveal">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>It is new</h3></div>
-        <p>Trindle is built on Debian stable, which is 13 at the time of writing, and has been tested on a small number of machines.</p>
-        <p>Things move between versions. There is no support desk: bugs and questions go to <a href="mailto:distro@trindle.org">distro@trindle.org</a>.</p>
+        <p>Trindle is built on Debian stable, which is version 13 at the time of writing. It has been tested on only a small number of machines.</p>
+        <p>Things change between versions. There is no support desk, so please send bugs and questions to <a href="mailto:distro@trindle.org">distro@trindle.org</a>.</p>
       </div>
       <div class="panel reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><h3>No warranty, and no tracking</h3></div>
-        <p>Trindle is provided as is, with no warranty of any kind, and you use it entirely at your own risk. Sections 15 and 16 of the licence say so in the usual words, and Help, in Settings, says the same.</p>
+        <p>Trindle is provided as it is, with no warranty of any kind, and you use it entirely at your own risk. Sections 15 and 16 of the licence say so in the usual words, and Help in Settings says the same.</p>
         <p>Trindle has no account and no telemetry. This site sets no cookies and counts no visitors.</p>
       </div>
     </div>
-    <div style="margin-top:1.25rem"><div class="note warn"><b>Use at your own risk.</b> Trindle is provided as is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks. Back up everything that matters first. The people who make Trindle are not responsible for any loss of data, damage to the computer or any other harm that comes from installing or using it. See sections 15 and 16 of the LICENSE file.</div></div>
+    <div style="margin-top:1.25rem"><div class="note warn"><b>Use at your own risk.</b> Trindle is provided as it is, with no warranty of any kind, and you use it entirely at your own risk. It changes how the computer starts, logs in and manages its disks, so back up everything that matters first. The people who make Trindle are not responsible for any loss of data, damage to the computer or any other harm that comes from installing or using it. See sections 15 and 16 of the LICENSE file.</div></div>
   </div>
 </section>
 
@@ -140,16 +140,16 @@
     <div class="split flip">
       <div class="panel reveal">
         <h3>Thanks</h3>
-        <p>Trindle is built on other people's work. Settings, Thanks lists every project it is built on, with a link to each one's home and a heart beside those that accept donations, and so does <a href="thanks.html">the Thanks page</a> here. A few of them:</p>
+        <p>Trindle is built on other people's work. The Thanks page in Settings lists every project it is built on, with a link to each one's home page and a heart beside those that accept donations. <a href="thanks.html">The Thanks page</a> on this site lists them too. Here are a few:</p>
         <div class="grid g2" style="margin-top:.8rem;gap:.25rem 1.25rem">
-          <ul style="margin:0"><li><a href="https://smithay.github.io" target="_blank" rel="noopener">Smithay</a>, what the compositor is built on</li><li><a href="https://www.rust-lang.org" target="_blank" rel="noopener">Rust</a>, the language it is written in</li><li><a href="https://www.debian.org" target="_blank" rel="noopener">Debian</a>, everything underneath</li><li><a href="https://flathub.org" target="_blank" rel="noopener">Flathub</a>, most of the apps</li></ul>
-          <ul style="margin:0"><li><a href="https://pipewire.org" target="_blank" rel="noopener">PipeWire</a>, the sound</li><li><a href="https://github.com/openSUSE/snapper" target="_blank" rel="noopener">snapper</a>, the snapshots</li><li><a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme" target="_blank" rel="noopener">Papirus</a>, what the icons build on</li><li><a href="https://github.com/ggml-org/whisper.cpp" target="_blank" rel="noopener">whisper.cpp</a>, the voice control</li></ul>
+          <ul style="margin:0"><li><a href="https://smithay.github.io" target="_blank" rel="noopener">Smithay</a>, which the compositor is built on</li><li><a href="https://www.rust-lang.org" target="_blank" rel="noopener">Rust</a>, the language Trindle is written in</li><li><a href="https://www.debian.org" target="_blank" rel="noopener">Debian</a>, the base of everything</li><li><a href="https://flathub.org" target="_blank" rel="noopener">Flathub</a>, where most of the apps come from</li></ul>
+          <ul style="margin:0"><li><a href="https://pipewire.org" target="_blank" rel="noopener">PipeWire</a>, for sound</li><li><a href="https://github.com/openSUSE/snapper" target="_blank" rel="noopener">snapper</a>, for snapshots</li><li><a href="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme" target="_blank" rel="noopener">Papirus</a>, which the icons are based on</li><li><a href="https://github.com/ggml-org/whisper.cpp" target="_blank" rel="noopener">whisper.cpp</a>, for voice control</li></ul>
         </div>
       </div>
       <div class="reveal d1">
         <div class="ico-row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.3-7-9.2A4 4 0 0 1 12 8a4 4 0 0 1 7 2.8C19 15.7 12 20 12 20z"/></svg><h2 style="font-size:1.6rem">Free software, and meant to stay that way</h2></div>
-        <p class="lead">Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on carries the same freedom with it.</p>
-        <p>The source repository is public at <a href="https://github.com/trindle-os" target="_blank" rel="noopener">github.com/trindle-os<span class="sr-only"> (opens in a new tab)</span></a>, and holds this website and the script that builds the installation image. Bug reports are welcome, and so is someone telling us a screen is confusing, which is harder to find out than a crash. Trindle is built to one specification, so pull requests are not the usual way in: describe your fix or idea in a report instead. Forking it is welcome.</p>
+        <p class="lead">Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on keeps the same freedom.</p>
+        <p>The source repository is public at <a href="https://github.com/trindle-os" target="_blank" rel="noopener">github.com/trindle-os<span class="sr-only"> (opens in a new tab)</span></a>, and holds this website and the script that builds the installation image. Bug reports are welcome. So is telling us that a screen is confusing, which is harder for us to find out than a crash. Trindle is built to one specification, so pull requests are not the usual way in. Please describe your fix or idea in a report instead. You are welcome to fork it.</p>
         <div class="actions">
           <a data-buildmorphic="report" class="btn btn-primary" href="https://trindle.buildmorphic.com/report" target="_blank" rel="noopener"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg>Report a bug</a>
           <a class="btn btn-quiet" href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">Read the licence</a>
@@ -163,13 +163,13 @@
   <div class="wrap">
     <div class="sec-head"><h2>Questions people ask</h2></div>
     <div class="grid" style="grid-template-columns:1fr">
-      <div class="panel reveal"><h3>What is Trindle?</h3><p>A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. It installs only from its own image, and it is written in Rust with its own toolkit.</p></div>
-      <div class="panel reveal"><h3>Is Trindle free software?</h3><p>Yes. Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on carries the same freedom with it.</p></div>
+      <div class="panel reveal"><h3>What is Trindle?</h3><p>A whole operating system built on Debian stable, with a desktop that lives in one ring and a Wayland compositor of its own. You can install it only from its own image, and it is written in Rust with its own toolkit.</p></div>
+      <div class="panel reveal"><h3>Is Trindle free software?</h3><p>Yes. Trindle is under the GNU General Public License, version 3 or later. You may use it, read it, change it and pass it on, and anything you pass on keeps the same freedom.</p></div>
       <div class="panel reveal"><h3>Does Trindle track me?</h3><p>No. Trindle has no account and no telemetry. This site sets no cookies and counts no visitors.</p></div>
-      <div class="panel reveal"><h3>Is it ready for everyday use?</h3><p>It is new, it has been tested on a small number of machines, and it keeps changing. Back up everything that matters before you install it, because it changes how the computer starts, logs in and manages its disks.</p></div>
-      <div class="panel reveal"><h3>What is it built on?</h3><p>Debian stable underneath, with apt and Flatpak behaving as they do anywhere else. The desktop on top is a rolling release, so new versions arrive as ordinary updates without waiting for a new version of the whole system.</p></div>
-      <div class="panel reveal"><h3>Where do I get help?</h3><p>There is no support desk. Bugs and questions go to <a href="mailto:distro@trindle.org">distro@trindle.org</a>. Bug reports are welcome, and so is someone telling us a screen is confusing.</p></div>
-      <div class="panel reveal"><h3>Can I send code?</h3><p>Trindle is built to one specification, so pull requests are not the usual way in. Describe your fix or idea in a report instead. Forking it is welcome.</p></div>
+      <div class="panel reveal"><h3>Is it ready for everyday use?</h3><p>It is new, it has been tested on only a small number of machines, and it keeps changing. Back up everything that matters before you install it, because it changes how the computer starts, logs in and manages its disks.</p></div>
+      <div class="panel reveal"><h3>What is it built on?</h3><p>It is built on Debian stable, with apt and Flatpak working as they do anywhere else. The desktop on top is a rolling release, so new versions arrive as ordinary updates and you don't have to wait for a new version of the whole system.</p></div>
+      <div class="panel reveal"><h3>Where do I get help?</h3><p>There is no support desk. Please send bugs and questions to <a href="mailto:distro@trindle.org">distro@trindle.org</a>. Bug reports are welcome. So is telling us that a screen is confusing.</p></div>
+      <div class="panel reveal"><h3>Can I send code?</h3><p>Trindle is built to one specification, so pull requests are not the usual way in. Please describe your fix or idea in a report instead. You are welcome to fork it.</p></div>
     </div>
   </div>
 </section>
@@ -242,7 +242,7 @@
     <p class="foot-small foot-owner">&copy; The Trindle project</p>
     <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
     </div>
-    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-11">11 November 2026</time></p>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-12">12 November 2026</time></p>
   </div>
 </footer>
 

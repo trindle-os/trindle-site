@@ -21,7 +21,7 @@
 <link rel="icon" href="img/trindle.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Manrope-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css?v=20261139">
-<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/virtual-machine.html#page","url":"https://trindle.org/virtual-machine.html","name":"Trindle in a virtual machine","description":"Trindle has been tested in a QEMU virtual machine with 4 GB of memory, 4 processors and a 30 GB disk. Here is that setup.","inLanguage":"en-GB","dateModified":"2026-11-11","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
+<script type="application/ld+json" id="ld">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://trindle.org/virtual-machine.html#page","url":"https://trindle.org/virtual-machine.html","name":"Trindle in a virtual machine","description":"Trindle has been tested in a QEMU virtual machine with 4 GB of memory, 4 processors and a 30 GB disk. Here is that setup.","inLanguage":"en-GB","dateModified":"2026-11-12","isPartOf":{"@id":"https://trindle.org/#site"}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -65,7 +65,7 @@
     <div class="hero-grid">
       <div>
         <h1>In a virtual machine</h1>
-        <p class="lead">Trindle runs in a virtual machine, and it is a sensible way to look round before you write a USB stick. So far it has been tested in one setup, in QEMU, and this page says what that was and nothing more.</p>
+        <p class="lead">Trindle runs in a virtual machine, which is a sensible way to look round before you write a USB stick. So far it has been tested in only one setup, in QEMU. This page says what that setup was, and nothing more.</p>
         <div class="actions">
           <a class="btn btn-primary" href="https://github.com/trindle-os/trindle/releases/latest/download/trindle-amd64.iso"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4v11"/><path d="M8 11l4 4 4-4"/><path d="M5 19h14"/></svg>Download the image</a>
           <a class="btn btn-quiet" href="install.html">Putting it on a real computer</a>
@@ -81,7 +81,7 @@
         </div>
       </div>
     </div>
-    <div style="margin-top:1.25rem"><div class="note warn"><b>A virtual machine is slower than the computer it runs on.</b> Everything drawn on the screen goes through another layer of software first. Judge how Trindle looks and how it works in a virtual machine, by all means. Judge how fast it is from a USB stick on the real computer, which costs you nothing.</div></div>
+    <div style="margin-top:1.25rem"><div class="note warn"><b>A virtual machine is slower than the computer it runs on.</b> Everything drawn on the screen goes through another layer of software first. Do judge how Trindle looks and works in a virtual machine. But judge how fast it is by running it from a USB stick on the real computer, which costs you nothing.</div></div>
   </div>
 </section>
 
@@ -92,8 +92,8 @@
         <h2>If it still feels slow</h2>
         <p>Two things, in this order.</p>
         <ol class="steps">
-          <li><b>How much memory did it actually get?</b><span>Not what you meant to give it. Look at what the program shows for the running machine.</span></li>
-          <li><b>Is the host busy?</b><span>A virtual machine gets what is left over. Close what you are not using on the real computer before you decide the desktop is slow.</span></li>
+          <li><b>How much memory did it actually get?</b><span>Look at what the program shows for the running machine, not at what you meant to give it.</span></li>
+          <li><b>Is the host busy?</b><span>A virtual machine gets only what is left over. Close what you aren't using on the real computer before you decide the desktop is slow.</span></li>
         </ol>
       </div>
     </div>
@@ -109,15 +109,15 @@
     <div class="grid g3">
       <div class="panel lift reveal">
         <h3>How fast it is</h3>
-        <p>Windows moving, menus opening, a video playing. All of it goes through another layer before it reaches your eyes.</p>
+        <p>Windows moving, menus opening and videos playing all go through another layer before they reach your eyes.</p>
       </div>
       <div class="panel lift reveal d1">
         <h3>The machine itself</h3>
-        <p>Battery, sleeping and waking, the lid, screen brightness, Wi-Fi, a fingerprint reader, a printer. A virtual machine has none of them, or a pretend one.</p>
+        <p>A virtual machine has no battery, sleep and wake, lid, screen brightness, Wi-Fi, fingerprint reader or printer. At best it has pretend versions of some of them.</p>
       </div>
       <div class="panel lift reveal d2">
         <h3>Installing</h3>
-        <p>You can install into a virtual machine and it works. What it will not tell you is whether this computer's own disk, firmware and graphics are happy, which is the part worth knowing.</p>
+        <p>You can install Trindle in a virtual machine and it works. But it can't tell you whether this computer's own disk, firmware and graphics work well with Trindle, which is the part worth knowing.</p>
       </div>
     </div>
     <p style="margin-top:1.25rem"><a class="btn btn-primary" href="install.html">When you are ready: putting it on a computer</a></p>
@@ -191,7 +191,7 @@
     <p class="foot-small foot-owner">&copy; The Trindle project</p>
     <nav class="foot-legal" aria-label="About this site"><a href="privacy.html">Privacy</a><a href="cookies.html">Cookies</a><a href="accessibility.html">Accessibility</a><a href="complaints.html">Complaints</a></nav>
     </div>
-    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-11">11 November 2026</time></p>
+    <p class="foot-small foot-updated">Page last updated <time datetime="2026-11-12">12 November 2026</time></p>
   </div>
 </footer>
 
